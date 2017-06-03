@@ -21,3 +21,6 @@ let g:airline#extensions#tabline#buffer_nr_show=1
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1
+
+" Javascript
+let g:javascript_plugin_jsdoc = 1
