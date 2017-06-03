@@ -1,3 +1,4 @@
+set nocompatible
 colorscheme molokai
 
 set tabstop=4
