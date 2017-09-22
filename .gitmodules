@@ -52,3 +52,6 @@
 [submodule "pack/plugins/start/tagbar-javascript.vim"]
 	path = pack/plugins/start/tagbar-javascript.vim
 	url = https://github.com/hushicai/tagbar-javascript.vim.git
+[submodule "pack/plugins/start/vim-phpfmt"]
+	path = pack/plugins/start/vim-phpfmt
+	url = https://github.com/beanworks/vim-phpfmt.git

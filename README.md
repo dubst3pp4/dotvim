@@ -18,6 +18,8 @@ Guide on building dotvim repository: https://gist.github.com/manasthakur/d4dc9a6
 #### JavaScript
 - tagbar-javascript.vim, JavaScript support for Tagbar
 - tern_for_vim, used by YouCompleteMe to support JavaScript
+#### PHP
+- vim-phpfmt, formats PHP files with the help of phpcbf
 #### FreePascal
 - vim-freepascal, modern support for FreePascal
 - syntastic-freepascal-checker, my own Syntastic FreePascal checker
@@ -31,6 +33,8 @@ Guide on building dotvim repository: https://gist.github.com/manasthakur/d4dc9a6
 - jshint (required by Syntastic)
 - esctags (required by tagbar-javascript.vim)
 - build-essentials, python (required by YouCompleteMe)
+- PHP_CodeSniffer (phpcs & phpbcf, required by vim-phpfmt and Syntastic)
+- fpc (required by syntastic-freepascal-checker)
 
 ## Update plugins
 I've changed a little script that I found somewhere (sorry!) to update all plugins:
