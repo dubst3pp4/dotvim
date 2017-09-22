@@ -43,3 +43,6 @@
 [submodule "pack/plugins/start/vim-signature"]
 	path = pack/plugins/start/vim-signature
 	url = https://github.com/kshenoy/vim-signature.git
+[submodule "pack/plugins/start/syntastic-freepascal-checker"]
+	path = pack/plugins/start/syntastic-freepascal-checker
+	url = git@github.com:dubst3pp4/syntastic-freepascal-checker.git
