@@ -37,3 +37,6 @@
 [submodule "pack/plugins/start/nerdtree-git-plugin"]
 	path = pack/plugins/start/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "pack/plugins/start/vim-freepascal"]
+	path = pack/plugins/start/vim-freepascal
+	url = https://github.com/boeckmann/vim-freepascal.git
