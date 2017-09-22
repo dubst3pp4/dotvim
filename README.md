@@ -47,6 +47,7 @@ At the moment the following features are provided:
 - jsctags (required by tern_for_vim and tagbar)
 - jshint (required by Syntastic)
 - fpc (required by syntastic-freepascal-checker)
+- powerline patched fonts for vim-airline (https://github.com/powerline/fonts)
 
 ## Update plugins
 I've changed a little script that I found somewhere (sorry!) to update all plugins:
