@@ -2,6 +2,16 @@
 
 Guide on building dotvim repository: https://gist.github.com/manasthakur/d4dc9a610884c60d944a4dd97f0b3560
 
+## Mission
+Build a configuration for daily editing of JavaScript and PHP files. Experimental support for FreePascal, too.
+
+At the moment the following features are provided:
+
+- Syntax checkers (syntastic)
+- Overview of functions / methods, classes and constants (tagbar)
+- Git support (vim-fugitive & vim-gitgutter)
+- Fuzzy file search and overview of buffers
+
 ## Plugins
 ### General plugins
 - [vim-airline](https://github.com/vim-airline/vim-airline), impressive status line
@@ -17,8 +27,7 @@ Guide on building dotvim repository: https://gist.github.com/manasthakur/d4dc9a6
 - [syntastic](https://github.com/vim-syntastic/syntastic), a universal syntax checker
 
 #### JavaScript
-- [tagbar-javascript.vim](https://github.com/hushicai/tagbar-javascript.vim), JavaScript support for Tagbar
-- [tern_for_vim](https://github.com/ternjs/tern_for_vim), used by YouCompleteMe to support JavaScript
+- [tern_for_vim](https://github.com/ternjs/tern_for_vim), used by YouCompleteMe and Tagbar to support JavaScript
 
 #### PHP
 - [vim-phpfmt](https://github.com/beanworks/vim-phpfmt), formats PHP files with the help of phpcbf
@@ -33,11 +42,11 @@ Guide on building dotvim repository: https://gist.github.com/manasthakur/d4dc9a6
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter), shows marks in the gutter column
 
 ## Requirements
-- PHP_CodeSniffer (phpcs & phpbcf, required by vim-phpfmt and Syntastic)
 - build-essentials, python (required by YouCompleteMe)
-- esctags (required by tagbar-javascript.vim)
-- fpc (required by syntastic-freepascal-checker)
+- PHP_CodeSniffer (phpcs & phpbcf, required by vim-phpfmt and syntastic)
+- jsctags (required by tern_for_vim and tagbar)
 - jshint (required by Syntastic)
+- fpc (required by syntastic-freepascal-checker)
 
 ## Update plugins
 I've changed a little script that I found somewhere (sorry!) to update all plugins:
@@ -51,6 +60,4 @@ When YouCompleteMe is updated, the binary can be compiled from within the plugin
 When tern_for_vim is installed, you have to cd into the plugin directory and install tern requirements with
 
     npm install
-
-
 
