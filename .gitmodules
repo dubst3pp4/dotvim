@@ -46,3 +46,6 @@
 [submodule "pack/plugins/start/syntastic-freepascal-checker"]
 	path = pack/plugins/start/syntastic-freepascal-checker
 	url = git@github.com:dubst3pp4/syntastic-freepascal-checker.git
+[submodule "pack/plugins/start/vim-gutentags"]
+	path = pack/plugins/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
