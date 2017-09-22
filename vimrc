@@ -78,6 +78,22 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+" Tagbar
+nmap <Leader>t :TagbarToggle<CR>
+let g:tagbar_type_freepascal = {
+    \ 'ctagstype' : 'freepascal',
+    \ 'kinds'     : [
+        \ 't:Type',
+        \ 'c:Class',
+        \ 'n:Constructor',
+        \ 'd:Destructor',
+        \ 'm:Method',
+        \ 'f:Function',
+        \ 'p:Procedure',
+        \ 's:Section',
+    \ ],
+\ }
+
 " Markdown
 let g:vim_markdown_folding_disabled = 1
 
@@ -92,6 +108,20 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_error_symbol = "☠" 
+let g:syntastic_warning_symbol = "⚠" 
+let g:syntastic_style_error_symbol = "☢"
 
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_php_checkers = ['php']
+
+" CTRL-P
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+nmap <Leader>b :CtrlPBuffer<CR>
+
+" NerdTree
+map <Leader>n :NERDTreeToggle<CR>
+map <Leader>f :NERDTreeFind<CR>
+let NERDTreeQuitOnOpen=1
