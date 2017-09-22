@@ -115,6 +115,7 @@ let g:syntastic_style_error_symbol = "☢"
 
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_php_checkers = ['php']
+let g:syntastic_freepascal_checkers = ['fpc']
 
 " CTRL-P
 let g:ctrlp_map = '<c-p>'
