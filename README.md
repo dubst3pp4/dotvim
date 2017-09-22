@@ -4,37 +4,40 @@ Guide on building dotvim repository: https://gist.github.com/manasthakur/d4dc9a6
 
 ## Plugins
 ### General plugins
-- Airline, impressive status line
-- CTRLP, a fuzzy file and buffer finder
-- DelimitMate, autoclose braces, brackets and quotes
-- Gutentags, creates tagfiles on-the-fly
-- NERDTree, a file drawer
-- Tagbar, lists ctags in its own window
-- YouCompleteMe, an autocompletion engine
-- vim-signature, shows marks in gutter
+- [vim-airline](https://github.com/vim-airline/vim-airline), impressive status line
+- [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim), a fuzzy file and buffer finder
+- [delimitMate](https://github.com/Raimondi/delimitMate), autoclose parens, braces, brackets and quotes
+- [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags), creates tagfiles on-the-fly
+- [NERDTree](https://github.com/scrooloose/nerdtree), a file drawer
+- [Tagbar](https://github.com/majutsushi/tagbar), lists tags in its own window
+- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), an autocompletion engine
+- [vim-signature](https://github.com/kshenoy/vim-signature), shows marks in gutter
 
 ### Language specific
-- Syntastic, a universal syntax checker
+- [syntastic](https://github.com/vim-syntastic/syntastic), a universal syntax checker
+
 #### JavaScript
-- tagbar-javascript.vim, JavaScript support for Tagbar
-- tern_for_vim, used by YouCompleteMe to support JavaScript
+- [tagbar-javascript.vim](https://github.com/hushicai/tagbar-javascript.vim), JavaScript support for Tagbar
+- [tern_for_vim](https://github.com/ternjs/tern_for_vim), used by YouCompleteMe to support JavaScript
+
 #### PHP
-- vim-phpfmt, formats PHP files with the help of phpcbf
+- [vim-phpfmt](https://github.com/beanworks/vim-phpfmt), formats PHP files with the help of phpcbf
+
 #### FreePascal
-- vim-freepascal, modern support for FreePascal
-- syntastic-freepascal-checker, my own Syntastic FreePascal checker
+- [vim-freepascal](https://github.com/boeckmann/vim-freepascal), modern support for FreePascal
+- [syntastic-freepascal-checker](https://github.com/dubst3pp4/syntastic-freepascal-checker), my own syntastic FreePascal checker
 
 ### Git specific plugins
-- NERDTree-git-plugin, shows git status next to the filenames
-- vim-fugitive, adds shortcuts for adding, commiting and pushing files
-- vim-gitgutter, shows marks in the gutter column
+- [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin), shows git status next to the filenames
+- [vim-fugitive](https://github.com/tpope/vim-fugitive), adds shortcuts for adding, commiting and pushing files
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter), shows marks in the gutter column
 
 ## Requirements
-- jshint (required by Syntastic)
-- esctags (required by tagbar-javascript.vim)
-- build-essentials, python (required by YouCompleteMe)
 - PHP_CodeSniffer (phpcs & phpbcf, required by vim-phpfmt and Syntastic)
+- build-essentials, python (required by YouCompleteMe)
+- esctags (required by tagbar-javascript.vim)
 - fpc (required by syntastic-freepascal-checker)
+- jshint (required by Syntastic)
 
 ## Update plugins
 I've changed a little script that I found somewhere (sorry!) to update all plugins:
@@ -44,4 +47,10 @@ I've changed a little script that I found somewhere (sorry!) to update all plugi
 When YouCompleteMe is updated, the binary can be compiled from within the plugin-directory with
 
     ./install.py --clang-completer --tern-completer
+
+When tern_for_vim is installed, you have to cd into the plugin directory and install tern requirements with
+
+    npm install
+
+
 
