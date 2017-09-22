@@ -40,3 +40,6 @@
 [submodule "pack/plugins/start/vim-freepascal"]
 	path = pack/plugins/start/vim-freepascal
 	url = https://github.com/boeckmann/vim-freepascal.git
+[submodule "pack/plugins/start/vim-signature"]
+	path = pack/plugins/start/vim-signature
+	url = https://github.com/kshenoy/vim-signature.git
