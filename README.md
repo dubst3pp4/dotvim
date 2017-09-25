@@ -31,9 +31,6 @@ At the moment the following features are provided:
 #### JavaScript
 - [tern_for_vim](https://github.com/ternjs/tern_for_vim), used by YouCompleteMe and Tagbar to support JavaScript
 
-#### PHP
-- [vim-phpfmt](https://github.com/beanworks/vim-phpfmt), formats PHP files with the help of phpcbf
-
 #### FreePascal
 - [vim-freepascal](https://github.com/boeckmann/vim-freepascal), modern support for FreePascal
 - [syntastic-freepascal-checker](https://github.com/dubst3pp4/syntastic-freepascal-checker), my own syntastic FreePascal checker
@@ -45,7 +42,7 @@ At the moment the following features are provided:
 
 ## Requirements
 - build-essentials, python (required by YouCompleteMe)
-- PHP_CodeSniffer (phpcs & phpbcf, required by vim-phpfmt and syntastic)
+- PHP_CodeSniffer (phpcs, required by syntastic)
 - jsctags (required by tern_for_vim and tagbar)
 - jshint (required by Syntastic)
 - fpc (required by syntastic-freepascal-checker)
