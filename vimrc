@@ -148,7 +148,3 @@ nmap <Leader>b :CtrlPBuffer<CR>
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>f :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=1
-
-" PHPfmt
-let g:phpfmt_standard = 'PSR2'
-let g:phpfmt_autosave = 0
