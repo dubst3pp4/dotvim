@@ -7,6 +7,7 @@ Build a configuration for daily editing of JavaScript and PHP files. Experimenta
 
 At the moment the following features are provided:
 
+- Autocompletion (YouCompleteMe)
 - Syntax checkers (syntastic)
 - Overview of functions / methods, classes and constants (tagbar)
 - Git support (vim-fugitive & vim-gitgutter)
@@ -22,6 +23,7 @@ At the moment the following features are provided:
 - [Tagbar](https://github.com/majutsushi/tagbar), lists tags in its own window
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), an autocompletion engine
 - [vim-signature](https://github.com/kshenoy/vim-signature), shows marks in gutter
+- [vim-abolish](https://github.com/tpope/tpope-vim-abolish.git), better substitution commands
 
 ### Language specific
 - [syntastic](https://github.com/vim-syntastic/syntastic), a universal syntax checker
