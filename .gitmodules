@@ -49,9 +49,6 @@
 [submodule "pack/plugins/start/vim-gutentags"]
 	path = pack/plugins/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
-[submodule "pack/plugins/start/vim-phpfmt"]
-	path = pack/plugins/start/vim-phpfmt
-	url = https://github.com/beanworks/vim-phpfmt.git
 [submodule "pack/plugins/start/vim-abolish"]
 	path = pack/plugins/start/vim-abolish
 	url = https://github.com/tpope/tpope-vim-abolish.git
