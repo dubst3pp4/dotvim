@@ -52,3 +52,15 @@
 [submodule "pack/plugins/start/vim-abolish"]
 	path = pack/plugins/start/vim-abolish
 	url = https://github.com/tpope/tpope-vim-abolish.git
+[submodule "pack/plugins/start/vim-snipmate"]
+	path = pack/plugins/start/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "pack/plugins/start/tlib_vim"]
+	path = pack/plugins/start/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "pack/plugins/start/vim-addon-mw-utils"]
+	path = pack/plugins/start/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "pack/plugins/start/vim-snippets"]
+	path = pack/plugins/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git

@@ -24,6 +24,8 @@ At the moment the following features are provided:
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), an autocompletion engine
 - [vim-signature](https://github.com/kshenoy/vim-signature), shows marks in gutter
 - [vim-abolish](https://github.com/tpope/tpope-vim-abolish.git), better substitution commands
+- [vim-snipmate](https://github.com/garbas/vim-snipmate), insert snippets with just on ekeypress (or two ;-))
+- [vim-snippets](https://github.com/honza/vim-snippets), useful default snippets for vim-snipmate
 
 ### Language specific
 - [syntastic](https://github.com/vim-syntastic/syntastic), a universal syntax checker

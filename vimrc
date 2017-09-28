@@ -148,3 +148,9 @@ nmap <Leader>b :CtrlPBuffer<CR>
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>f :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=1
+
+" SnipMate
+
+"to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
+imap <C-SPACE> <esc>a<Plug>snipMateNextOrTrigger
+smap <C-SPACE> <Plug>snipMateNextOrTrigger
