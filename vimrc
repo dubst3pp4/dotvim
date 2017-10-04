@@ -15,6 +15,7 @@ colorscheme molokai
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set ttyfast          " speedup in tty
+set lazyredraw       " speedup rendering while scrolling
 set laststatus=2     " always show last status
 set nowrap           " don't break long lines
 set listchars=tab:▸\ 
