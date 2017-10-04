@@ -37,6 +37,9 @@ At the moment the following features are provided:
 - [vim-freepascal](https://github.com/boeckmann/vim-freepascal), modern support for FreePascal
 - [syntastic-freepascal-checker](https://github.com/dubst3pp4/syntastic-freepascal-checker), my own syntastic FreePascal checker
 
+#### PHP
+- [tagbar-phpctags.vim](https://github.com/vim-php/tagbar-phpctags.vim), better PHP support for tagbar
+
 ### Git specific plugins
 - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin), shows git status next to the filenames
 - [vim-fugitive](https://github.com/tpope/vim-fugitive), adds shortcuts for adding, commiting and pushing files
@@ -49,6 +52,7 @@ At the moment the following features are provided:
 - jshint (required by Syntastic)
 - fpc (required by syntastic-freepascal-checker)
 - powerline patched fonts for vim-airline (https://github.com/powerline/fonts)
+- phpctags (required by tagbar-phpctags.vim)
 
 ## Update plugins
 I've changed a little script that I found somewhere (sorry!) to update all plugins:
