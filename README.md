@@ -9,9 +9,9 @@ At the moment the following features are provided:
 
 - Autocompletion (YouCompleteMe)
 - Syntax checkers (syntastic)
-- Overview of functions / methods, classes and constants (tagbar)
+- Code structure browsing (tagbar)
 - Git support (vim-fugitive & vim-gitgutter)
-- Fuzzy file search and overview of buffers
+- Fuzzy file search and overview of buffers (ctrlp)
 
 ## Plugins
 ### General plugins
@@ -32,6 +32,9 @@ At the moment the following features are provided:
 
 #### JavaScript
 - [tern_for_vim](https://github.com/ternjs/tern_for_vim), used by YouCompleteMe and Tagbar to support JavaScript
+
+#### Handlebars / Mustache
+- [vim-mustache-handlebars](https://github.com/mustache/vim-mustache-handlebars), Handlebars support
 
 #### FreePascal
 - [vim-freepascal](https://github.com/boeckmann/vim-freepascal), modern support for FreePascal
