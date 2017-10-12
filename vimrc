@@ -158,3 +158,6 @@ let NERDTreeQuitOnOpen=1
 "to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
 imap <C-SPACE> <esc>a<Plug>snipMateNextOrTrigger
 smap <C-SPACE> <Plug>snipMateNextOrTrigger
+
+" Mustache / Handlebars
+let g:mustache_abbreviations = 1
