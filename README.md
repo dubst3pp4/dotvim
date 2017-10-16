@@ -12,6 +12,7 @@ At the moment the following features are provided:
 - Code structure browsing (tagbar)
 - Git support (vim-fugitive & vim-gitgutter)
 - Fuzzy file search and overview of buffers (ctrlp)
+- Matching of XML/HTML tags (matchit)
 
 ## Plugins
 ### General plugins

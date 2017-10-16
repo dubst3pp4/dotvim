@@ -94,6 +94,9 @@ augroup END
 " P L U G I N S "
 """""""""""""""""
 
+" matchit.vim
+packadd! matchit
+
 " Airline
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
