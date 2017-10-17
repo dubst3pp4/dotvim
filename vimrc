@@ -64,6 +64,13 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
+" when opening a file, jump to last position ('.)
+au BufReadPost *
+   \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' 
+   \ |   exe "normal! g`\""
+   \ | endif
+
+
 " Definition of tag = Leader + #
 nnoremap <Leader># <C-]>
 
