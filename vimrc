@@ -38,6 +38,8 @@ set showmatch
 set hlsearch
 set ignorecase
 set smartcase
+" Press F2 to toggle highlighting on/off, and show current value.
+noremap <F2> :set hlsearch! hlsearch?<CR>
 
 """""""""""""""""""""""""""""
 " F I L E   B R O W S I N G "
