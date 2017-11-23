@@ -3,7 +3,7 @@
 Guide on building dotvim repository: https://gist.github.com/manasthakur/d4dc9a610884c60d944a4dd97f0b3560
 
 ## Mission
-Build a configuration for daily editing of JavaScript and PHP files. Experimental support for FreePascal, too.
+Build a configuration for daily editing of JavaScript and PHP files. Experimental support for FreePascal and Rust, too.
 
 At the moment the following features are provided:
 
@@ -44,6 +44,9 @@ At the moment the following features are provided:
 #### PHP
 - [tagbar-phpctags.vim](https://github.com/vim-php/tagbar-phpctags.vim), better PHP support for tagbar
 
+#### Rust
+- [rust.vim](https://github.com/rust-lang/rust.vim), Support for the Rust language
+
 ### Git specific plugins
 - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin), shows git status next to the filenames
 - [vim-fugitive](https://github.com/tpope/vim-fugitive), adds shortcuts for adding, commiting and pushing files
@@ -57,6 +60,7 @@ At the moment the following features are provided:
 - fpc (required by syntastic-freepascal-checker)
 - powerline patched fonts for vim-airline (https://github.com/powerline/fonts)
 - phpctags (required by tagbar-phpctags.vim)
+- rustc (required by rust syntastic checker)
 
 ## Update plugins
 I've changed a little script that I found somewhere (sorry!) to update all plugins:
