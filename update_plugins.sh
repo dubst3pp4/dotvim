@@ -1,7 +1,7 @@
-#!/usr/bin/env zsh
+#!/bin/bash
 which git >/dev/null || {
     echo "git not found in path..."
-exit 1
+    exit 1
 }
 
 for BASE_DIR in "${HOME}/.vim"; do
