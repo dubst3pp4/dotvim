@@ -154,7 +154,7 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_php_checkers = ['php', 'phpcs']
 let g:syntastic_php_phpcs_args='--report=csv --standard=PSR2'
 let g:syntastic_freepascal_checkers = ['fpc']
-let g:syntastic_rust_checkers = ['rustc']
+let g:syntastic_rust_checkers = ['cargo']
 
 " CTRL-P
 let g:ctrlp_map = '<c-p>'
