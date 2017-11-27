@@ -78,13 +78,6 @@ nnoremap <Leader># <C-]>
 " V A R I O U S "
 """""""""""""""""
 
-" Speed up syntax highlighting
-" see http://vim.wikia.com/wiki/Speed_up_Syntax_Highlighting
-augroup vimrc
-    autocmd!
-    autocmd BufWinEnter,Syntax * syn sync minlines=500 maxlines=500
-augroup END
-
 " Simple TODO list:
 " enter command Todo to list all files with TODOs or FIXMEs in quicklist
 command! Todo noautocmd vimgrep /TODO\|FIXME/j % | cw
