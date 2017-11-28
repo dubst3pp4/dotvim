@@ -148,3 +148,15 @@ smap <C-SPACE> <Plug>snipMateNextOrTrigger
 
 " Mustache / Handlebars
 let g:mustache_abbreviations = 1
+
+" Ale
+let g:ale_open_list = 1
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:airline#extensions#ale#enabled = 1
+
+let g:ale_linters = {
+\   'javascript': ['jshint'],
+\   'php': ['php', 'phpcs'],
+\}
+let g:ale_php_phpcs_standard = 'PSR2'
