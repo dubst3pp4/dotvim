@@ -13,7 +13,7 @@ for BASE_DIR in "${HOME}/.vim"; do
             if [[ -e "${plugin}/.git" ]]; then
                 echo "plugin: ${plugin}..."
                 cd "${plugin}"
-                git submodule update --init --recursive && git pull origin master
+                git submodule update --init --recursive && git checkout master && git pull
             fi
         done
     fi
