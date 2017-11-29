@@ -1,9 +1,6 @@
 [submodule "pack/plugins/start/vim-airline"]
 	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "pack/plugins/start/YouCompleteMe"]
-	path = pack/plugins/start/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "pack/plugins/start/vim-javascript"]
 	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -73,3 +70,6 @@
 [submodule "pack/plugins/start/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "pack/plugins/start/YouCompleteMe"]
+	path = pack/plugins/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
