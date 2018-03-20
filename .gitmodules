@@ -76,3 +76,6 @@
 [submodule "pack/plugins/start/vaxe"]
 	path = pack/plugins/start/vaxe
 	url = https://github.com/jdonaldson/vaxe.git
+[submodule "pack/plugins/start/gopher.vim"]
+	path = pack/plugins/start/gopher.vim
+	url = https://github.com/seanyeh/gopher.vim.git
