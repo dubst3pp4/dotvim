@@ -58,12 +58,11 @@ At the moment the following features are provided:
 - powerline patched fonts for vim-airline (https://github.com/powerline/fonts)
 - Node.js (required by jsctags, jshint)
 - jsctags (required by tern_for_vim and tagbar)
-- jshint (required by Syntastic)
+- jshint (required by Ale)
 - PHP (required by PHP_CodeSniffer, phpctags)
 - PHP_CodeSniffer (phpcs, required by Ale, install latest version!)
 - phpctags (required by tagbar-phpctags.vim)
-- fpc (required by syntastic-freepascal-checker)
-- rustc (required by rust syntastic checker)
+- rustc (required by rust Ale)
 
 ## Update plugins
 I've changed a little script that I found somewhere (sorry!) to update all plugins:

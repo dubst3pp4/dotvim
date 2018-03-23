@@ -167,3 +167,7 @@ let g:ale_linters = {
 \   'php': ['php', 'phpcs'],
 \}
 let g:ale_php_phpcs_standard = 'PSR2'
+
+" Gutentags
+" don't enable Gutentags by default
+let g:gutentags_enabled = 0
