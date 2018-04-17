@@ -171,3 +171,8 @@ let g:ale_php_phpcs_standard = 'PSR2'
 " Gutentags
 " don't enable Gutentags by default
 let g:gutentags_enabled = 0
+
+" Dutyl (D-Support)
+let g:dutyl_stdImportPaths=['/usr/include/dmd']
+"call dutyl#register#tool('dcd-client','/path/to/DCD/dcd-client')
+"call dutyl#register#tool('dcd-server','/path/to/DCD/dcd-server')
