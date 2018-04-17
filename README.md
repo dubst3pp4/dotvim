@@ -48,6 +48,9 @@ At the moment the following features are provided:
 #### Rust
 - [rust.vim](https://github.com/rust-lang/rust.vim), Support for the Rust language
 
+#### D
+- [vim-dutyl](https://github.com/idanarye/vim-dutyl), Support for the D language
+
 ### Git specific plugins
 - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin), shows git status next to the filenames
 - [vim-fugitive](https://github.com/tpope/vim-fugitive), adds shortcuts for adding, commiting and pushing files
