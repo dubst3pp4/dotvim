@@ -76,3 +76,6 @@
 [submodule "pack/plugins/start/gopher.vim"]
 	path = pack/plugins/start/gopher.vim
 	url = https://github.com/seanyeh/gopher.vim.git
+[submodule "pack/plugins/start/vim-dutyl"]
+	path = pack/plugins/start/vim-dutyl
+	url = https://github.com/idanarye/vim-dutyl.git
