@@ -79,3 +79,6 @@
 [submodule "pack/plugins/start/vim-dutyl"]
 	path = pack/plugins/start/vim-dutyl
 	url = https://github.com/idanarye/vim-dutyl.git
+[submodule "pack/plugins/start/zeavim"]
+	path = pack/plugins/start/zeavim
+	url = https://github.com/KabbAmine/zeavim.vim.git
