@@ -82,3 +82,6 @@
 [submodule "pack/plugins/start/zeavim"]
 	path = pack/plugins/start/zeavim
 	url = https://github.com/KabbAmine/zeavim.vim.git
+[submodule "pack/plugins/start/vim-peekaboo"]
+	path = pack/plugins/start/vim-peekaboo
+	url = https://github.com/junegunn/vim-peekaboo.git
