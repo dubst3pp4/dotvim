@@ -52,15 +52,11 @@ set wildmenu
 """""""""""""""""""""""
 let mapleader=","
 
-" dont use the arrow keys ;-)
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+" use the arrow keys to cycle through buffers
+nnoremap <up> :blast<CR>
+nnoremap <down> :bfirst<CR>
+nnoremap <left> :bprevious<CR>
+nnoremap <right> :bnext<CR>
 nnoremap j gj
 nnoremap k gk
 
