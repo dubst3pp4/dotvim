@@ -85,3 +85,6 @@
 [submodule "pack/plugins/start/vim-peekaboo"]
 	path = pack/plugins/start/vim-peekaboo
 	url = https://github.com/junegunn/vim-peekaboo.git
+[submodule "pack/plugins/start/plantuml-syntax"]
+	path = pack/plugins/start/plantuml-syntax
+	url = https://github.com/aklt/plantuml-syntax.git
