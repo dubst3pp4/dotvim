@@ -88,6 +88,9 @@ augroup myvimrc
     autocmd QuickFixCmdPost l*    lwindow
 augroup END
 
+" command to create tag files
+command! MakeTags !ctags -R .
+
 
 
 """""""""""""""""
