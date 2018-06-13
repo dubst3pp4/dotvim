@@ -131,11 +131,6 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 nmap <Leader>b :CtrlPBuffer<CR>
 
-" NerdTree
-map <Leader>n :NERDTreeToggle<CR>
-map <Leader>f :NERDTreeFind<CR>
-let NERDTreeQuitOnOpen=1
-
 " SnipMate
 
 "to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
