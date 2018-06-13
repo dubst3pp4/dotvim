@@ -46,13 +46,14 @@ noremap <F2> :set hlsearch! hlsearch?<CR>
 """""""""""""""""""""""""""""
 set path+=**
 set wildmenu
+let g:netrw_liststyle = 3
 
 """""""""""""""""""""""
 " N A V I G A T I O N "
 """""""""""""""""""""""
 let mapleader=","
 
-" use the arrow keys to cycle through buffers
+" use the arrow keys to cycle through buffers (conflicts with netrw)
 "nnoremap <up> :cclose<bar>blast<CR>
 "nnoremap <down> :cclose<bar>bfirst<CR>
 "nnoremap <left> :cclose<bar>bprevious<CR>
@@ -125,16 +126,6 @@ let g:vim_markdown_folding_disabled = 1
 
 " Javascript
 let g:javascript_plugin_jsdoc = 1
-
-" CTRL-P
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-nmap <Leader>b :CtrlPBuffer<CR>
-
-" NerdTree
-map <Leader>n :NERDTreeToggle<CR>
-map <Leader>f :NERDTreeFind<CR>
-let NERDTreeQuitOnOpen=1
 
 " SnipMate
 

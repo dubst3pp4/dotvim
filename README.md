@@ -11,15 +11,11 @@ At the moment the following features are provided:
 - Syntax linting and checking (Ale)
 - Code structure browsing (tagbar, gutentags)
 - Git support (vim-fugitive & vim-gitgutter)
-- Fuzzy file search and overview of buffers (ctrlp)
-- File tree structure (NERDTree)
 - Matching of XML/HTML tags (matchit)
 
 ## Plugins
 ### General plugins
 - [vim-airline](https://github.com/vim-airline/vim-airline), impressive status line
-- [NERDTree](https://github.com/scrooloose/nerdtree), a file drawer
-- [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim), a fuzzy file and buffer finder
 - [Tagbar](https://github.com/majutsushi/tagbar), lists tags in its own window
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags), creates tagfiles on-the-fly
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), an autocompletion engine
@@ -52,7 +48,6 @@ At the moment the following features are provided:
 - [vim-dutyl](https://github.com/idanarye/vim-dutyl), Support for the D language
 
 ### Git specific plugins
-- [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin), shows git status next to the filenames
 - [vim-fugitive](https://github.com/tpope/vim-fugitive), adds shortcuts for adding, commiting and pushing files
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter), shows marks in the gutter column
 
