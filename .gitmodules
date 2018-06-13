@@ -22,9 +22,6 @@
 [submodule "pack/plugins/start/tagbar"]
 	path = pack/plugins/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
-[submodule "pack/plugins/start/ctrlp.vim"]
-	path = pack/plugins/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "pack/plugins/start/vim-freepascal"]
 	path = pack/plugins/start/vim-freepascal
 	url = https://github.com/boeckmann/vim-freepascal.git

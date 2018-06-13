@@ -126,11 +126,6 @@ let g:vim_markdown_folding_disabled = 1
 " Javascript
 let g:javascript_plugin_jsdoc = 1
 
-" CTRL-P
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-nmap <Leader>b :CtrlPBuffer<CR>
-
 " SnipMate
 
 "to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
