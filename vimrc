@@ -47,6 +47,7 @@ noremap <F2> :set hlsearch! hlsearch?<CR>
 set path+=**
 set wildmenu
 let g:netrw_liststyle = 3
+let g:netrw_list_hide= '.*\.swp$'
 
 """""""""""""""""""""""
 " N A V I G A T I O N "
