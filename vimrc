@@ -47,7 +47,6 @@ noremap <F2> :set hlsearch! hlsearch?<CR>
 set path+=**
 set wildmenu
 let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
 let g:netrw_list_hide= '.*\.sw.$'
 
 """""""""""""""""""""""
