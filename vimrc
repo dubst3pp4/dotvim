@@ -72,6 +72,12 @@ au BufReadPost *
 " Definition of tag = Leader + #
 nnoremap <Leader># <C-]>
 
+" Jumping in Diff mode
+" CTRL-j - next diff
+nnoremap <expr> <C-J> &diff ? ']c' : '<C-J>'
+" CTRL-h - previous diff
+nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
+
 """""""""""""""""
 " V A R I O U S "
 """""""""""""""""
