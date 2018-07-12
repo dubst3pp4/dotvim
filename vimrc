@@ -87,7 +87,7 @@ nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
 command! Todo noautocmd vimgrep /TODO\|FIXME/j % | cw
 command! TodoR noautocmd vimgrep /TODO\|FIXME/j ** | cw
 
-" when Quickfix is populated, open it
+" when Quickfix or Locationlist is populated, open it
 augroup myvimrc
     autocmd!
     autocmd QuickFixCmdPost [^l]* cwindow
@@ -97,7 +97,10 @@ augroup END
 " command to create tag files
 command! MakeTags !ctags -R .
 
-
+" ignore whitespace in vimdiff mode
+if &diff
+    set diffopt+=iwhite
+endif
 
 """""""""""""""""
 " P L U G I N S "
@@ -156,7 +159,7 @@ let g:ale_set_loclist = 1
 let g:ale_set_quickfix = 0
 " support for airline
 let g:airline#extensions#ale#enabled = 1
-" always show the gutter
+" do not always show the gutter
 let g:ale_sign_column_always = 0
 " do not highlight errors
 let g:ale_set_highlights = 0
