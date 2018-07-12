@@ -150,14 +150,16 @@ let g:mustache_abbreviations = 1
 " only lint when saving files
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
-" open error list in quickfix
+" open error list in locationlist
 let g:ale_open_list = 1
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 0
 " support for airline
 let g:airline#extensions#ale#enabled = 1
 " always show the gutter
-let g:ale_sign_column_always = 1
+let g:ale_sign_column_always = 0
+" do not highlight errors
+let g:ale_set_highlights = 0
 
 let g:ale_linters = {
 \   'javascript': ['jshint'],
