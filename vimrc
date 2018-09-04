@@ -182,3 +182,7 @@ let g:gutentags_enabled = 0
 let g:dutyl_stdImportPaths=['/usr/include/dmd']
 "call dutyl#register#tool('dcd-client','/path/to/DCD/dcd-client')
 "call dutyl#register#tool('dcd-server','/path/to/DCD/dcd-server')
+
+" Nerdtree
+" open with leader n
+map <Leader>n :NERDTreeToggle<CR>
