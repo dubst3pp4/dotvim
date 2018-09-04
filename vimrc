@@ -189,4 +189,5 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " IndentLine
 " use conceal color from colorscheme
-let g:indentLine_setColors = 0
+" let g:indentLine_setColors = 0
+let g:indentLine_char = '┆'
