@@ -186,3 +186,7 @@ let g:dutyl_stdImportPaths=['/usr/include/dmd']
 " Nerdtree
 " open with leader n
 map <Leader>n :NERDTreeToggle<CR>
+
+" IndentLine
+" use conceal color from colorscheme
+let g:indentLine_setColors = 0
