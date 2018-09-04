@@ -11,7 +11,11 @@ filetype plugin indent on
 """""""""""""""""
 set t_Co=256         " 256 colors in terminal
 set background=dark
-colorscheme molokai
+" enable 24bit true color
+if (has("termguicolors"))
+  set termguicolors
+endif
+colorscheme night-owl
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set ttyfast          " speedup in tty
