@@ -175,8 +175,8 @@ let g:ale_linters = {
 let g:ale_php_phpcs_standard = 'PSR2'
 
 " Gutentags
-" don't enable Gutentags by default
-let g:gutentags_enabled = 0
+" 0 - don't enable Gutentags by default, 1 - enable
+let g:gutentags_enabled = 1
 
 " Dutyl (D-Support)
 let g:dutyl_stdImportPaths=['/usr/include/dmd']
