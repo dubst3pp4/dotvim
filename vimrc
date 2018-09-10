@@ -136,7 +136,7 @@ let g:tagbar_type_freepascal = {
 \ }
 
 " tagbar-phpctags
-let g:tagbar_phpctags_bin='~/bin/phpctags'
+let g:tagbar_phpctags_bin='/home/marc/bin/phpctags'
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1
