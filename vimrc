@@ -59,10 +59,10 @@ let g:netrw_list_hide= '.*\.sw.$'
 let mapleader=","
 
 " use the arrow keys to cycle through buffers (conflicts with netrw)
-nnoremap <up> :cclose<bar>blast<CR>
-nnoremap <down> :cclose<bar>bfirst<CR>
-nnoremap <left> :cclose<bar>bprevious<CR>
-nnoremap <right> :cclose<bar>bnext<CR>
+nnoremap <S-Up> :cclose<bar>blast<CR>
+nnoremap <S-Down> :cclose<bar>bfirst<CR>
+nnoremap <S-Right> :cclose<bar>bprevious<CR>
+nnoremap <S-Left> :cclose<bar>bnext<CR>
 nnoremap j gj
 nnoremap k gk
 
