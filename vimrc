@@ -59,12 +59,12 @@ let g:netrw_list_hide= '.*\.sw.$'
 let mapleader=","
 
 " use the arrow keys to cycle through buffers (conflicts with netrw)
-"nnoremap <up> :cclose<bar>blast<CR>
-"nnoremap <down> :cclose<bar>bfirst<CR>
-"nnoremap <left> :cclose<bar>bprevious<CR>
-"nnoremap <right> :cclose<bar>bnext<CR>
-"nnoremap j gj
-"nnoremap k gk
+nnoremap <up> :cclose<bar>blast<CR>
+nnoremap <down> :cclose<bar>bfirst<CR>
+nnoremap <left> :cclose<bar>bprevious<CR>
+nnoremap <right> :cclose<bar>bnext<CR>
+nnoremap j gj
+nnoremap k gk
 
 " when opening a file, jump to last position ('.)
 au BufReadPost *
