@@ -176,7 +176,7 @@ let g:ale_php_phpcs_standard = 'PSR2'
 
 " Gutentags
 " 0 - don't enable Gutentags by default, 1 - enable
-let g:gutentags_enabled = 1
+let g:gutentags_enabled = 0
 
 " Dutyl (D-Support)
 let g:dutyl_stdImportPaths=['/usr/include/dmd']
@@ -188,6 +188,6 @@ let g:dutyl_stdImportPaths=['/usr/include/dmd']
 map <Leader>n :NERDTreeToggle<CR>
 
 " IndentLine
-" use conceal color from colorscheme
-" let g:indentLine_setColors = 0
+" disable by default
+let g:indentLine_enabled = 0
 let g:indentLine_char = '┆'
