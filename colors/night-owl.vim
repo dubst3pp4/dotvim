@@ -4,7 +4,7 @@
 " URL: https://github.com/haishanh/night-owl.vim
 " Author: Haishan
 " License: MIT
-" Last Change: 2019/01/15 21:49
+" Last Change: 2019/01/16 21:34
 " ===============================================================
 
 set background=dark
@@ -25,6 +25,7 @@ hi DiffDelete guifg=#011627 ctermfg=233 guibg=#ff5874 ctermbg=204 gui=NONE cterm
 hi DiffText guifg=#011627 ctermfg=233 guibg=#7fdbca ctermbg=116 gui=NONE cterm=NONE
 hi VertSplit guifg=#777777 ctermfg=243 gui=NONE cterm=NONE
 hi Folded guifg=#777777 ctermfg=243 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
+hi FoldColumn guifg=#333333 ctermfg=236 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi IncSearch guifg=#eeeeee ctermfg=255 guibg=#ecc48d ctermbg=222 gui=NONE cterm=NONE
 hi MatchParen guifg=#011627 ctermfg=233 guibg=#aaaaaa ctermbg=248 gui=NONE cterm=NONE
 hi NonText guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
@@ -130,7 +131,6 @@ hi NERDTreeDirSlash guifg=#637777 ctermfg=243 gui=NONE cterm=NONE
 hi gitcommitSummary guifg=#d6deeb ctermfg=253 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi IndentGuidesOdd guibg=#444444 ctermbg=238 gui=NONE cterm=NONE
 hi IndentGuidesEven guibg=#777777 ctermbg=243 gui=NONE cterm=NONE
-hi FoldColumn guifg=#303030 ctermfg=238 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 
 let g:terminal_color_foreground = "#d6deeb"
 let g:terminal_color_background = "#011627"
