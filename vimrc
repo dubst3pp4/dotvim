@@ -83,6 +83,15 @@ nnoremap <expr> <C-J> &diff ? ']c' : '<C-J>'
 nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
 
 """""""""""""""""
+" F O L D I N G "
+"""""""""""""""""
+set foldmethod=syntax " fold by syntax
+set foldcolumn=1 " show fold gutter
+set foldlevelstart=99 " open with all folds opened
+
+let javaScript_fold=1 " enable folding in js files
+
+"""""""""""""""""
 " V A R I O U S "
 """""""""""""""""
 
