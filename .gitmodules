@@ -91,3 +91,6 @@
 [submodule "pack/plugins/start/night-owl-color-schema"]
 	path = pack/plugins/start/night-owl-color-schema
 	url = https://github.com/haishanh/night-owl.vim.git
+[submodule "pack/plugins/start/vim-airline-themes"]
+	path = pack/plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
