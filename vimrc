@@ -200,3 +200,7 @@ map <Leader>n :NERDTreeToggle<CR>
 " disable by default
 let g:indentLine_enabled = 0
 let g:indentLine_char = '┆'
+
+" quick-scope
+" enable only when pressing f,F,t,T
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
