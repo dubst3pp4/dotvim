@@ -82,3 +82,6 @@
 [submodule "pack/plugins/start/indentLine"]
 	path = pack/plugins/start/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
+[submodule "pack/plugins/start/quick-scope"]
+	path = pack/plugins/start/quick-scope
+	url = https://github.com/unblevable/quick-scope.git
