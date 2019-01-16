@@ -106,13 +106,6 @@ if &diff
     set diffopt+=iwhite
 endif
 
-" speedup syntax highlighting for large files
-" see http://vim.wikia.com/wiki/Speed_up_Syntax_Highlighting
-augroup vimrc
-   autocmd!
-   autocmd BufWinEnter,Syntax * syn sync minlines=500 maxlines=500
-augroup END
-
 """""""""""""""""
 " P L U G I N S "
 """""""""""""""""
