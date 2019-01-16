@@ -85,3 +85,9 @@
 [submodule "pack/plugins/start/quick-scope"]
 	path = pack/plugins/start/quick-scope
 	url = https://github.com/unblevable/quick-scope.git
+[submodule "pack/plugins/start/dracula-color-schema"]
+	path = pack/plugins/start/dracula-color-schema
+	url = git@github.com:dracula/vim.git
+[submodule "pack/plugins/start/night-owl-color-schema"]
+	path = pack/plugins/start/night-owl-color-schema
+	url = https://github.com/haishanh/night-owl.vim.git
