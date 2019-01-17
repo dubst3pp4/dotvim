@@ -10,9 +10,3 @@ command! -buffer -range=% Fmt let myview = winsaveview() |
 
 " do not match < and > (which are used in => and ->)
 setlocal matchpairs-=<:>
-
-" enable folding
-setlocal foldmethod=syntax
-setlocal foldcolumn=1 " show fold gutter
-setlocal foldlevelstart=99 " open with all folds opened
-let php_folding=1 " enable folding in js files
