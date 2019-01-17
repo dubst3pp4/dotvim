@@ -100,3 +100,6 @@
 [submodule "pack/plugins/start/Colorizer"]
 	path = pack/plugins/start/Colorizer
 	url = https://github.com/chrisbra/Colorizer.git
+[submodule "pack/plugins/start/phpfolding.vim"]
+	path = pack/plugins/start/phpfolding.vim
+	url = https://github.com/rayburgemeestre/phpfolding.vim.git
