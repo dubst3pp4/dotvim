@@ -82,14 +82,6 @@ nnoremap <expr> <C-J> &diff ? ']c' : '<C-J>'
 " CTRL-h - previous diff
 nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
 
-"""""""""""""""""
-" F O L D I N G "
-"""""""""""""""""
-set foldmethod=syntax " fold by syntax
-set foldcolumn=1 " show fold gutter
-set foldlevelstart=99 " open with all folds opened
-
-let javaScript_fold=1 " enable folding in js files
 
 """""""""""""""""
 " V A R I O U S "
@@ -146,12 +138,6 @@ let g:tagbar_type_freepascal = {
 
 " tagbar-phpctags
 let g:tagbar_phpctags_bin='/home/marc/bin/phpctags'
-
-" Markdown
-let g:vim_markdown_folding_disabled = 1
-
-" Javascript
-let g:javascript_plugin_jsdoc = 1
 
 " SnipMate
 
