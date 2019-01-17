@@ -87,6 +87,14 @@ nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
 " V A R I O U S "
 """""""""""""""""
 
+set foldcolumn=1 " show fold gutter
+set foldlevelstart=99 " open with all folds opened
+
+
+"""""""""""""""""
+" V A R I O U S "
+"""""""""""""""""
+
 " Simple TODO list:
 " enter command Todo to list all files with TODOs or FIXMEs in quicklist
 command! Todo noautocmd vimgrep /TODO\|FIXME/j % | cw

@@ -2,8 +2,6 @@ command! MakeTags !find . -type f -iregex ".*\.js$" -not -path "./node_modules/*
 
 " folding
 setlocal foldmethod=syntax
-setlocal foldcolumn=1 " show fold gutter
-setlocal foldlevelstart=99 " open with all folds opened
 let javaScript_fold=1 " enable folding in js files
 
 " JSDoc support
