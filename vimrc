@@ -202,3 +202,7 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 " Colorizer
 " enable Colorizer for HTMl, CSS, Less and SASS
 let g:colorizer_auto_filetype='css,html,less,scss' 
+
+" FZF
+" extend runtimepath for fzf binary
+set rtp+=~/bin/fzf
