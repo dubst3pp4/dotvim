@@ -94,3 +94,6 @@
 [submodule "pack/plugins/start/vim-airline-themes"]
 	path = pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "pack/plugins/start/php.vim"]
+	path = pack/plugins/start/php.vim
+	url = https://github.com/StanAngeloff/php.vim.git
