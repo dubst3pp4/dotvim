@@ -190,3 +190,7 @@ let g:indentLine_char = '┆'
 " quick-scope
 " enable only when pressing f,F,t,T
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" Colorizer
+" enable Colorizer for HTMl, CSS, Less and SASS
+let g:colorizer_auto_filetype='css,html,less,scss' 

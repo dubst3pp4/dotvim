@@ -97,3 +97,6 @@
 [submodule "pack/plugins/start/php.vim"]
 	path = pack/plugins/start/php.vim
 	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "pack/plugins/start/Colorizer"]
+	path = pack/plugins/start/Colorizer
+	url = https://github.com/chrisbra/Colorizer.git
