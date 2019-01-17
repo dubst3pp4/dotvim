@@ -10,6 +10,3 @@ command! -buffer -range=% Fmt let myview = winsaveview() |
 
 " do not match < and > (which are used in => and ->)
 setlocal matchpairs-=<:>
-
-" don't fold PHP automatically (requires phpfolding.vim)
-let g:DisableAutoPHPFolding = 1
