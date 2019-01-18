@@ -124,6 +124,9 @@ packadd! matchit
 
 " Airline
 let g:airline_powerline_fonts=1
+" don't show whitespace info
+let g:airline#extensions#whitespace#enabled = 0
+" show a tabline with buffer numbers and filenames
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
 let g:airline#extensions#tabline#fnamemod = ':t'
