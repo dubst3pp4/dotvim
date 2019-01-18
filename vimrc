@@ -206,3 +206,16 @@ let g:colorizer_auto_filetype='css,html,less,scss'
 " FZF
 " extend runtimepath for fzf binary
 set rtp+=~/bin/fzf
+
+" PHP.vim
+" enable highlighting of PHPDoc blocks
+function! PhpSyntaxOverride()
+  " Put snippet overrides in this function.
+  hi! link phpDocTags phpDefine
+  hi! link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
