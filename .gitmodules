@@ -28,9 +28,6 @@
 [submodule "pack/plugins/start/vim-signature"]
 	path = pack/plugins/start/vim-signature
 	url = https://github.com/kshenoy/vim-signature.git
-[submodule "pack/plugins/start/syntastic-freepascal-checker"]
-	path = pack/plugins/start/syntastic-freepascal-checker
-	url = git@github.com:dubst3pp4/syntastic-freepascal-checker.git
 [submodule "pack/plugins/start/vim-gutentags"]
 	path = pack/plugins/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
@@ -55,9 +52,6 @@
 [submodule "pack/plugins/start/vim-mustache-handlebars"]
 	path = pack/plugins/start/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars.git
-[submodule "pack/plugins/start/rust.vim"]
-	path = pack/plugins/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
 [submodule "pack/plugins/start/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/w0rp/ale.git
@@ -67,24 +61,12 @@
 [submodule "pack/plugins/start/gopher.vim"]
 	path = pack/plugins/start/gopher.vim
 	url = https://github.com/seanyeh/gopher.vim.git
-[submodule "pack/plugins/start/vim-dutyl"]
-	path = pack/plugins/start/vim-dutyl
-	url = https://github.com/idanarye/vim-dutyl.git
-[submodule "pack/plugins/start/plantuml-syntax"]
-	path = pack/plugins/start/plantuml-syntax
-	url = https://github.com/aklt/plantuml-syntax.git
 [submodule "pack/plugins/start/nerdtree"]
 	path = pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "pack/plugins/start/nerdtree-git-plugin"]
 	path = pack/plugins/start/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
-[submodule "pack/plugins/start/indentLine"]
-	path = pack/plugins/start/indentLine
-	url = https://github.com/Yggdroot/indentLine.git
-[submodule "pack/plugins/start/quick-scope"]
-	path = pack/plugins/start/quick-scope
-	url = https://github.com/unblevable/quick-scope.git
 [submodule "pack/plugins/start/dracula-color-schema"]
 	path = pack/plugins/start/dracula-color-schema
 	url = git@github.com:dracula/vim.git

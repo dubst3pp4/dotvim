@@ -3,7 +3,7 @@
 Guide on building dotvim repository: https://gist.github.com/manasthakur/d4dc9a610884c60d944a4dd97f0b3560
 
 ## Mission
-Build a configuration for daily editing of JavaScript and PHP files. Experimental support for FreePascal and Rust, too.
+Build a configuration for daily editing of JavaScript and PHP files.
 
 At the moment the following features are provided:
 
@@ -36,16 +36,9 @@ At the moment the following features are provided:
 
 #### FreePascal
 - [vim-freepascal](https://github.com/boeckmann/vim-freepascal), modern support for FreePascal
-- *out of date:* [syntastic-freepascal-checker](https://github.com/dubst3pp4/syntastic-freepascal-checker), my own syntastic FreePascal checker - will be replaced by an Ale checker
 
 #### PHP
 - [tagbar-phpctags.vim](https://github.com/vim-php/tagbar-phpctags.vim), better PHP support for tagbar
-
-#### Rust
-- [rust.vim](https://github.com/rust-lang/rust.vim), Support for the Rust language
-
-#### D
-- [vim-dutyl](https://github.com/idanarye/vim-dutyl), Support for the D language
 
 ### Git specific plugins
 - [vim-fugitive](https://github.com/tpope/vim-fugitive), adds shortcuts for adding, commiting and pushing files
@@ -60,7 +53,6 @@ At the moment the following features are provided:
 - PHP (required by PHP_CodeSniffer, phpctags)
 - PHP_CodeSniffer (phpcs, required by Ale, install latest version!)
 - phpctags (required by tagbar-phpctags.vim)
-- rustc (required by rust Ale)
 
 ## Update plugins
 I've changed a little script that I found somewhere (sorry!) to update all plugins:
