@@ -58,11 +58,6 @@ let g:netrw_list_hide= '.*\.sw.$'
 """""""""""""""""""""""
 let mapleader=","
 
-" use the arrow keys to cycle through buffers (conflicts with netrw)
-nnoremap <S-Up> :cclose<bar>blast<CR>
-nnoremap <S-Down> :cclose<bar>bfirst<CR>
-nnoremap <S-Right> :cclose<bar>bprevious<CR>
-nnoremap <S-Left> :cclose<bar>bnext<CR>
 nnoremap j gj
 nnoremap k gk
 
@@ -129,7 +124,22 @@ let g:airline#extensions#whitespace#enabled = 0
 " show a tabline with buffer numbers and filenames
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
+let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+" quickly switch to the selected airline-tab (buffer)
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
 
 " Tagbar
 nmap <Leader>t :TagbarToggle<CR>
