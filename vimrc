@@ -190,6 +190,7 @@ let g:ale_sign_warning = '>>'
 let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'php': ['php', 'phpcs'],
+\   'ruby': ['rubocop', 'ruby']
 \}
 let g:ale_php_phpcs_standard = 'PSR2'
 
