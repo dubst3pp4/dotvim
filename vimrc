@@ -193,9 +193,11 @@ let g:ale_linters = {
 \   'ruby': ['rubocop', 'ruby']
 \}
 let g:ale_fixers = {
+\   'php': ['phpcbf'],
 \   'ruby': ['rubocop']
 \}
 let g:ale_php_phpcs_standard = 'PSR2'
+let g:ale_php_phpcbf_standard = 'PSR2'
 
 " Gutentags
 " 0 - don't enable Gutentags by default, 1 - enable
