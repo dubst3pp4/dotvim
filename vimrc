@@ -169,10 +169,14 @@ smap <C-SPACE> <Plug>snipMateNextOrTrigger
 " Mustache / Handlebars
 let g:mustache_abbreviations = 1
 
+" YouCompleteMe
+" disable diagnostics
+let g:ycm_show_diagnostics_ui = 0
+
 " Ale
 " only lint when saving files
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 0
+let g:ale_lint_on_enter = 1
 " open error list in locationlist
 let g:ale_open_list = 1
 let g:ale_set_loclist = 1
@@ -193,6 +197,7 @@ let g:ale_linters = {
 \   'ruby': ['rubocop', 'ruby']
 \}
 let g:ale_fixers = {
+\   'javascript': ['eslint'],
 \   'php': ['phpcbf'],
 \   'ruby': ['rubocop']
 \}
