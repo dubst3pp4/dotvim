@@ -85,10 +85,7 @@ nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
 set foldcolumn=1 " show fold gutter
 set foldlevelstart=99 " open with all folds opened
 
-
-"""""""""""""""""
-" V A R I O U S "
-"""""""""""""""""
+set synmaxcol=240 " disable systax hightlighting after column n (speeds up drawing)
 
 " Simple TODO list:
 " enter command Todo to list all files with TODOs or FIXMEs in quicklist
