@@ -79,9 +79,6 @@
 [submodule "pack/plugins/start/php.vim"]
 	path = pack/plugins/start/php.vim
 	url = https://github.com/StanAngeloff/php.vim.git
-[submodule "pack/plugins/start/Colorizer"]
-	path = pack/plugins/start/Colorizer
-	url = https://github.com/chrisbra/Colorizer.git
 [submodule "pack/plugins/start/fzf.vim"]
 	path = pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
@@ -94,9 +91,6 @@
 [submodule "pack/plugins/start/vim-endwise"]
 	path = pack/plugins/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
-[submodule "pack/plugins/start/vim-startify"]
-	path = pack/plugins/start/vim-startify
-	url = https://github.com/mhinz/vim-startify.git
 [submodule "pack/plugins/start/FastFold"]
 	path = pack/plugins/start/FastFold
 	url = https://github.com/Konfekt/FastFold.git
