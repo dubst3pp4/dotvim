@@ -243,3 +243,6 @@ augroup phpSyntaxOverride
   autocmd!
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+" disable FastFold for HTML files
+let g:fastfold_skip_filetypes=['html']
