@@ -91,3 +91,6 @@
 [submodule "pack/plugins/start/FastFold"]
 	path = pack/plugins/start/FastFold
 	url = https://github.com/Konfekt/FastFold.git
+[submodule "pack/plugins/start/vim-racket"]
+	path = pack/plugins/start/vim-racket
+	url = https://github.com/wlangstroth/vim-racket.git
