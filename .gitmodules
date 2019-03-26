@@ -94,6 +94,3 @@
 [submodule "pack/plugins/start/vim-racket"]
 	path = pack/plugins/start/vim-racket
 	url = https://github.com/wlangstroth/vim-racket.git
-[submodule "pack/plugins/start/rainbow"]
-	path = pack/plugins/start/rainbow
-	url = https://github.com/luochen1990/rainbow.git
