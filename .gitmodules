@@ -94,3 +94,6 @@
 [submodule "pack/plugins/start/vim-racket"]
 	path = pack/plugins/start/vim-racket
 	url = https://github.com/wlangstroth/vim-racket.git
+[submodule "pack/plugins/start/rainbow_parentheses.vim"]
+	path = pack/plugins/start/rainbow_parentheses.vim
+	url = https://github.com/junegunn/rainbow_parentheses.vim.git
