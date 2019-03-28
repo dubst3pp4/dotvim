@@ -111,8 +111,8 @@ endif
 " P L U G I N S "
 """""""""""""""""
 
-" matchit.vim
-packadd! matchit
+" matchit.vim (replaced by matchup)
+" packadd! matchit
 
 " Airline
 let g:airline_powerline_fonts=1
@@ -250,3 +250,9 @@ augroup END
 
 " disable FastFold for HTML files
 let g:fastfold_skip_filetypes=['html']
+
+" matchup
+let g:matchup_matchparen_deferred = 1
+let g:matchup_matchparen_hi_surround_always = 1
+let g:matchup_matchparen_stopline = 100
+hi MatchParen ctermfg=yellow guifg=GreenYellow ctermbg=57 guibg=BlueViolet
