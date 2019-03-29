@@ -12,6 +12,8 @@ At the moment the following features are provided:
 - Code structure browsing (tagbar, gutentags)
 - Git support (vim-fugitive & vim-gitgutter)
 - Matching of XML/HTML tags (matchit)
+- Matching of Parenthesis (matchup, rainbow-parenthesis)
+- Snippets (snipmate, snipmate-snippets)
 
 ## Plugins
 ### General plugins
@@ -25,11 +27,10 @@ At the moment the following features are provided:
 - [vim-snipmate](https://github.com/garbas/vim-snipmate), insert snippets with just on ekeypress (or two ;-))
 - [vim-snippets](https://github.com/honza/vim-snippets), useful default snippets for vim-snipmate
 
+and some more...
+
 ### Language specific
 - [Ale](https://github.com/w0rp/ale), Ale - the Asynchronous Lint Engine
-
-#### JavaScript
-- [tern_for_vim](https://github.com/ternjs/tern_for_vim), used by YouCompleteMe and Tagbar to support JavaScript
 
 #### Handlebars / Mustache
 - [vim-mustache-handlebars](https://github.com/mustache/vim-mustache-handlebars), Handlebars support
@@ -46,10 +47,9 @@ At the moment the following features are provided:
 
 ## Requirements
 - build-essentials, python (required by YouCompleteMe)
-- powerline patched fonts for vim-airline (https://github.com/powerline/fonts)
-- Node.js (required by jsctags, jshint)
-- jsctags (required by tern_for_vim and tagbar)
 - jshint (required by Ale)
+- Node.js and npm (jshint)
+- powerline patched fonts for vim-airline (https://github.com/powerline/fonts)
 - PHP (required by PHP_CodeSniffer, phpctags)
 - PHP_CodeSniffer (phpcs, required by Ale, install latest version!)
 - phpctags (required by tagbar-phpctags.vim)
@@ -61,9 +61,5 @@ I've changed a little script that I found somewhere (sorry!) to update all plugi
 
 When YouCompleteMe is updated, the binary can be compiled from within the plugin-directory with
 
-    ./install.py --clang-completer --tern-completer
-
-When tern_for_vim is installed, you have to cd into the plugin directory and install tern requirements with
-
-    npm install
+    ./install.py --clang-completer --ts-completer
 
