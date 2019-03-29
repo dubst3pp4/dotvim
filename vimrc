@@ -209,23 +209,9 @@ let g:ale_php_phpcbf_standard = 'PSR2'
 " 0 - don't enable Gutentags by default, 1 - enable
 let g:gutentags_enabled = 0
 
-" Dutyl (D-Support)
-let g:dutyl_stdImportPaths=['/usr/include/dmd']
-"call dutyl#register#tool('dcd-client','/path/to/DCD/dcd-client')
-"call dutyl#register#tool('dcd-server','/path/to/DCD/dcd-server')
-
 " Nerdtree
 " open with leader n
 map <Leader>n :NERDTreeToggle<CR>
-
-" IndentLine
-" disable by default
-let g:indentLine_enabled = 0
-let g:indentLine_char = '┆'
-
-" quick-scope
-" enable only when pressing f,F,t,T
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " Colorizer
 " enable Colorizer for HTMl, CSS, Less and SASS
@@ -255,4 +241,5 @@ let g:fastfold_skip_filetypes=['html']
 let g:matchup_matchparen_deferred = 1
 let g:matchup_matchparen_hi_surround_always = 1
 let g:matchup_matchparen_stopline = 100
-hi MatchParen ctermfg=yellow guifg=GreenYellow ctermbg=57 guibg=BlueViolet
+" colors borrowed by night-owl scheme
+hi MatchParen ctermfg=yellow guifg=GreenYellow guibg=#2d2c5d ctermbg=236 gui=NONE cterm=NONE
