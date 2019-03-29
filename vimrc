@@ -215,7 +215,7 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " Colorizer
 " enable Colorizer for HTMl, CSS, Less and SASS
-let g:colorizer_auto_filetype='css,html,less,scss' 
+let g:colorizer_auto_filetype='css,html,less,scss,vim' 
 
 " FZF
 " extend runtimepath for fzf binary
