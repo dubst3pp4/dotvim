@@ -106,3 +106,6 @@
 [submodule "pack/plugins/start/vim-asciidoctor"]
 	path = pack/plugins/start/vim-asciidoctor
 	url = https://github.com/habamax/vim-asciidoctor.git
+[submodule "pack/plugins/start/slimv"]
+	path = pack/plugins/start/slimv
+	url = https://github.com/kovisoft/slimv.git
