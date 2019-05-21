@@ -238,6 +238,8 @@ augroup END
 let g:fastfold_skip_filetypes=['html']
 
 " matchup
+" disable highlighting at startup - use :DoMatchParen
+let g:matchup_matchparen_enabled = 0
 let g:matchup_matchparen_deferred = 1
 let g:matchup_matchparen_hi_surround_always = 1
 let g:matchup_matchparen_stopline = 100
