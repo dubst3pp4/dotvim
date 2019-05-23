@@ -109,3 +109,6 @@
 [submodule "pack/plugins/start/slimv"]
 	path = pack/plugins/start/slimv
 	url = https://github.com/kovisoft/slimv.git
+[submodule "pack/plugins/start/NrrwRgn"]
+	path = pack/plugins/start/NrrwRgn
+	url = https://github.com/chrisbra/NrrwRgn.git
