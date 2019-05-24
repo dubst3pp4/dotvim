@@ -107,6 +107,13 @@ if &diff
     set diffopt+=iwhite
 endif
 
+" some mappings
+nnoremap <leader>b :buffers<CR>
+nnoremap <leader>r :registers<CR>
+nnoremap <leader>w <C-w>
+vnoremap <leader>w <C-w>
+map <leader>p :set invpaste<CR>
+
 """""""""""""""""
 " P L U G I N S "
 """""""""""""""""
@@ -245,3 +252,9 @@ let g:matchup_matchparen_hi_surround_always = 1
 let g:matchup_matchparen_stopline = 100
 " colors borrowed by night-owl scheme
 hi MatchParen ctermfg=yellow guifg=GreenYellow guibg=#2d2c5d ctermbg=236 gui=NONE cterm=NONE
+
+" vim-which-key
+let g:which_key_map = {}
+nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
+vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
+set timeoutlen=500

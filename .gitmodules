@@ -112,3 +112,6 @@
 [submodule "pack/plugins/start/NrrwRgn"]
 	path = pack/plugins/start/NrrwRgn
 	url = https://github.com/chrisbra/NrrwRgn.git
+[submodule "pack/plugins/start/vim-which-key"]
+	path = pack/plugins/start/vim-which-key
+	url = https://github.com/liuchengxu/vim-which-key.git
