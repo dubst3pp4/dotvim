@@ -211,6 +211,8 @@ let g:ale_fixers = {
 \}
 let g:ale_php_phpcs_standard = 'PSR2'
 let g:ale_php_phpcbf_standard = 'PSR2'
+nnoremap <leader>f :ALEFix<CR>
+nnoremap <leader>l :ALELint<CR>
 
 " Gutentags
 " 0 - don't enable Gutentags by default, 1 - enable
