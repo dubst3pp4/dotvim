@@ -115,3 +115,6 @@
 [submodule "pack/plugins/start/vim-which-key"]
 	path = pack/plugins/start/vim-which-key
 	url = https://github.com/liuchengxu/vim-which-key.git
+[submodule "pack/plugins/start/Vim-Jinja2-Syntax"]
+	path = pack/plugins/start/Vim-Jinja2-Syntax
+	url = https://github.com/Glench/Vim-Jinja2-Syntax.git

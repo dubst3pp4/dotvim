@@ -202,15 +202,19 @@ let g:ale_sign_warning = '⇨'
 let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'php': ['php', 'phpcs'],
-\   'ruby': ['rubocop', 'ruby']
+\   'ruby': ['rubocop', 'ruby'],
+\   'python': ['pylint']
 \}
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'php': ['phpcbf'],
-\   'ruby': ['rubocop']
+\   'ruby': ['rubocop'],
+\   'python': ['autopep8']
 \}
 let g:ale_php_phpcs_standard = 'PSR2'
 let g:ale_php_phpcbf_standard = 'PSR2'
+let g:ale_python_pylint_executable = 'pylint3'
+let g:ale_python_autopep8_executable = 'autopep8'
 nnoremap <leader>f :ALEFix<CR>
 nnoremap <leader>l :ALELint<CR>
 
