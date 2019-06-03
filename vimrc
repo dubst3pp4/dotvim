@@ -43,8 +43,8 @@ set hlsearch
 set ignorecase
 set smartcase
 set incsearch
-" Press F2 to toggle highlighting on/off, and show current value.
-noremap <F2> :set hlsearch! hlsearch?<CR>
+" Press leader + SPACE to toggle highlighting on/off, and show current value.
+nnoremap <leader><space> :set hlsearch! hlsearch?<CR>
 
 """""""""""""""""""""""""""""
 " F I L E   B R O W S I N G "
@@ -136,16 +136,6 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " quickly switch to the selected airline-tab (buffer)
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
-
 " Tagbar
 nmap <Leader>t :TagbarToggle<CR>
 let g:tagbar_type_freepascal = {
@@ -216,8 +206,8 @@ let g:ale_php_phpcs_standard = 'PSR2'
 let g:ale_php_phpcbf_standard = 'PSR2'
 let g:ale_python_pylint_executable = 'pylint3'
 let g:ale_python_autopep8_executable = 'autopep8'
-nnoremap <leader>f :ALEFix<CR>
-nnoremap <leader>l :ALELint<CR>
+nnoremap <leader>af :ALEFix<CR>
+nnoremap <leader>al :ALELint<CR>
 
 " Gutentags
 " 0 - don't enable Gutentags by default, 1 - enable
@@ -254,11 +244,21 @@ let g:fastfold_skip_filetypes=['html']
 " vim-which-key
 let g:which_key_map = {}
 
+let g:which_key_map[' '] = 'toggle highlight'
+let g:which_key_map['#'] = 'goto tag'
+let g:which_key_map['nr'] = 'edit visual selection'
+
 let g:which_key_map[','] = {
     \ 'name' : '+list' ,
     \ 'b' : ['buffers' , 'list buffers'] ,
     \ 'c' : ['commands' , 'list command history'] ,
     \ 'r' : ['registers' , 'list registers'] ,
+    \ }
+
+let g:which_key_map['a'] = {
+    \ 'name' : '+ALE' ,
+    \ 'l' : ['ALELint' , 'lint buffer'] ,
+    \ 'f' : ['ALEFix' , 'fix buffer'] ,
     \ }
 
 let g:which_key_map['w'] = {
