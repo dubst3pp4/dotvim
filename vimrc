@@ -119,8 +119,8 @@ map <leader>p :set invpaste<CR>
 " P L U G I N S "
 """""""""""""""""
 
-" matchit.vim (replaced by matchup)
-" packadd! matchit
+" matchit.vim 
+packadd! matchit
 
 " Airline
 let g:airline_powerline_fonts=1
@@ -250,15 +250,6 @@ augroup END
 
 " disable FastFold for HTML files
 let g:fastfold_skip_filetypes=['html']
-
-" matchup
-" disable highlighting at startup - use :DoMatchParen
-let g:matchup_matchparen_enabled = 0
-let g:matchup_matchparen_deferred = 1
-let g:matchup_matchparen_hi_surround_always = 1
-let g:matchup_matchparen_stopline = 100
-" colors borrowed by night-owl scheme
-hi MatchParen ctermfg=yellow guifg=GreenYellow guibg=#2d2c5d ctermbg=236 gui=NONE cterm=NONE
 
 " vim-which-key
 let g:which_key_map = {}
