@@ -25,12 +25,12 @@ set nowrap           " don't break long lines
 set listchars=tab:▸\ 
 set list
 set hidden           " allow switch from modified buffer to another buffer
+set synmaxcol=1000 " disable systax hightlighting after column n (speeds up drawing)
 
 """""""""""""""""""""
 " I N D E N T I N G "
 """""""""""""""""""""
 set autoindent
-set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -78,15 +78,15 @@ nnoremap <expr> <C-J> &diff ? ']c' : '<C-J>'
 " CTRL-h - previous diff
 nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
 
+"""""""""""""""""
+" F O L D I N G "
+"""""""""""""""""
+set foldcolumn=1 " show fold gutter
+set foldlevelstart=99 " open with all folds opened
 
 """""""""""""""""
 " V A R I O U S "
 """""""""""""""""
-
-set foldcolumn=1 " show fold gutter
-set foldlevelstart=99 " open with all folds opened
-
-set synmaxcol=240 " disable systax hightlighting after column n (speeds up drawing)
 
 " Simple TODO list:
 " enter command Todo to list all files with TODOs or FIXMEs in quicklist
@@ -100,9 +100,6 @@ augroup myvimrc
     autocmd QuickFixCmdPost l*    lwindow
 augroup END
 
-" command to create tag files
-command! MakeTags !ctags -R .
-
 " ignore whitespace in vimdiff mode
 if &diff
     set diffopt+=iwhite
@@ -113,7 +110,7 @@ nnoremap <leader>,b :buffers<CR>
 nnoremap <leader>,r :registers<CR>
 nnoremap <leader>,c q:
 nnoremap <leader>w <C-w>
-map <leader>p :set invpaste<CR>
+nnoremap <leader>p :set invpaste<CR>
 
 """""""""""""""""
 " P L U G I N S "
@@ -137,7 +134,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 " Tagbar
-nmap <Leader>t :TagbarToggle<CR>
+nnoremap <Leader>t :TagbarToggle<CR>
 let g:tagbar_type_freepascal = {
     \ 'ctagstype' : 'freepascal',
     \ 'kinds'     : [
@@ -156,7 +153,6 @@ let g:tagbar_type_freepascal = {
 let g:tagbar_phpctags_bin='/home/marc/bin/phpctags'
 
 " SnipMate
-
 "to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
 imap <C-SPACE> <esc>a<Plug>snipMateNextOrTrigger
 smap <C-SPACE> <Plug>snipMateNextOrTrigger
@@ -215,7 +211,7 @@ let g:gutentags_enabled = 0
 
 " Nerdtree
 " open with leader n
-map <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Colorizer
 " enable Colorizer for HTMl, CSS, Less and SASS
@@ -282,7 +278,10 @@ let g:which_key_map['w'] = {
     \ '?' : ['Windows'    , 'fzf-window']            ,
     \ }
  
-autocmd VimEnter * call which_key#register(',', "g:which_key_map")
+augroup whichKeySettings
+    autocmd!
+    autocmd VimEnter * call which_key#register(',', "g:which_key_map")
+augroup END
 
 nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
