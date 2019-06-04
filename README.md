@@ -9,17 +9,16 @@ At the moment the following features are provided:
 
 - Autocompletion (YouCompleteMe)
 - Syntax linting and checking (Ale)
-- Code structure browsing (tagbar, gutentags)
+- Code structure browsing (tagbar)
 - Git support (vim-fugitive & vim-gitgutter)
 - Matching of XML/HTML tags (matchit)
-- Matching of Parenthesis (matchup, rainbow-parenthesis)
+- Matching of Parenthesis (rainbow-parenthesis)
 - Snippets (snipmate, snipmate-snippets)
 
 ## Plugins
 ### General plugins
 - [vim-airline](https://github.com/vim-airline/vim-airline), impressive status line
 - [Tagbar](https://github.com/majutsushi/tagbar), lists tags in its own window
-- [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags), creates tagfiles on-the-fly
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), an autocompletion engine
 - [delimitMate](https://github.com/Raimondi/delimitMate), autoclose parens, braces, brackets and quotes
 - [vim-signature](https://github.com/kshenoy/vim-signature), shows marks in gutter
