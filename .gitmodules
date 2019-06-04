@@ -58,12 +58,6 @@
 [submodule "pack/plugins/start/gopher.vim"]
 	path = pack/plugins/start/gopher.vim
 	url = https://github.com/seanyeh/gopher.vim.git
-[submodule "pack/plugins/start/nerdtree"]
-	path = pack/plugins/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "pack/plugins/start/nerdtree-git-plugin"]
-	path = pack/plugins/start/nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule "pack/plugins/start/dracula-color-schema"]
 	path = pack/plugins/start/dracula-color-schema
 	url = git@github.com:dracula/vim.git
@@ -76,9 +70,6 @@
 [submodule "pack/plugins/start/php.vim"]
 	path = pack/plugins/start/php.vim
 	url = https://github.com/StanAngeloff/php.vim.git
-[submodule "pack/plugins/start/fzf.vim"]
-	path = pack/plugins/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
 [submodule "pack/plugins/start/vim-commentary"]
 	path = pack/plugins/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
