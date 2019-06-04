@@ -5,6 +5,7 @@ set nocompatible
 set nu
 syn on
 filetype plugin indent on
+let mapleader=","
 
 """""""""""""""""
 " V I S U A L S "
@@ -50,15 +51,22 @@ nnoremap <leader><space> :set hlsearch! hlsearch?<CR>
 " F I L E   B R O W S I N G "
 """""""""""""""""""""""""""""
 set path+=**
+" list available items
 set wildmenu
+" ignore some the following directorys when using fuzzy search
+set wildignore+=**/node_modules/**
+set wildignore+=**/vendor/**
+" netrw settings
 let g:netrw_liststyle = 3
-let g:netrw_list_hide= '.*\.sw.$'
+let g:netrw_winsize = 25
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_list_hide= netrw_gitignore#Hide() . '.*\.swp$,.*\.bak$'
+nnoremap <leader>e :Lexplore<CR>
 
 """""""""""""""""""""""
 " N A V I G A T I O N "
 """""""""""""""""""""""
-let mapleader=","
-
 nnoremap j gj
 nnoremap k gk
 
@@ -67,7 +75,6 @@ au BufReadPost *
    \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' 
    \ |   exe "normal! g`\""
    \ | endif
-
 
 " Definition of tag = Leader + #
 nnoremap <Leader># <C-]>
@@ -205,21 +212,10 @@ let g:ale_python_autopep8_executable = 'autopep8'
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
 
-" Gutentags
-" 0 - don't enable Gutentags by default, 1 - enable
-let g:gutentags_enabled = 0
-
-" Nerdtree
-" open with leader n
-nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Colorizer
 " enable Colorizer for HTMl, CSS, Less and SASS
 let g:colorizer_auto_filetype='css,html,less,scss,vim' 
-
-" FZF
-" extend runtimepath for fzf binary
-set rtp+=~/bin/fzf
 
 " PHP.vim
 " enable highlighting of PHPDoc blocks
