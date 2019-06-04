@@ -63,6 +63,11 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_list_hide= netrw_gitignore#Hide() . '.*\.swp$,.*\.bak$'
 nnoremap <leader>e :Lexplore<CR>
+" Per default, netrw leaves unmodified buffers open. This autocommand
+" deletes netrw's buffer once it's hidden (using ':q', for example)
+augroup netrwCloseBuffer
+    autocmd FileType netrw setl bufhidden=delete
+augroup END
 
 """""""""""""""""""""""
 " N A V I G A T I O N "
