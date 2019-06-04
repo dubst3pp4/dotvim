@@ -56,6 +56,7 @@ set wildmenu
 " ignore some the following directorys when using fuzzy search
 set wildignore+=**/node_modules/**
 set wildignore+=**/vendor/**
+set wildignore+=**/__pycache__/**
 " netrw settings
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
