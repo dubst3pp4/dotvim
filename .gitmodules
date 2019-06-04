@@ -106,3 +106,6 @@
 [submodule "pack/plugins/start/vim-vinegear"]
 	path = pack/plugins/start/vim-vinegear
 	url = https://github.com/tpope/vim-vinegar
+[submodule "pack/plugins/start/tagbar-markdown"]
+	path = pack/plugins/start/tagbar-markdown
+	url = https://github.com/lvht/tagbar-markdown.git
