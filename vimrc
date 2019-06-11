@@ -165,6 +165,20 @@ let g:tagbar_type_freepascal = {
 " tagbar-phpctags
 let g:tagbar_phpctags_bin='/home/marc/bin/phpctags'
 
+" tagbar-asciidoc
+let g:tagbar_type_asciidoc = {
+    \ 'ctagstype' : 'asciidoc',
+    \ 'kinds' : [
+        \ 'h:table of contents',
+        \ 'a:anchors:1',
+        \ 't:titles:1',
+        \ 'n:includes:1',
+        \ 'i:images:1',
+        \ 'I:inline images:1'
+    \ ],
+    \ 'sort' : 0
+\ }
+
 " SnipMate
 "to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
 imap <C-SPACE> <esc>a<Plug>snipMateNextOrTrigger
