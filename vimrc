@@ -111,6 +111,9 @@ augroup myvimrc
     autocmd QuickFixCmdPost [^l]* cwindow
     autocmd QuickFixCmdPost l*    lwindow
 augroup END
+" toggle Quickfix and Location list
+nnoremap <leader>,tq :cwindow<CR>
+nnoremap <leader>,tl :lwindow<CR>
 
 " ignore whitespace in vimdiff mode
 if &diff
@@ -264,10 +267,16 @@ let g:which_key_map['#'] = 'goto tag'
 let g:which_key_map['nr'] = 'edit visual selection'
 
 let g:which_key_map[','] = {
-    \ 'name' : '+list' ,
+    \ 'name' : '+custom' ,
     \ 'b' : ['buffers' , 'list buffers'] ,
     \ 'c' : ['commands' , 'list command history'] ,
     \ 'r' : ['registers' , 'list registers'] ,
+    \ }
+
+let g:which_key_map[',']['t'] = {
+    \ 'name' : '+toggle windows' ,
+    \ 'q' : ['cwindow' , 'toggle Quickfix window'] ,
+    \ 'l' : ['lwindow' , 'toggle Location list'] ,
     \ }
 
 let g:which_key_map['a'] = {
@@ -294,7 +303,6 @@ let g:which_key_map['w'] = {
     \ '=' : ['<C-W>='     , 'balance-window']        ,
     \ 's' : ['<C-W>s'     , 'split-window-below']    ,
     \ 'v' : ['<C-W>v'     , 'split-window-below']    ,
-    \ '?' : ['Windows'    , 'fzf-window']            ,
     \ }
  
 augroup whichKeySettings
