@@ -1,21 +1,24 @@
-"""""""""""""""
-" B A S I C S "
-"""""""""""""""
+" vim.rc configuration for my daily usage
+"
+" Author: Marc Hanisch
+" URL: https://github.com/dubst3pp4/dotvim
+
+" *** BASICS *** {{{
 set nocompatible
 set nu
 syn on
 filetype plugin indent on
 let mapleader=","
+" }}}
 
-"""""""""""""""""
-" V I S U A L S "
-"""""""""""""""""
+" *** VISUALS *** {{{
 set t_Co=256         " 256 colors in terminal
 set background=dark
-" enable 24bit true color
+" enable 24bit true color {{{
 if (has("termguicolors"))
   set termguicolors
 endif
+" }}}
 colorscheme night-owl
 set ruler            " show rows and column info
 set showmode         " shows current mode
@@ -27,18 +30,16 @@ set listchars=tab:▸\
 set list
 set hidden           " allow switch from modified buffer to another buffer
 set synmaxcol=1000 " disable systax hightlighting after column n (speeds up drawing)
+" }}}
 
-"""""""""""""""""""""
-" I N D E N T I N G "
-"""""""""""""""""""""
+" *** INDENTING *** {{{
 set autoindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+" }}}
 
-"""""""""""""""""""""
-" S E A R C H I N G "
-"""""""""""""""""""""
+" *** SEARCHING *** {{{
 set showmatch
 set hlsearch
 set ignorecase
@@ -46,10 +47,9 @@ set smartcase
 set incsearch
 " Press leader + SPACE to toggle highlighting on/off, and show current value.
 nnoremap <leader><space> :set hlsearch! hlsearch?<CR>
+" }}}
 
-"""""""""""""""""""""""""""""
-" F I L E   B R O W S I N G "
-"""""""""""""""""""""""""""""
+" *** FILE BROWSING *** {{{
 set path+=**
 " list available items
 set wildmenu
@@ -57,7 +57,7 @@ set wildmenu
 set wildignore+=**/node_modules/**
 set wildignore+=**/vendor/**
 set wildignore+=**/__pycache__/**
-" netrw settings
+" netrw settings {{{
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 let g:netrw_browse_split = 4
@@ -68,18 +68,19 @@ let g:netrw_list_hide= netrw_gitignore#Hide() . '.*\.swp$,.*\.bak$'
 augroup netrwCloseBuffer
     autocmd FileType netrw setl bufhidden=delete
 augroup END
+" }}}
+" }}}
 
-"""""""""""""""""""""""
-" N A V I G A T I O N "
-"""""""""""""""""""""""
+" *** NAVIGATION *** {{{
 nnoremap j gj
 nnoremap k gk
 
-" when opening a file, jump to last position ('.)
+" when opening a file, jump to last position ('.) {{{
 au BufReadPost *
    \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' 
    \ |   exe "normal! g`\""
    \ | endif
+" }}}
 
 " Definition of tag = Leader + #
 nnoremap <Leader># <C-]>
@@ -89,52 +90,53 @@ nnoremap <Leader># <C-]>
 nnoremap <expr> <C-J> &diff ? ']c' : '<C-J>'
 " CTRL-h - previous diff
 nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
+" }}}
 
-"""""""""""""""""
-" F O L D I N G "
-"""""""""""""""""
+" *** FOLDING *** {{{
 set foldcolumn=1 " show fold gutter
 set foldlevelstart=99 " open with all folds opened
+" }}}
 
-"""""""""""""""""
-" V A R I O U S "
-"""""""""""""""""
-
-" Simple TODO list:
+" *** VARIOUS *** {{{
+" Simple TODO list: {{{
 " enter command Todo to list all files with TODOs or FIXMEs in quicklist
 command! Todo noautocmd vimgrep /TODO\|FIXME/j % | cw
 command! TodoR noautocmd vimgrep /TODO\|FIXME/j ** | cw
+" }}}
 
-" when Quickfix or Locationlist is populated, open it
+" when Quickfix or Locationlist is populated, open it {{{
 augroup myvimrc
     autocmd!
     autocmd QuickFixCmdPost [^l]* cwindow
     autocmd QuickFixCmdPost l*    lwindow
 augroup END
+" }}}
 " toggle Quickfix and Location list
 nnoremap <leader>,tq :cwindow<CR>
 nnoremap <leader>,tl :lwindow<CR>
 
-" ignore whitespace in vimdiff mode
+" ignore whitespace in vimdiff mode {{{
 if &diff
     set diffopt+=iwhite
 endif
+" }}}
 
-" some mappings
+" some leader mappings {{{
 nnoremap <leader>,b :buffers<CR>
 nnoremap <leader>,r :registers<CR>
 nnoremap <leader>,c q:
 nnoremap <leader>w <C-w>
 nnoremap <leader>p :set invpaste<CR>
+" }}}
+" }}}
 
-"""""""""""""""""
-" P L U G I N S "
-"""""""""""""""""
+" *** PLUGINS *** {{{
 
-" matchit.vim 
+" matchit.vim {{{
 packadd! matchit
+" }}}
 
-" Airline
+" Airline {{{
 let g:airline_powerline_fonts=1
 " don't show whitespace info
 let g:airline#extensions#whitespace#enabled = 0
@@ -147,8 +149,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " quickly switch to the selected airline-tab (buffer)
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+" }}}
 
-" Tagbar
+" Tagbar {{{
 nnoremap <Leader>t :TagbarToggle<CR>
 let g:tagbar_type_freepascal = {
     \ 'ctagstype' : 'freepascal',
@@ -180,42 +183,49 @@ let g:tagbar_type_asciidoc = {
     \ ],
     \ 'sort' : 0
 \ }
+" }}}
 
-" SnipMate
-"to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
+" SnipMate {{{
+" to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
 imap <C-SPACE> <esc>a<Plug>snipMateNextOrTrigger
 smap <C-SPACE> <Plug>snipMateNextOrTrigger
+" }}}
 
-" Mustache / Handlebars
+" Mustache / Handlebars {{{
 let g:mustache_abbreviations = 1
+" }}}
 
-" YouCompleteMe
+" YouCompleteMe {{{
 " disable diagnostics
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_complete_in_comments = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+" }}}
 
-" Ale
-" only lint when saving files
+" Ale {{{
+" only lint when saving files {{{
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 1
-" open error list in locationlist
+" }}}
+" open error list in locationlist {{{
 let g:ale_open_list = 1
 let g:ale_set_loclist = 1
 let g:ale_set_quickfix = 0
+" }}}
 " support for airline
 let g:airline#extensions#ale#enabled = 1
 " do not always show the gutter
 let g:ale_sign_column_always = 0
 " do not highlight errors
 let g:ale_set_highlights = 0
-" error and warning signs
+" error and warning signs {{{
 let g:ale_sign_error = '💥'
 let g:ale_sign_warning = '😳'
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
+" }}}
 
 let g:ale_linters = {
 \   'javascript': ['jshint'],
@@ -235,15 +245,18 @@ let g:ale_python_pylint_executable = 'pylint3'
 let g:ale_python_autopep8_executable = 'autopep8'
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
+" }}}
 
-" Nerdtree
+" Nerdtree {{{
 map <Leader>n :NERDTreeToggle<CR>
+" }}}
 
-" Colorizer
+" Colorizer {{{
 " enable Colorizer for HTMl, CSS, Less and SASS
 let g:colorizer_auto_filetype='css,html,less,scss,vim' 
+" }}}
 
-" PHP.vim
+" PHP.vim {{{
 " enable highlighting of PHPDoc blocks
 function! PhpSyntaxOverride()
   " Put snippet overrides in this function.
@@ -255,36 +268,46 @@ augroup phpSyntaxOverride
   autocmd!
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
+" }}}
 
+" Fastfold {{{
 " disable FastFold for HTML files
 let g:fastfold_skip_filetypes=['html']
+" }}}
 
-" vim-which-key
+" vim-which-key {{{
 let g:which_key_map = {}
 
 let g:which_key_map[' '] = 'toggle highlight'
 let g:which_key_map['#'] = 'goto tag'
 let g:which_key_map['nr'] = 'edit visual selection'
 
+" , {{{
 let g:which_key_map[','] = {
     \ 'name' : '+custom' ,
     \ 'b' : ['buffers' , 'list buffers'] ,
     \ 'c' : ['commands' , 'list command history'] ,
     \ 'r' : ['registers' , 'list registers'] ,
     \ }
+" }}}
 
+" ,t {{{
 let g:which_key_map[',']['t'] = {
     \ 'name' : '+toggle windows' ,
     \ 'q' : ['cwindow' , 'toggle Quickfix window'] ,
     \ 'l' : ['lwindow' , 'toggle Location list'] ,
     \ }
+" }}}
 
+" a {{{
 let g:which_key_map['a'] = {
     \ 'name' : '+ALE' ,
     \ 'l' : ['ALELint' , 'lint buffer'] ,
     \ 'f' : ['ALEFix' , 'fix buffer'] ,
     \ }
+" }}}
 
+" w (not working) {{{
 let g:which_key_map['w'] = {
     \ 'name' : '+windows' ,
     \ 'w' : ['<C-W>w'     , 'other-window']          ,
@@ -304,12 +327,19 @@ let g:which_key_map['w'] = {
     \ 's' : ['<C-W>s'     , 'split-window-below']    ,
     \ 'v' : ['<C-W>v'     , 'split-window-below']    ,
     \ }
+" }}}
  
+" register the maps {{{
 augroup whichKeySettings
     autocmd!
     autocmd VimEnter * call which_key#register(',', "g:which_key_map")
 augroup END
+" }}}
 
 nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 set timeoutlen=500
+" }}}
+" }}}
+
+" vim:foldmethod=marker:foldlevel=0
