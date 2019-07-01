@@ -112,3 +112,12 @@
 [submodule "pack/plugins/start/vim-devicons"]
 	path = pack/plugins/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "pack/plugins/start/vim-monokai"]
+	path = pack/plugins/start/vim-monokai
+	url = https://github.com/crusoexia/vim-monokai.git
+[submodule "pack/plugins/start/vim-dracula"]
+	path = pack/plugins/start/vim-dracula
+	url = https://github.com/dracula/vim.git
+[submodule "pack/plugins/start/space-vim-theme"]
+	path = pack/plugins/start/space-vim-theme
+	url = https://github.com/liuchengxu/space-vim-theme.git
