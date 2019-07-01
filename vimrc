@@ -36,6 +36,7 @@ set synmaxcol=1000 " disable systax hightlighting after column n (speeds up draw
 set autoindent
 set tabstop=4
 set shiftwidth=4
+set shiftround
 set expandtab
 " }}}
 
