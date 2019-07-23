@@ -121,3 +121,6 @@
 [submodule "pack/plugins/start/space-vim-theme"]
 	path = pack/plugins/start/space-vim-theme
 	url = https://github.com/liuchengxu/space-vim-theme.git
+[submodule "pack/plugins/start/vim-devdocs"]
+	path = pack/plugins/start/vim-devdocs
+	url = https://github.com/romainl/vim-devdocs.git
