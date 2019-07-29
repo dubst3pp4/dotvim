@@ -124,3 +124,6 @@
 [submodule "pack/plugins/start/vim-devdocs"]
 	path = pack/plugins/start/vim-devdocs
 	url = https://github.com/romainl/vim-devdocs.git
+[submodule "pack/plugins/start/reply.vim"]
+	path = pack/plugins/start/reply.vim
+	url = https://github.com/rhysd/reply.vim.git
