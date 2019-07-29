@@ -232,7 +232,7 @@ let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'php': ['php', 'phpcs'],
 \   'ruby': ['rubocop', 'ruby'],
-\   'python': ['pylint']
+\   'python': ['flake8']
 \}
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
@@ -242,7 +242,6 @@ let g:ale_fixers = {
 \}
 let g:ale_php_phpcs_standard = 'PSR2'
 let g:ale_php_phpcbf_standard = 'PSR2'
-let g:ale_python_pylint_executable = 'pylint3'
 let g:ale_python_autopep8_executable = 'autopep8'
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
