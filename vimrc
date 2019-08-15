@@ -242,7 +242,8 @@ let g:ale_fixers = {
 \}
 let g:ale_php_phpcs_standard = 'PSR2'
 let g:ale_php_phpcbf_standard = 'PSR2'
-let g:ale_python_autopep8_executable = 'autopep8'
+let g:ale_python_auto_pipenv = 1
+let g:ale_python_flake8_auto_pipenv = 1
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
 " }}}
