@@ -1,4 +1,4 @@
-set guifont=FantasqueSansMono\ Nerd\ Font\ Mono\ Regular\ 12
+set guifont=FantasqueSansMono\ Nerd\ Font\ 14
 set guioptions-=T "remove toolbar
 set guioptions-=L "disable scrollbars left
 set guioptions-=l "disable scrollbars left
