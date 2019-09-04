@@ -127,3 +127,6 @@
 [submodule "pack/plugins/start/reply.vim"]
 	path = pack/plugins/start/reply.vim
 	url = https://github.com/rhysd/reply.vim.git
+[submodule "pack/plugins/start/typescript-vim"]
+	path = pack/plugins/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
