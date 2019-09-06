@@ -55,9 +55,6 @@
 [submodule "pack/plugins/start/gopher.vim"]
 	path = pack/plugins/start/gopher.vim
 	url = https://github.com/seanyeh/gopher.vim.git
-[submodule "pack/plugins/start/dracula-color-schema"]
-	path = pack/plugins/start/dracula-color-schema
-	url = git@github.com:dracula/vim.git
 [submodule "pack/plugins/start/night-owl-color-schema"]
 	path = pack/plugins/start/night-owl-color-schema
 	url = https://github.com/haishanh/night-owl.vim.git
