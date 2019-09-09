@@ -1,5 +1,5 @@
-set guifont=FantasqueSansMono\ Nerd\ Font\ 14
-set ambiwith="double" "correct rendering of double wide UTF8 glyphs
+" set guifont=FantasqueSansMono\ Nerd\ Font\ 14
+set guifont=Fira\ Code\ Regular\ 13
 set guioptions-=T "remove toolbar
 set guioptions-=L "disable scrollbars left
 set guioptions-=l "disable scrollbars left
