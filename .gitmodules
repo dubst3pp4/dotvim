@@ -130,3 +130,6 @@
 [submodule "pack/plugins/start/graphviz.vim"]
 	path = pack/plugins/start/graphviz.vim
 	url = https://github.com/liuchengxu/graphviz.vim.git
+[submodule "pack/plugins/start/vimwiki"]
+	path = pack/plugins/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
