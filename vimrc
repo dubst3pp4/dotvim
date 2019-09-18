@@ -126,8 +126,7 @@ endif
 nnoremap <leader>,b :buffers<CR>
 nnoremap <leader>,r :registers<CR>
 nnoremap <leader>,c q:
-nnoremap <leader>w <C-w>
-nnoremap <leader>p :set invpaste<CR>
+nnoremap <leader>,p :set invpaste<CR>
 " }}}
 " }}}
 
@@ -294,6 +293,7 @@ let g:which_key_map[','] = {
     \ 'b' : ['buffers' , 'list buffers'] ,
     \ 'c' : ['commands' , 'list command history'] ,
     \ 'r' : ['registers' , 'list registers'] ,
+    \ 'p' : ['set invpaste' , 'toggle pastemode'] ,
     \ }
 " }}}
 
@@ -313,25 +313,23 @@ let g:which_key_map['a'] = {
     \ }
 " }}}
 
-" w (not working) {{{
+" w VimWiki {{{
 let g:which_key_map['w'] = {
-    \ 'name' : '+windows' ,
-    \ 'w' : ['<C-W>w'     , 'other-window']          ,
-    \ 'd' : ['<C-W>c'     , 'delete-window']         ,
-    \ '-' : ['<C-W>s'     , 'split-window-below']    ,
-    \ '|' : ['<C-W>v'     , 'split-window-right']    ,
-    \ '2' : ['<C-W>v'     , 'layout-double-columns'] ,
-    \ 'h' : ['<C-W>h'     , 'window-left']           ,
-    \ 'j' : ['<C-W>j'     , 'window-below']          ,
-    \ 'l' : ['<C-W>l'     , 'window-right']          ,
-    \ 'k' : ['<C-W>k'     , 'window-up']             ,
-    \ 'H' : ['<C-W>5<'    , 'expand-window-left']    ,
-    \ 'J' : ['resize +5'  , 'expand-window-below']   ,
-    \ 'L' : ['<C-W>5>'    , 'expand-window-right']   ,
-    \ 'K' : ['resize -5'  , 'expand-window-up']      ,
-    \ '=' : ['<C-W>='     , 'balance-window']        ,
-    \ 's' : ['<C-W>s'     , 'split-window-below']    ,
-    \ 'v' : ['<C-W>v'     , 'split-window-below']    ,
+    \ 'name' : '+VimWiki' ,
+    \ 'w' : ['VimwikiIndex' , 'Index page'] ,
+    \ 'i' : ['VimwikiDiaryIndex' , 'Diary index page'] ,
+    \ 's' : ['VimwikiUISelect' , 'List availabe wikis'] ,
+    \ 't' : ['VimwikiTabIndex' , 'Index page (tab)'] ,
+    \ }
+" }}}
+
+let g:which_key_map['w'][','] = {
+    \ 'name' : '+VimWiki diary commands' ,
+    \ 'i' : ['VimwikiDiaryGenerateLinks' , 'generate diary links'] ,
+    \ 'm' : ['VimwikiMakeTomorrowDiaryNote' , 'creates and open diary note for tomorrow'] ,
+    \ 't' : ['VimwikiTabMakeDiaryNote' , 'create and open diary note in new tab'] ,
+    \ 'w' : ['VimwikiMakeDiaryNote' , 'create and open diary note'] ,
+    \ 'y' : ['VimwikiMakeYesterdayDiaryNote' , 'creates and open diary note for yesterday'] ,
     \ }
 " }}}
  
