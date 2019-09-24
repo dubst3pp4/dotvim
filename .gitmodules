@@ -136,3 +136,6 @@
 [submodule "pack/plugins/start/vim-coiled-snake"]
 	path = pack/plugins/start/vim-coiled-snake
 	url = https://github.com/kalekundert/vim-coiled-snake.git
+[submodule "pack/plugins/start/tern_for_vim"]
+	path = pack/plugins/start/tern_for_vim
+	url = https://github.com/ternjs/tern_for_vim.git
