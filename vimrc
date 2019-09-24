@@ -321,7 +321,6 @@ let g:which_key_map['w'] = {
     \ 's' : ['VimwikiUISelect' , 'List availabe wikis'] ,
     \ 't' : ['VimwikiTabIndex' , 'Index page (tab)'] ,
     \ }
-" }}}
 
 let g:which_key_map['w'][','] = {
     \ 'name' : '+VimWiki diary commands' ,
@@ -339,14 +338,13 @@ augroup whichKeySettings
     autocmd VimEnter * call which_key#register(',', "g:which_key_map")
 augroup END
 " }}}
-
 nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 set timeoutlen=500
 " }}}
 
 " Tagbar {{{
-" support for VimWiki syntax
+" VimWiki support {{{ 
 let g:tagbar_type_vimwiki = {
           \   'ctagstype':'vimwiki'
           \ , 'kinds':['h:header']
@@ -356,8 +354,9 @@ let g:tagbar_type_vimwiki = {
           \ , 'ctagsbin':'~/bin/vwtags.py'
           \ , 'ctagsargs': 'default'
           \ }
+" }}}
 
-" support for AsciiDoc
+" AsciiDoc support {{{
 let g:tagbar_type_asciidoc = {
     \ 'ctagstype' : 'asciidoc',
     \ 'kinds' : [
