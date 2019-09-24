@@ -11,7 +11,7 @@ At the moment the following features are provided:
 - Autocompletion (YouCompleteMe)
 - Syntax linting and checking (Ale)
 - Code structure browsing (tagbar)
-- Git support (vim-fugitive & vim-gitgutter)
+- Git support (vim-fugitive & vim-signify)
 - Matching of XML/HTML tags (matchit)
 - Matching of Parenthesis (rainbow-parenthesis)
 - Snippets (snipmate, snipmate-snippets)
@@ -61,7 +61,7 @@ and some more...
 
 - [vim-fugitive](https://github.com/tpope/vim-fugitive), adds shortcuts for
   adding, commiting and pushing files
-- [vim-gitgutter](https://github.com/airblade/vim-gitgutter), shows marks in the
+- [vim-signify](https://github.com/mhinz/vim-signify), shows marks in the
   gutter column
 
 ## Requirements
@@ -79,10 +79,14 @@ and some more...
 I've changed a little script that I found somewhere (sorry!) to update all
 plugins:
 
-    update_plugins.sh
+```
+update_plugins.sh
+```
 
 When YouCompleteMe is updated, the binary can be compiled from within the
 plugin-directory with
 
-    ./install.py --clang-completer --ts-completer
+```
+./install.py --clang-completer --ts-completer
+```
 
