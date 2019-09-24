@@ -373,4 +373,19 @@ let g:tagbar_type_asciidoc = {
 " }}}
 " }}}
 
+" Signify {{{
+let g:signify_sign_add               = '+'
+let g:signify_sign_delete            = '-'
+let g:signify_sign_delete_first_line = '‾'
+let g:signify_sign_change            = '~'
+let g:signify_sign_changedelete      = '↛'
+highlight link SignifySignAdd             diffAdded
+highlight link SignifySignDelete          diffRemoved
+highlight SignifySignChange ctermfg=222 guifg=#ecc48d cterm=NONE gui=NONE 
+highlight link SignifySignChangeDelete    SignifySignChange
+highlight link SignifySignDeleteFirstLine SignifySignDelete
+" }}}
+
+" }}}
+
 " vim:foldmethod=marker:foldlevel=0
