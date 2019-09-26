@@ -139,3 +139,6 @@
 [submodule "pack/plugins/start/vim-signify"]
 	path = pack/plugins/start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
+[submodule "pack/plugins/start/vim-python-pep8-indent"]
+	path = pack/plugins/start/vim-python-pep8-indent
+	url = https://github.com/Vimjas/vim-python-pep8-indent.git
