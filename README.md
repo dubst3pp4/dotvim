@@ -4,7 +4,8 @@ Guide on building dotvim repository: <https://gist.github.com/manasthakur/d4dc9a
 
 ## Mission
 
-Build a configuration for daily editing of JavaScript, PHP and Python files.
+Build a configuration for daily editing of JavaScript, Python, PHP, AsciiDoc,
+Markdown files and daily notes.
 
 At the moment the following features are provided:
 
@@ -15,6 +16,8 @@ At the moment the following features are provided:
 - Matching of XML/HTML tags (matchit)
 - Matching of Parenthesis (rainbow-parenthesis)
 - Snippets (snipmate, snipmate-snippets)
+- Display keybindings (vim-which-key)
+- Wiki (VimWiki)
 
 ## Plugins
 
@@ -35,6 +38,9 @@ At the moment the following features are provided:
   just on ekeypress (or two ;-))
 - [vim-snippets](https://github.com/honza/vim-snippets), useful default snippets
   for vim-snipmate
+- [VimWiki](https://github.com/vimwiki/vimwiki), A personal wiki for Vim
+- [vim-which-key](https://github.com/liuchengxu/vim-which-key), display
+  keybindings
 
 and some more...
 
@@ -47,15 +53,22 @@ and some more...
 - [vim-mustache-handlebars](https://github.com/mustache/vim-mustache-handlebars),
   Handlebars support
 
-#### FreePascal
+#### Python
 
-- [vim-freepascal](https://github.com/boeckmann/vim-freepascal), modern support
-  for FreePascal
+- [python-pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent),
+  PEP8-style indentation of Python files
+- [coiled-snake-plugin](https://github.com/kalekundert/vim-coiled-snake), Python
+  folding for Vim
 
 #### PHP
 
 - [tagbar-phpctags.vim](https://github.com/vim-php/tagbar-phpctags.vim), better
   PHP support for tagbar
+
+#### FreePascal
+
+- [vim-freepascal](https://github.com/boeckmann/vim-freepascal), modern support
+  for FreePascal
 
 ### Git specific plugins
 
@@ -68,11 +81,13 @@ and some more...
 
 - build-essentials, python (required by YouCompleteMe)
 - jshint (required by Ale)
-- Node.js and npm (jshint)
-- powerline patched fonts for vim-airline (<https://github.com/powerline/fonts>)
+- Node.js and npm (YouCompleteMe, jshint)
+- Python3 (required by Ale, YouCompleteMe)
+- flake8, autopep8, pyls (required by Ale)
 - PHP (required by PHP_CodeSniffer, phpctags)
 - PHP_CodeSniffer (phpcs, required by Ale, install latest version!)
 - phpctags (required by tagbar-phpctags.vim)
+- powerline patched fonts for vim-airline (<https://github.com/powerline/fonts>)
 
 ## Update plugins
 
@@ -87,6 +102,6 @@ When YouCompleteMe is updated, the binary can be compiled from within the
 plugin-directory with
 
 ```
-./install.py --clang-completer --ts-completer
+python3 install.py --clang-completer --ts-completer
 ```
 
