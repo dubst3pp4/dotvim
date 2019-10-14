@@ -298,7 +298,7 @@ let g:which_key_map[','] = {
     \ 'b' : ['buffers' , 'list buffers'] ,
     \ 'c' : ['commands' , 'list command history'] ,
     \ 'r' : ['registers' , 'list registers'] ,
-    \ 'p' : ['set invpaste' , 'toggle pastemode'] ,
+    \ 'p' : [':set invpaste' , 'toggle pastemode'] ,
     \ }
 " }}}
 
