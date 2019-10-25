@@ -403,7 +403,7 @@ highlight link SignifySignDeleteFirstLine SignifySignDelete
 " Doge {{{
 let g:doge_doc_standard_python = 'numpy'
 let g:doge_doc_standard_php = 'phpdoc'
-let g:doge_doc_standard_javascript = 'doc'
+let g:doge_doc_standard_javascript = 'jsdoc'
 " }}
 
 " }}}
