@@ -264,11 +264,6 @@ nnoremap <leader>al :ALELint<CR>
 map <Leader>n :NERDTreeToggle<CR>
 " }}}
 
-" DevIcons {{{
-let g:webdevicons_enable = 0 " disabled as rendering issues
-let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
-" }}}
-
 " Colorizer {{{
 " enable Colorizer for HTMl, CSS, Less and SASS
 let g:colorizer_auto_filetype='css,html,less,scss,vim,javascript,typescript' 
