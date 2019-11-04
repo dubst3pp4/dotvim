@@ -140,6 +140,10 @@ nnoremap <leader>,p :set invpaste<CR>
 packadd! matchit
 " }}}
 
+" editexisting.vim {{{
+packadd! editexisting
+" }}}
+
 " Airline {{{
 let g:airline_powerline_fonts=1
 " don't show whitespace info
