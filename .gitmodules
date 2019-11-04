@@ -49,9 +49,6 @@
 [submodule "pack/plugins/start/YouCompleteMe"]
 	path = pack/plugins/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule "pack/plugins/start/gopher.vim"]
-	path = pack/plugins/start/gopher.vim
-	url = https://github.com/seanyeh/gopher.vim.git
 [submodule "pack/plugins/start/night-owl-color-schema"]
 	path = pack/plugins/start/night-owl-color-schema
 	url = https://github.com/haishanh/night-owl.vim.git
@@ -61,24 +58,12 @@
 [submodule "pack/plugins/start/php.vim"]
 	path = pack/plugins/start/php.vim
 	url = https://github.com/StanAngeloff/php.vim.git
-[submodule "pack/plugins/start/vim-commentary"]
-	path = pack/plugins/start/vim-commentary
-	url = https://github.com/tpope/vim-commentary.git
-[submodule "pack/plugins/start/vim-rails"]
-	path = pack/plugins/start/vim-rails
-	url = https://github.com/tpope/vim-rails.git
 [submodule "pack/plugins/start/vim-endwise"]
 	path = pack/plugins/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
 [submodule "pack/plugins/start/FastFold"]
 	path = pack/plugins/start/FastFold
 	url = https://github.com/Konfekt/FastFold.git
-[submodule "pack/plugins/start/vim-racket"]
-	path = pack/plugins/start/vim-racket
-	url = https://github.com/wlangstroth/vim-racket.git
-[submodule "pack/plugins/start/rainbow_parentheses.vim"]
-	path = pack/plugins/start/rainbow_parentheses.vim
-	url = https://github.com/junegunn/rainbow_parentheses.vim.git
 [submodule "pack/plugins/start/Colorizer"]
 	path = pack/plugins/start/Colorizer
 	url = https://github.com/chrisbra/Colorizer.git
@@ -103,9 +88,6 @@
 [submodule "pack/plugins/start/nerdtree-git-plugin"]
 	path = pack/plugins/start/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
-[submodule "pack/plugins/start/vim-devicons"]
-	path = pack/plugins/start/vim-devicons
-	url = https://github.com/ryanoasis/vim-devicons.git
 [submodule "pack/plugins/start/vim-monokai"]
 	path = pack/plugins/start/vim-monokai
 	url = https://github.com/crusoexia/vim-monokai.git
