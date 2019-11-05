@@ -116,9 +116,11 @@ augroup myvimrc
     autocmd QuickFixCmdPost l*    lwindow
 augroup END
 " }}}
-" toggle Quickfix and Location list
+
+" toggle Quickfix and Location list {{{
 nnoremap <leader>,tq :cwindow<CR>
 nnoremap <leader>,tl :lwindow<CR>
+" }}}
 
 " ignore whitespace in vimdiff mode {{{
 if &diff
@@ -131,6 +133,12 @@ nnoremap <leader>,b :buffers<CR>
 nnoremap <leader>,r :registers<CR>
 nnoremap <leader>,c q:
 nnoremap <leader>,p :set invpaste<CR>
+" }}}
+
+" browser-sync {{{
+if executable( 'browser-sync' )
+    command Serve terminal browser-sync start --server --files .
+endif
 " }}}
 " }}}
 
