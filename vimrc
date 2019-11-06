@@ -415,7 +415,12 @@ highlight link SignifySignDeleteFirstLine SignifySignDelete
 let g:doge_doc_standard_python = 'numpy'
 let g:doge_doc_standard_php = 'phpdoc'
 let g:doge_doc_standard_javascript = 'jsdoc'
-" }}
+" }}}
+
+" DelimitMate {{{
+" DelimitMate conflicts with vim-closetag, so ignore in html files
+au FileType html let b:delimitMate_matchpairs = "(:),[:],{:}"
+"}}}
 
 " }}}
 
