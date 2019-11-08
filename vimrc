@@ -247,6 +247,9 @@ let g:ale_sign_column_always = 0
 "highlight clear ALEWarningSign
 " }}}
 
+" disable Ale for VimWiki
+let g:ale_pattern_options = {'\.wiki$': {'ale_enabled': 0}}
+
 let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'php': ['php', 'phpcs'],
