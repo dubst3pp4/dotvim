@@ -247,9 +247,6 @@ let g:ale_sign_column_always = 0
 "highlight clear ALEWarningSign
 " }}}
 
-" disable Ale for VimWiki
-let g:ale_pattern_options = {'\.wiki$': {'ale_enabled': 0}}
-
 let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'php': ['php', 'phpcs'],
@@ -332,25 +329,6 @@ let g:which_key_map['a'] = {
     \ }
 " }}}
 
-" w VimWiki {{{
-let g:which_key_map['w'] = {
-    \ 'name' : '+VimWiki' ,
-    \ 'w' : ['VimwikiIndex' , 'Index page'] ,
-    \ 'i' : ['VimwikiDiaryIndex' , 'Diary index page'] ,
-    \ 's' : ['VimwikiUISelect' , 'List availabe wikis'] ,
-    \ 't' : ['VimwikiTabIndex' , 'Index page (tab)'] ,
-    \ }
-
-let g:which_key_map['w'][','] = {
-    \ 'name' : '+VimWiki diary commands' ,
-    \ 'i' : ['VimwikiDiaryGenerateLinks' , 'generate diary links'] ,
-    \ 'm' : ['VimwikiMakeTomorrowDiaryNote' , 'creates and open diary note for tomorrow'] ,
-    \ 't' : ['VimwikiTabMakeDiaryNote' , 'create and open diary note in new tab'] ,
-    \ 'w' : ['VimwikiMakeDiaryNote' , 'create and open diary note'] ,
-    \ 'y' : ['VimwikiMakeYesterdayDiaryNote' , 'creates and open diary note for yesterday'] ,
-    \ }
-" }}}
-
 " y YouCompleteMe {{{
 let g:which_key_map['y'] = {
     \ 'name' : '+YouCompleteMe' ,
@@ -373,18 +351,6 @@ set timeoutlen=500
 " }}}
 
 " Tagbar {{{
-" VimWiki support {{{ 
-let g:tagbar_type_vimwiki = {
-          \   'ctagstype':'vimwiki'
-          \ , 'kinds':['h:header']
-          \ , 'sro':'&&&'
-          \ , 'kind2scope':{'h':'header'}
-          \ , 'sort':0
-          \ , 'ctagsbin':'~/bin/vwtags.py'
-          \ , 'ctagsargs': 'default'
-          \ }
-" }}}
-
 " AsciiDoc support {{{
 let g:tagbar_type_asciidoc = {
     \ 'ctagstype' : 'asciidoc',
