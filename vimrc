@@ -61,6 +61,7 @@ set wildmenu
 set wildignore+=**/node_modules/**
 set wildignore+=**/vendor/**
 set wildignore+=**/__pycache__/**
+set wildignore+=**/.venv/**
 " netrw settings {{{
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
