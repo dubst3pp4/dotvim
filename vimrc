@@ -199,6 +199,18 @@ let g:tagbar_type_asciidoc = {
     \ ],
     \ 'sort' : 0
 \ }
+let g:tagbar_type_asciidoctor = {
+    \ 'ctagstype' : 'asciidoc',
+    \ 'kinds' : [
+        \ 'h:table of contents',
+        \ 'a:anchors:1',
+        \ 't:titles:1',
+        \ 'n:includes:1',
+        \ 'i:images:1',
+        \ 'I:inline images:1'
+    \ ],
+    \ 'sort' : 0
+\ }
 " }}}
 
 " SnipMate {{{
