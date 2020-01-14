@@ -17,7 +17,6 @@ At the moment the following features are provided:
 - Matching of Parenthesis (rainbow-parenthesis)
 - Snippets (snipmate, snipmate-snippets)
 - Display keybindings (vim-which-key)
-- Wiki (VimWiki)
 
 ## Plugins
 
@@ -38,7 +37,6 @@ At the moment the following features are provided:
   just on ekeypress (or two ;-))
 - [vim-snippets](https://github.com/honza/vim-snippets), useful default snippets
   for vim-snipmate
-- [VimWiki](https://github.com/vimwiki/vimwiki), A personal wiki for Vim
 - [vim-which-key](https://github.com/liuchengxu/vim-which-key), display
   keybindings
 
