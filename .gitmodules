@@ -130,3 +130,6 @@
 [submodule "pack/plugins/start/vim-asciidoctor"]
 	path = pack/plugins/start/vim-asciidoctor
 	url = https://github.com/habamax/vim-asciidoctor.git
+[submodule "pack/plugins/start/guile.vim"]
+	path = pack/plugins/start/guile.vim
+	url = https://github.com/HiPhish/guile.vim.git
