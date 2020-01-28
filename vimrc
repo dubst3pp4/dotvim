@@ -403,6 +403,10 @@ let g:doge_doc_standard_javascript = 'jsdoc'
 au FileType html let b:delimitMate_matchpairs = "(:),[:],{:}"
 "}}}
 
+" Rainbow Parentheses {{{
+autocmd FileType lisp,scheme,clojure RainbowParentheses
+"}}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0

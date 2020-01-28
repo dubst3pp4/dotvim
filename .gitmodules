@@ -133,3 +133,6 @@
 [submodule "pack/plugins/start/guile.vim"]
 	path = pack/plugins/start/guile.vim
 	url = https://github.com/HiPhish/guile.vim.git
+[submodule "pack/plugins/start/rainbow_parentheses.vim"]
+	path = pack/plugins/start/rainbow_parentheses.vim
+	url = https://github.com/junegunn/rainbow_parentheses.vim.git
