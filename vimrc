@@ -28,6 +28,13 @@ set lazyredraw       " speedup rendering while scrolling
 set laststatus=2     " always show last status
 set nowrap           " don't break long lines
 set listchars=tab:▸\ 
+" workaround for local listchars, see
+" https://www.reddit.com/r/vim/comments/f37vrm/problem_with_listchars_option_in_buffers/fhh5lqy/
+let g:listchars = &listchars
+augroup local_listchars
+    au!
+    au BufEnter * let &listchars = get(b:, 'listchars', get(g:, 'listchars', ''))
+augroup END
 set list             " show invisible characters
 set hidden           " allow switch from modified buffer to another buffer
 set synmaxcol=1024   " disable systax hightlighting after column n (speeds up drawing)
