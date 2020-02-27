@@ -136,3 +136,6 @@
 [submodule "pack/plugins/start/rainbow_parentheses.vim"]
 	path = pack/plugins/start/rainbow_parentheses.vim
 	url = https://github.com/junegunn/rainbow_parentheses.vim.git
+[submodule "pack/plugins/start/vifm.vim"]
+	path = pack/plugins/start/vifm.vim
+	url = https://github.com/vifm/vifm.vim.git
