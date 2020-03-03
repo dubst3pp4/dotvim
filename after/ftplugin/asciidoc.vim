@@ -4,4 +4,5 @@ set colorcolumn=80
 set wrap
 set linebreak
 set breakindent
+setlocal relativenumber
 setlocal spell spelllang=de_de,en
