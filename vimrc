@@ -16,7 +16,8 @@ set t_Co=256         " 256 colors in terminal
 set background=dark
 " enable 24bit true color {{{
 if (has("termguicolors"))
-  set termguicolors
+  " disabled as this causes problems in tmux and screen:
+  "set termguicolors  
 endif
 " }}}
 colorscheme night-owl
