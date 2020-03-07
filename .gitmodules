@@ -82,12 +82,6 @@
 [submodule "pack/plugins/start/tagbar-markdown"]
 	path = pack/plugins/start/tagbar-markdown
 	url = https://github.com/lvht/tagbar-markdown.git
-[submodule "pack/plugins/start/nerdtree"]
-	path = pack/plugins/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "pack/plugins/start/nerdtree-git-plugin"]
-	path = pack/plugins/start/nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule "pack/plugins/start/vim-monokai"]
 	path = pack/plugins/start/vim-monokai
 	url = https://github.com/crusoexia/vim-monokai.git
