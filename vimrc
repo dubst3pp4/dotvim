@@ -139,6 +139,7 @@ endif
 " some leader mappings {{{
 nnoremap <leader>,b :buffers<CR>
 nnoremap <leader>,r :registers<CR>
+nnoremap <leader>,j :jumps<CR>
 nnoremap <leader>,c q:
 nnoremap <leader>,p :set invpaste<CR>
 " }}}
@@ -325,6 +326,7 @@ let g:which_key_map[','] = {
     \ 'b' : ['buffers' , 'list buffers'] ,
     \ 'c' : ['commands' , 'list command history'] ,
     \ 'r' : ['registers' , 'list registers'] ,
+    \ 'j' : ['jumps' , 'list jumps'] ,
     \ 'p' : [':set invpaste' , 'toggle pastemode'] ,
     \ }
 " }}}
