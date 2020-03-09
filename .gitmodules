@@ -136,3 +136,6 @@
 [submodule "pack/plugins/start/vim-peekaboo"]
 	path = pack/plugins/start/vim-peekaboo
 	url = https://github.com/junegunn/vim-peekaboo.git
+[submodule "pack/plugins/start/vim-dirvish"]
+	path = pack/plugins/start/vim-dirvish
+	url = https://github.com/justinmk/vim-dirvish.git
