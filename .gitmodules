@@ -136,6 +136,3 @@
 [submodule "pack/plugins/start/vim-peekaboo"]
 	path = pack/plugins/start/vim-peekaboo
 	url = https://github.com/junegunn/vim-peekaboo.git
-[submodule "pack/plugins/start/vim-vinegear"]
-	path = pack/plugins/start/vim-vinegear
-	url = https://github.com/tpope/vim-vinegar.git
