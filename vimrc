@@ -70,6 +70,7 @@ set wildignore+=**/node_modules/**
 set wildignore+=**/vendor/**
 set wildignore+=**/__pycache__/**
 set wildignore+=**/.venv/**
+set wildignore+=**/.git/**
 " netrw settings {{{
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
