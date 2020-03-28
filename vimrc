@@ -75,7 +75,7 @@ let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 let g:netrw_browse_split = 0
 let g:netrw_altv = 1
-let g:netrw_list_hide= netrw_gitignore#Hide() . '.*\.swp$,.*\.bak$'
+let g:netrw_list_hide= netrw_gitignore#Hide() . ',.*\.swp$,.*\.bak$'
 " Per default, netrw leaves unmodified buffers open. This autocommand
 " deletes netrw's buffer once it's hidden (using ':q', for example)
 augroup netrwCloseBuffer
@@ -140,6 +140,7 @@ endif
 nnoremap <leader>,b :buffers<CR>
 nnoremap <leader>,r :registers<CR>
 nnoremap <leader>,j :jumps<CR>
+nnoremap <leader>,m :marks<CR>
 nnoremap <leader>,c q:
 nnoremap <leader>,p :set invpaste<CR>
 " }}}
@@ -325,8 +326,9 @@ let g:which_key_map[','] = {
     \ 'name' : '+custom' ,
     \ 'b' : ['buffers' , 'list buffers'] ,
     \ 'c' : ['commands' , 'list command history'] ,
-    \ 'r' : ['registers' , 'list registers'] ,
     \ 'j' : ['jumps' , 'list jumps'] ,
+    \ 'm' : ['marks' , 'list marks'] ,
+    \ 'r' : ['registers' , 'list registers'] ,
     \ 'p' : [':set invpaste' , 'toggle pastemode'] ,
     \ }
 " }}}
