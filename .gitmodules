@@ -37,9 +37,6 @@
 [submodule "pack/plugins/start/vim-snippets"]
 	path = pack/plugins/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "pack/plugins/start/tagbar-phpctags.vim"]
-	path = pack/plugins/start/tagbar-phpctags.vim
-	url = https://github.com/vim-php/tagbar-phpctags.vim.git
 [submodule "pack/plugins/start/vim-mustache-handlebars"]
 	path = pack/plugins/start/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars.git
