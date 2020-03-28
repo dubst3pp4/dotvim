@@ -193,9 +193,6 @@ let g:tagbar_type_freepascal = {
     \ ],
 \ }
 
-" tagbar-phpctags
-let g:tagbar_phpctags_bin='/home/marc/bin/phpctags'
-
 " tagbar-asciidoc
 let g:tagbar_type_asciidoc = {
     \ 'ctagstype' : 'asciidoc',
@@ -270,19 +267,11 @@ let g:ale_sign_column_always = 0
 " }}}
 
 let g:ale_linters = {
-\   'javascript': ['jshint'],
-\   'php': ['php', 'phpcs'],
-\   'ruby': ['rubocop', 'ruby'],
 \   'python': ['pyls', 'flake8']
 \}
 let g:ale_fixers = {
-\   'javascript': ['eslint'],
-\   'php': ['phpcbf'],
-\   'ruby': ['rubocop'],
 \   'python': ['autopep8']
 \}
-let g:ale_php_phpcs_standard = 'PSR2'
-let g:ale_php_phpcbf_standard = 'PSR2'
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_flake8_auto_pipenv = 1
 let g:ale_python_pyls_auto_pipenv = 1
@@ -293,20 +282,6 @@ nnoremap <leader>al :ALELint<CR>
 " Colorizer {{{
 " enable Colorizer for HTMl, CSS, Less and SASS
 let g:colorizer_auto_filetype='css,html,less,scss' 
-" }}}
-
-" PHP.vim {{{
-" enable highlighting of PHPDoc blocks
-function! PhpSyntaxOverride()
-  " Put snippet overrides in this function.
-  hi! link phpDocTags phpDefine
-  hi! link phpDocParam phpType
-endfunction
-
-augroup phpSyntaxOverride
-  autocmd!
-  autocmd FileType php call PhpSyntaxOverride()
-augroup END
 " }}}
 
 " Fastfold {{{
@@ -402,7 +377,6 @@ highlight link SignifySignDeleteFirstLine SignifySignDelete
 
 " Doge {{{
 let g:doge_doc_standard_python = 'numpy'
-let g:doge_doc_standard_php = 'phpdoc'
 let g:doge_doc_standard_javascript = 'jsdoc'
 " }}}
 
