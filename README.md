@@ -4,7 +4,7 @@ Guide on building dotvim repository: <https://gist.github.com/manasthakur/d4dc9a
 
 ## Mission
 
-Build a configuration for daily editing of JavaScript, Python, PHP, AsciiDoc,
+Build a configuration for daily editing of JavaScript, Python, AsciiDoc,
 Markdown files and daily notes.
 
 At the moment the following features are provided:
@@ -58,11 +58,6 @@ and some more...
 - [coiled-snake-plugin](https://github.com/kalekundert/vim-coiled-snake), Python
   folding for Vim
 
-#### PHP
-
-- [tagbar-phpctags.vim](https://github.com/vim-php/tagbar-phpctags.vim), better
-  PHP support for tagbar
-
 #### FreePascal
 
 - [vim-freepascal](https://github.com/boeckmann/vim-freepascal), modern support
@@ -78,13 +73,9 @@ and some more...
 ## Requirements
 
 - build-essentials, python (required by YouCompleteMe)
-- jshint (required by Ale)
-- Node.js and npm (YouCompleteMe, jshint)
+- jshint or eslint (required by Ale)
 - Python3 (required by Ale, YouCompleteMe)
 - flake8, autopep8, pyls (required by Ale)
-- PHP (required by PHP_CodeSniffer, phpctags)
-- PHP_CodeSniffer (phpcs, required by Ale, install latest version!)
-- phpctags (required by tagbar-phpctags.vim)
 - powerline patched fonts for vim-airline (<https://github.com/powerline/fonts>)
 
 ## Update plugins
