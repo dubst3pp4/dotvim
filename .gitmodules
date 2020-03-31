@@ -130,3 +130,6 @@
 [submodule "pack/plugins/start/vim-dirvish"]
 	path = pack/plugins/start/vim-dirvish
 	url = https://github.com/justinmk/vim-dirvish.git
+[submodule "pack/plugins/start/vim-sleuth"]
+	path = pack/plugins/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
