@@ -278,6 +278,8 @@ let g:ale_python_flake8_auto_pipenv = 1
 let g:ale_python_pyls_auto_pipenv = 1
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " }}}
 
 " Colorizer {{{
@@ -320,8 +322,8 @@ let g:which_key_map[',']['t'] = {
 " a {{{
 let g:which_key_map['a'] = {
     \ 'name' : '+ALE' ,
-    \ 'l' : ['ALELint' , 'lint buffer'] ,
     \ 'f' : ['ALEFix' , 'fix buffer'] ,
+    \ 'l' : ['ALELint' , 'lint buffer'] ,
     \ }
 " }}}
 
