@@ -102,8 +102,8 @@ nnoremap <Leader># <C-]>
 " Jumping in Diff mode
 " CTRL-j - next diff
 nnoremap <expr> <C-J> &diff ? ']c' : '<C-J>'
-" CTRL-h - previous diff
-nnoremap <expr> <C-H> &diff ? '[c' : '<C-H>'
+" CTRL-k - previous diff
+nnoremap <expr> <C-K> &diff ? '[c' : '<C-K>'
 " }}}
 
 " *** FOLDING *** {{{
