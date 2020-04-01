@@ -28,9 +28,6 @@
 [submodule "pack/plugins/start/vim-snipmate"]
 	path = pack/plugins/start/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
-[submodule "pack/plugins/start/tlib_vim"]
-	path = pack/plugins/start/tlib_vim
-	url = https://github.com/tomtom/tlib_vim.git
 [submodule "pack/plugins/start/vim-addon-mw-utils"]
 	path = pack/plugins/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
@@ -79,12 +76,6 @@
 [submodule "pack/plugins/start/vim-monokai"]
 	path = pack/plugins/start/vim-monokai
 	url = https://github.com/crusoexia/vim-monokai.git
-[submodule "pack/plugins/start/vim-dracula"]
-	path = pack/plugins/start/vim-dracula
-	url = https://github.com/dracula/vim.git
-[submodule "pack/plugins/start/space-vim-theme"]
-	path = pack/plugins/start/space-vim-theme
-	url = https://github.com/liuchengxu/space-vim-theme.git
 [submodule "pack/plugins/start/vim-devdocs"]
 	path = pack/plugins/start/vim-devdocs
 	url = https://github.com/romainl/vim-devdocs.git
