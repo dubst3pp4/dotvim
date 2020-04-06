@@ -388,6 +388,10 @@ au FileType html let b:delimitMate_matchpairs = "(:),[:],{:}"
 autocmd FileType lisp,scheme,clojure RainbowParentheses
 "}}}
 
+" fzf.vim {{{
+set rtp+=~/bin/fzf
+"}}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
