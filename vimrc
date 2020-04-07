@@ -390,6 +390,10 @@ autocmd FileType lisp,scheme,clojure RainbowParentheses
 
 " fzf.vim {{{
 set rtp+=~/bin/fzf
+nnoremap <leader>,b :Buffers<CR>
+nnoremap <leader>,m :Marks<CR>
+nnoremap <leader>,h :History<CR>
+nnoremap <leader>,s :History/<CR>
 "}}}
 
 " }}}
