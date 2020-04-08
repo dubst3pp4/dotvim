@@ -20,7 +20,10 @@ if (has("termguicolors"))
   "set termguicolors  
 endif
 " }}}
-colorscheme night-owl
+"colorscheme night-owl
+colorscheme monokai
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
@@ -107,7 +110,7 @@ nnoremap <expr> <C-K> &diff ? '[c' : '<C-K>'
 " }}}
 
 " *** FOLDING *** {{{
-set foldcolumn=1 " show fold gutter
+set foldcolumn=0 " show fold gutter
 set foldlevelstart=99 " open with all folds opened
 " }}}
 
