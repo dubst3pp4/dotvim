@@ -265,10 +265,12 @@ let g:ale_sign_column_always = 0
 " }}}
 
 let g:ale_linters = {
-\   'python': ['pyls', 'flake8']
+\   'python': ['pyls', 'flake8'],
+\   'javascript': ['standard', 'eslint']
 \}
 let g:ale_fixers = {
-\   'python': ['autopep8']
+\   'python': ['autopep8'],
+\   'javascript': ['standard']
 \}
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_flake8_auto_pipenv = 1
