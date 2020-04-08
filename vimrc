@@ -22,8 +22,6 @@ endif
 " }}}
 "colorscheme night-owl
 colorscheme monokai
-let g:monokai_term_italic = 1
-let g:monokai_gui_italic = 1
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
