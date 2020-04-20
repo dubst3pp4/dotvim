@@ -399,6 +399,12 @@ nnoremap <leader>,h :History<CR>
 nnoremap <leader>,s :History/<CR>
 "}}}
 
+" vim-vue-plugin {{{
+" enabke tyoescript
+let g:vim_vue_plugin_use_typescript = 1
+let g:vim_vue_plugin_hightlight_vue_attr = 1
+"}}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0

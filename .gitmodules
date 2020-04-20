@@ -130,3 +130,6 @@
 [submodule "pack/plugins/start/tlib_vim"]
 	path = pack/plugins/start/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
+[submodule "pack/plugins/start/vim-vue-plugin"]
+	path = pack/plugins/start/vim-vue-plugin
+	url = https://github.com/leafOfTree/vim-vue-plugin.git
