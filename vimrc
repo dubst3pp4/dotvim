@@ -21,7 +21,9 @@ if (has("termguicolors"))
 endif
 " }}}
 "colorscheme night-owl
-colorscheme monokai
+"colorscheme monokai
+packadd! dracula.vim
+colorscheme dracula
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
