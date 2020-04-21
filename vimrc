@@ -264,6 +264,8 @@ let g:ale_sign_column_always = 0
 "let g:ale_sign_warning = '😳'
 "highlight clear ALEErrorSign
 "highlight clear ALEWarningSign
+" set a custon ALE msg to prepend linter name before the error
+let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
 " }}}
 
 let g:ale_linters = {
