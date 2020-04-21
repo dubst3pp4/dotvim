@@ -1,4 +1,5 @@
 set guifont=FantasqueSansMono\ Nerd\ Font\ 14
+set guioptions+=d "enable dark theme
 set guioptions-=T "remove toolbar
 set guioptions-=m "remove menu bar
 set guioptions-=L "disable scrollbars left
