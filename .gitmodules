@@ -136,3 +136,6 @@
 [submodule "pack/plugins/start/dracula.vim"]
 	path = pack/plugins/start/dracula.vim
 	url = https://github.com/dracula/vim.git
+[submodule "pack/plugins/start/emmet-vim"]
+	path = pack/plugins/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
