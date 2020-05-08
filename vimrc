@@ -257,9 +257,7 @@ let g:ale_set_quickfix = 1
 let g:airline#extensions#ale#enabled = 1
 " do not always show the gutter
 let g:ale_sign_column_always = 0
-" do not highlight errors
-"let g:ale_set_highlights = 0
-" error and warning signs {{{
+" error and warnings {{{
 "let g:ale_sign_error = '💥'
 "let g:ale_sign_warning = '😳'
 "highlight clear ALEErrorSign
@@ -270,6 +268,7 @@ let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
 
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
+nnoremap <leader>ag :ALEGoToDefinition<CR>
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " }}}
@@ -316,6 +315,7 @@ let g:which_key_map['a'] = {
     \ 'name' : '+ALE' ,
     \ 'f' : ['ALEFix' , 'fix buffer'] ,
     \ 'l' : ['ALELint' , 'lint buffer'] ,
+    \ 'g' : ['ALEGoToDefinition' , 'goto definition'] ,
     \ }
 " }}}
 
