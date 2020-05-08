@@ -270,11 +270,11 @@ let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
 
 let g:ale_linters = {
 \   'python': ['pyls', 'flake8'],
-\   'javascript': ['standard', 'eslint']
+\   'javascript': ['eslint']
 \}
 let g:ale_fixers = {
 \   'python': ['autopep8'],
-\   'javascript': ['standard']
+\   'javascript': ['eslint']
 \}
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_flake8_auto_pipenv = 1
