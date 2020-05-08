@@ -11,3 +11,7 @@ let javaScript_fold=1 " enable folding in js files
 
 " JSDoc support
 let g:javascript_plugin_jsdoc = 1
+
+" ALE
+let b:ale_linters = ['eslint']
+let b:ale_fixers = ['eslint']

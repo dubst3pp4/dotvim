@@ -268,17 +268,6 @@ let g:ale_sign_column_always = 0
 let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
 " }}}
 
-let g:ale_linters = {
-\   'python': ['pyls', 'flake8'],
-\   'javascript': ['eslint']
-\}
-let g:ale_fixers = {
-\   'python': ['autopep8'],
-\   'javascript': ['eslint']
-\}
-let g:ale_python_auto_pipenv = 1
-let g:ale_python_flake8_auto_pipenv = 1
-let g:ale_python_pyls_auto_pipenv = 1
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
