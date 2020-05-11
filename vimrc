@@ -373,6 +373,9 @@ highlight link SignifySignDeleteFirstLine SignifySignDelete
 " Doge {{{
 let g:doge_doc_standard_python = 'numpy'
 let g:doge_doc_standard_javascript = 'jsdoc'
+let g:doge_filetype_aliases = {
+\  'javascript': ['typescript', 'vue']
+\}
 " }}}
 
 " DelimitMate {{{
