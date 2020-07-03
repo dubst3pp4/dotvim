@@ -273,11 +273,6 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " }}}
 
-" Colorizer {{{
-" enable Colorizer for HTMl, CSS, Less and SASS
-let g:colorizer_auto_filetype='css,html,less,scss' 
-" }}}
-
 " Fastfold {{{
 " disable FastFold for HTML files
 let g:fastfold_skip_filetypes=['html']
