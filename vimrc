@@ -226,10 +226,6 @@ imap <C-SPACE> <esc>a<Plug>snipMateNextOrTrigger
 smap <C-SPACE> <Plug>snipMateNextOrTrigger
 " }}}
 
-" Mustache / Handlebars {{{
-let g:mustache_abbreviations = 1
-" }}}
-
 " YouCompleteMe {{{
 " disable diagnostics
 let g:ycm_show_diagnostics_ui = 0
