@@ -387,14 +387,6 @@ au FileType html let b:delimitMate_matchpairs = "(:),[:],{:}"
 autocmd FileType lisp,scheme,clojure RainbowParentheses
 "}}}
 
-" fzf.vim {{{
-set rtp+=~/bin/fzf
-nnoremap <leader>,b :Buffers<CR>
-nnoremap <leader>,m :Marks<CR>
-nnoremap <leader>,h :History<CR>
-nnoremap <leader>,s :History/<CR>
-"}}}
-
 " vim-vue-plugin {{{
 " enabke tyoescript
 let g:vim_vue_plugin_use_typescript = 1
