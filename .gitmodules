@@ -121,3 +121,6 @@
 [submodule "pack/plugins/start/emmet-vim"]
 	path = pack/plugins/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "pack/plugins/start/guile.vim"]
+	path = pack/plugins/start/guile.vim
+	url = https://gitlab.com/HiPhish/guile.vim.git
