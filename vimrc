@@ -379,7 +379,7 @@ autocmd FileType lisp,scheme,clojure RainbowParentheses
 "}}}
 
 " vim-vue-plugin {{{
-" enabke tyoescript
+" enable typescript
 let g:vim_vue_plugin_use_typescript = 1
 let g:vim_vue_plugin_hightlight_vue_attr = 1
 "}}}
