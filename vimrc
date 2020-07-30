@@ -369,11 +369,6 @@ let g:doge_filetype_aliases = {
 \}
 " }}}
 
-" DelimitMate {{{
-" DelimitMate conflicts with vim-closetag, so ignore in html files
-au FileType html let b:delimitMate_matchpairs = "(:),[:],{:}"
-"}}}
-
 " Rainbow Parentheses {{{
 autocmd FileType lisp,scheme,clojure RainbowParentheses
 "}}}
