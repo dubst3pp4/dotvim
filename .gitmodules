@@ -10,9 +10,6 @@
 [submodule "pack/plugins/start/vim-markdown"]
 	path = pack/plugins/start/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "pack/plugins/start/tagbar"]
-	path = pack/plugins/start/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "pack/plugins/start/vim-freepascal"]
 	path = pack/plugins/start/vim-freepascal
 	url = https://github.com/boeckmann/vim-freepascal.git
@@ -22,15 +19,9 @@
 [submodule "pack/plugins/start/vim-abolish"]
 	path = pack/plugins/start/vim-abolish
 	url = https://github.com/tpope/tpope-vim-abolish.git
-[submodule "pack/plugins/start/vim-snipmate"]
-	path = pack/plugins/start/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule "pack/plugins/start/vim-addon-mw-utils"]
 	path = pack/plugins/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "pack/plugins/start/vim-snippets"]
-	path = pack/plugins/start/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
 [submodule "pack/plugins/start/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/w0rp/ale.git
@@ -61,15 +52,9 @@
 [submodule "pack/plugins/start/Vim-Jinja2-Syntax"]
 	path = pack/plugins/start/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "pack/plugins/start/tagbar-markdown"]
-	path = pack/plugins/start/tagbar-markdown
-	url = https://github.com/lvht/tagbar-markdown.git
 [submodule "pack/plugins/start/vim-monokai"]
 	path = pack/plugins/start/vim-monokai
 	url = https://github.com/crusoexia/vim-monokai.git
-[submodule "pack/plugins/start/vim-devdocs"]
-	path = pack/plugins/start/vim-devdocs
-	url = https://github.com/romainl/vim-devdocs.git
 [submodule "pack/plugins/start/reply.vim"]
 	path = pack/plugins/start/reply.vim
 	url = https://github.com/rhysd/reply.vim.git

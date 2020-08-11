@@ -177,55 +177,6 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 " }}}
 
-" Tagbar {{{
-nnoremap <Leader>t :TagbarToggle<CR>
-let g:tagbar_type_freepascal = {
-    \ 'ctagstype' : 'freepascal',
-    \ 'kinds'     : [
-        \ 't:Type',
-        \ 'c:Class',
-        \ 'n:Constructor',
-        \ 'd:Destructor',
-        \ 'm:Method',
-        \ 'f:Function',
-        \ 'p:Procedure',
-        \ 's:Section',
-    \ ],
-\ }
-
-" tagbar-asciidoc
-let g:tagbar_type_asciidoc = {
-    \ 'ctagstype' : 'asciidoc',
-    \ 'kinds' : [
-        \ 'h:table of contents',
-        \ 'a:anchors:1',
-        \ 't:titles:1',
-        \ 'n:includes:1',
-        \ 'i:images:1',
-        \ 'I:inline images:1'
-    \ ],
-    \ 'sort' : 0
-\ }
-let g:tagbar_type_asciidoctor = {
-    \ 'ctagstype' : 'asciidoc',
-    \ 'kinds' : [
-        \ 'h:table of contents',
-        \ 'a:anchors:1',
-        \ 't:titles:1',
-        \ 'n:includes:1',
-        \ 'i:images:1',
-        \ 'I:inline images:1'
-    \ ],
-    \ 'sort' : 0
-\ }
-" }}}
-
-" SnipMate {{{
-" to prevent clash with youcompleteme, change snippet trigger to CTRL-SPACE
-imap <C-SPACE> <esc>a<Plug>snipMateNextOrTrigger
-smap <C-SPACE> <Plug>snipMateNextOrTrigger
-" }}}
-
 " YouCompleteMe {{{
 " disable diagnostics
 let g:ycm_show_diagnostics_ui = 0
@@ -329,23 +280,6 @@ augroup END
 nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 set timeoutlen=500
-" }}}
-
-" Tagbar {{{
-" AsciiDoc support {{{
-let g:tagbar_type_asciidoc = {
-    \ 'ctagstype' : 'asciidoc',
-    \ 'kinds' : [
-        \ 'h:table of contents',
-        \ 'a:anchors:1',
-        \ 't:titles:1',
-        \ 'n:includes:1',
-        \ 'i:images:1',
-        \ 'I:inline images:1'
-    \ ],
-    \ 'sort' : 0
-\ }
-" }}}
 " }}}
 
 " Signify {{{
