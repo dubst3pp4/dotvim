@@ -149,11 +149,6 @@ nnoremap <leader>,c q:
 nnoremap <leader>,p :set invpaste<CR>
 " }}}
 
-" browser-sync {{{
-if executable( 'browser-sync' )
-    command Serve terminal browser-sync start --server --files .
-endif
-" }}}
 " }}}
 
 " *** PLUGINS *** {{{
