@@ -62,6 +62,11 @@ set smartcase
 set incsearch
 " Press leader + SPACE to toggle highlighting on/off, and show current value.
 nnoremap <leader><space> :set hlsearch! hlsearch?<CR>
+
+" custom highlight groups to use with :match
+highlight Red ctermfg=white ctermbg=red guifg=white guibg=red
+highlight Yellow ctermfg=DarkBlue ctermbg=yellow guifg=DarkBlue guibg=yellow
+highlight Green ctermfg=white ctermbg=DarkGreen guifg=white guibg=DarkGreen
 " }}}
 
 " *** FILE BROWSING *** {{{
