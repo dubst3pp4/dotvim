@@ -9,6 +9,9 @@ set nu
 syn on
 filetype plugin indent on
 let mapleader=","
+" Enable persistent undo so that undo history persists across vim sessions
+set undofile
+set undodir=~/.vim_undo
 " }}}
 
 " *** VISUALS *** {{{
