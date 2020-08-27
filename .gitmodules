@@ -112,3 +112,6 @@
 [submodule "pack/plugins/start/vala.vim"]
 	path = pack/plugins/start/vala.vim
 	url = https://github.com/arrufat/vala.vim.git
+[submodule "pack/plugins/start/vim-mundo"]
+	path = pack/plugins/start/vim-mundo
+	url = https://github.com/simnalamburt/vim-mundo
