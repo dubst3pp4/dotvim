@@ -155,6 +155,7 @@ nnoremap <leader>,j :jumps<CR>
 nnoremap <leader>,m :marks<CR>
 nnoremap <leader>,c q:
 nnoremap <leader>,p :set invpaste<CR>
+nnoremap <leader>,n :set rnu!<CR>
 " }}}
 
 " }}}
@@ -244,6 +245,7 @@ let g:which_key_map[','] = {
     \ 'm' : ['marks' , 'list marks'] ,
     \ 'r' : ['registers' , 'list registers'] ,
     \ 'p' : [':set invpaste' , 'toggle pastemode'] ,
+    \ 'n' : [':set rnu!' , 'toggle relative numbers'] ,
     \ }
 " }}}
 
