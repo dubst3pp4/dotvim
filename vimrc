@@ -129,14 +129,6 @@ command! Todo noautocmd vimgrep /TODO\|FIXME/j % | cw
 command! TodoR noautocmd vimgrep /TODO\|FIXME/j ** | cw
 " }}}
 
-" when Quickfix or Locationlist is populated, open it {{{
-augroup myvimrc
-    autocmd!
-    autocmd QuickFixCmdPost [^l]* cwindow
-    autocmd QuickFixCmdPost l*    lwindow
-augroup END
-" }}}
-
 " toggle Quickfix and Location list {{{
 nnoremap <leader>,tq :cwindow<CR>
 nnoremap <leader>,tl :lwindow<CR>
