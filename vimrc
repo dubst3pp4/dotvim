@@ -308,6 +308,8 @@ autocmd FileType lisp,scheme,clojure RainbowParentheses
 " enable typescript
 let g:vim_vue_plugin_use_typescript = 1
 let g:vim_vue_plugin_hightlight_vue_attr = 1
+" enable scss
+let g:vim_vue_plugin_use_scss = 1
 "}}}
 
 " }}}
