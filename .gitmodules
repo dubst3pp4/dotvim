@@ -115,3 +115,6 @@
 [submodule "pack/plugins/start/vim-surround"]
 	path = pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/plugins/start/delimitMate"]
+	path = pack/plugins/start/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
