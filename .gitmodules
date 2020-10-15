@@ -106,9 +106,6 @@
 [submodule "pack/plugins/start/guile.vim"]
 	path = pack/plugins/start/guile.vim
 	url = https://gitlab.com/HiPhish/guile.vim.git
-[submodule "pack/plugins/start/lexima.vim"]
-	path = pack/plugins/start/lexima.vim
-	url = https://github.com/cohama/lexima.vim.git
 [submodule "pack/plugins/start/vala.vim"]
 	path = pack/plugins/start/vala.vim
 	url = https://github.com/arrufat/vala.vim.git
