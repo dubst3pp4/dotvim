@@ -154,6 +154,11 @@ nnoremap <leader>,n :set rnu!<CR>
 
 " *** PLUGINS *** {{{
 
+" DelimitMate {{{
+" DelimitMate conflicts with vim-closetag, so ignore in html files
+au FileType html let b:delimitMate_matchpairs = "(:),[:],{:}"
+"}}}
+
 " matchit.vim {{{
 packadd! matchit
 " }}}
