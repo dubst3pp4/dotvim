@@ -77,11 +77,13 @@ set path+=**
 " list available items
 set wildmenu
 " ignore some the following directorys when using fuzzy search
+set wildignore+=**/.git/**
+set wildignore+=**/.npm/**
+set wildignore+=**/.nuxt/**
+set wildignore+=**/.venv/**
+set wildignore+=**/__pycache__/**
 set wildignore+=**/node_modules/**
 set wildignore+=**/vendor/**
-set wildignore+=**/__pycache__/**
-set wildignore+=**/.venv/**
-set wildignore+=**/.git/**
 " netrw settings {{{
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
