@@ -118,3 +118,6 @@
 [submodule "pack/plugins/start/delimitMate"]
 	path = pack/plugins/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "pack/plugins/start/papercolor-theme"]
+	path = pack/plugins/start/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme
