@@ -1,4 +1,9 @@
+" disable concealing
 setlocal conceallevel=0
+
+" folding
+setlocal foldmethod=syntax
+setlocal foldcolumn=1
 
 " workaround for local listchars, see
 " https://www.reddit.com/r/vim/comments/f37vrm/problem_with_listchars_option_in_buffers/fhh5lqy/

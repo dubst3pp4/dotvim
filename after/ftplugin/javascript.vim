@@ -1,5 +1,3 @@
-command! MakeTags !find . -type f -iregex ".*\.js$" -not -path "./node_modules/*" -exec jsctags {} -f \; | sed '/^$/d' | LANG=C sort > tags
-
 " indenting
 setlocal expandtab
 setlocal shiftwidth=2
@@ -7,6 +5,7 @@ setlocal softtabstop=2
 
 " folding
 setlocal foldmethod=syntax
+setlocal foldcolumn=1
 let javaScript_fold=1 " enable folding in js files
 
 " JSDoc support
