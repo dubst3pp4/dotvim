@@ -136,10 +136,18 @@ nnoremap <leader>,tq :cwindow<CR>
 nnoremap <leader>,tl :lwindow<CR>
 " }}}
 
+" vim diff options {{{
 " ignore whitespace in vimdiff mode {{{
 if &diff
     set diffopt+=iwhite
 endif
+" }}}
+
+" always use vertical splits in vimdiff mode {{{
+if &diff
+    set diffopt+=vertical
+endif
+" }}}
 " }}}
 
 " some leader mappings {{{
