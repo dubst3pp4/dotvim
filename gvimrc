@@ -1,5 +1,4 @@
 set guifont=FantasqueSansMono\ Nerd\ Font\ 13
-set background=light
 if &background =~# 'dark'
   set guioptions+=d "enable dark theme
 endif
