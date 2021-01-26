@@ -26,7 +26,8 @@ endif
 "colorscheme night-owl
 "packadd! dracula.vim
 "colorscheme dracula
-colorscheme PaperColor
+"colorscheme PaperColor
+colorscheme vim-monokai-tasty
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
