@@ -205,7 +205,7 @@ nnoremap <leader>yh :YcmCompleter GetDoc<CR>
 " Ale {{{
 " only lint when saving files {{{
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 1
+let g:ale_lint_on_enter = 0
 " }}}
 " open errors in location-list {{{
 let g:ale_open_list = 1
