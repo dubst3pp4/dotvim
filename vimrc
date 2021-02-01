@@ -24,10 +24,10 @@ if (has("termguicolors"))
 endif
 " }}}
 "colorscheme night-owl
-"packadd! dracula.vim
-"colorscheme dracula
 "colorscheme PaperColor
-colorscheme vim-monokai-tasty
+"colorscheme vim-monokai-tasty
+packadd! dracula.vim
+colorscheme dracula
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
