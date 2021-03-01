@@ -130,3 +130,6 @@
 [submodule "pack/plugins/start/vim-racket"]
 	path = pack/plugins/start/vim-racket
 	url = git@github.com:wlangstroth/vim-racket.git
+[submodule "pack/plugins/start/editorconfig-vim"]
+	path = pack/plugins/start/editorconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim.git

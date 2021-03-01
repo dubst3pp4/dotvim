@@ -328,6 +328,11 @@ let g:vim_vue_plugin_hightlight_vue_attr = 1
 let g:vim_vue_plugin_use_scss = 1
 "}}}
 
+" editorconfig {{{
+" make sure editorconfig rules don't apply to fugitive buffers
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
