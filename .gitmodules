@@ -133,3 +133,6 @@
 [submodule "pack/plugins/start/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "pack/plugins/start/vim-docker-tools"]
+	path = pack/plugins/start/vim-docker-tools
+	url = git@github.com:kkvh/vim-docker-tools.git
