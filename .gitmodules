@@ -124,9 +124,6 @@
 [submodule "pack/plugins/start/vim-monokai-tasty"]
 	path = pack/plugins/start/vim-monokai-tasty
 	url = git@github.com:patstockwell/vim-monokai-tasty.git
-[submodule "pack/plugins/start/goyo.vim"]
-	path = pack/plugins/start/goyo.vim
-	url = git@github.com:junegunn/goyo.vim.git
 [submodule "pack/plugins/start/vim-racket"]
 	path = pack/plugins/start/vim-racket
 	url = git@github.com:wlangstroth/vim-racket.git
