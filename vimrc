@@ -161,6 +161,9 @@ nnoremap <leader>,p :set invpaste<CR>
 nnoremap <leader>,n :set rnu!<CR>
 " }}}
 
+" use popup windows in completeopt settings
+set completeopt=popup
+
 " }}}
 
 " *** PLUGINS *** {{{
@@ -192,8 +195,9 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 " YouCompleteMe {{{
 " disable diagnostics
 let g:ycm_show_diagnostics_ui = 0
+let g:ycm_min_num_of_chars_for_completion = 3
 let g:ycm_complete_in_comments = 1
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 nnoremap <leader>yd :YcmCompleter GoTo<CR>
