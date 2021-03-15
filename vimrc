@@ -224,8 +224,8 @@ let g:airline#extensions#ale#enabled = 1
 " do not always show the gutter
 let g:ale_sign_column_always = 0
 " error and warnings {{{
-"let g:ale_sign_error = '💥'
-"let g:ale_sign_warning = '😳'
+let g:ale_sign_error = ' »'
+let g:ale_sign_warning = '»'
 "highlight clear ALEErrorSign
 "highlight clear ALEWarningSign
 " set a custon ALE msg to prepend linter name before the error
