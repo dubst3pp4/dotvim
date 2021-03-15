@@ -85,6 +85,9 @@ set wildignore+=**/.venv/**
 set wildignore+=**/__pycache__/**
 set wildignore+=**/node_modules/**
 set wildignore+=**/vendor/**
+" define mappings for Explore and Rexplore
+nnoremap <leader>e :Explore<CR>
+nnoremap <leader>r :Rexplore<CR>
 " netrw settings {{{
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
