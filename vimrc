@@ -340,6 +340,11 @@ let g:vim_vue_plugin_use_scss = 1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 " }}}
 
+" asciidoctor {{{
+let g:asciidoctor_syntax_conceal = 1
+let g:asciidoctor_fenced_languages = ['bash', 'python', 'javascript']
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
