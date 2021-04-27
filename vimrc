@@ -48,6 +48,8 @@ set hidden           " allow switch from modified buffer to another buffer
 set synmaxcol=1024   " disable systax hightlighting after column n (speeds up drawing)
 "set splitright       " puts new vsplit windows to the right
 "set splitbelow       " puts new split windows to the bottom
+set cursorline
+set cursorlineopt=number
 " }}}
 
 " *** INDENTING *** {{{
