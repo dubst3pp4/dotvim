@@ -197,6 +197,40 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 " }}}
 
+" Ale {{{
+" only lint when saving files {{{
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+" }}}
+" open errors in quickfix {{{
+let g:ale_open_list = 1
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+" }}}
+" support for airline
+let g:airline#extensions#ale#enabled = 1
+" do not always show the gutter
+let g:ale_sign_column_always = 0
+" error and warnings {{{
+let g:ale_sign_error = ' »'
+let g:ale_sign_warning = 'ℹ'
+"highlight clear ALEErrorSign
+"highlight clear ALEWarningSign
+" set a custon ALE msg to prepend linter name before the error
+let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
+" }}}
+
+nnoremap <leader>af :ALEFix<CR>
+nnoremap <leader>al :ALELint<CR>
+nnoremap <leader>ag :ALEGoToDefinition<CR>
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+" }}}
+
+" LSP {{{
+let g:lsp_diagnostics_enabled = 0
+" }}}
+
 " Fastfold {{{
 " disable FastFold for HTML files
 let g:fastfold_skip_filetypes=['html']
@@ -230,6 +264,14 @@ let g:which_key_map[',']['t'] = {
     \ }
 " }}}
 
+" a {{{
+let g:which_key_map['a'] = {
+    \ 'name' : '+ALE' ,
+    \ 'f' : ['ALEFix' , 'fix buffer'] ,
+    \ 'l' : ['ALELint' , 'lint buffer'] ,
+    \ 'g' : ['ALEGoToDefinition' , 'goto definition'] ,
+    \ }
+" }}}
 " register the maps {{{
 augroup whichKeySettings
     autocmd!

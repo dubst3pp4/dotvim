@@ -23,7 +23,7 @@
 	path = pack/plugins/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "pack/plugins/start/ale"]
-	path = pack/plugins/opt/ale
+	path = pack/plugins/start/ale
 	url = https://github.com/w0rp/ale.git
 [submodule "pack/plugins/start/YouCompleteMe"]
 	path = pack/plugins/opt/YouCompleteMe
