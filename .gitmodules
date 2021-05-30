@@ -124,3 +124,18 @@
 [submodule "pack/plugins/start/vim-docker-tools"]
 	path = pack/plugins/start/vim-docker-tools
 	url = git@github.com:kkvh/vim-docker-tools.git
+[submodule "pack/plugins/start/asyncomplete.vim"]
+	path = pack/plugins/start/asyncomplete.vim
+	url = git@github.com:prabirshrestha/asyncomplete.vim.git
+[submodule "pack/plugins/start/asyncomplete-lsp.vim"]
+	path = pack/plugins/start/asyncomplete-lsp.vim
+	url = git@github.com:prabirshrestha/asyncomplete-lsp.vim.git
+[submodule "pack/plugins/async.vim"]
+	path = pack/plugins/async.vim
+	url = git@github.com:prabirshrestha/async.vim.git
+[submodule "pack/plugins/start/vim-lsp"]
+	path = pack/plugins/start/vim-lsp
+	url = git@github.com:prabirshrestha/vim-lsp.git
+[submodule "pack/plugins/start/vim-lsp-settings"]
+	path = pack/plugins/start/vim-lsp-settings
+	url = git@github.com:mattn/vim-lsp-settings.git
