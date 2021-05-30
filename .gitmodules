@@ -23,10 +23,10 @@
 	path = pack/plugins/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "pack/plugins/start/ale"]
-	path = pack/plugins/start/ale
+	path = pack/plugins/opt/ale
 	url = https://github.com/w0rp/ale.git
 [submodule "pack/plugins/start/YouCompleteMe"]
-	path = pack/plugins/start/YouCompleteMe
+	path = pack/plugins/opt/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "pack/plugins/start/night-owl-color-schema"]
 	path = pack/plugins/start/night-owl-color-schema
