@@ -37,9 +37,6 @@
 [submodule "pack/plugins/start/FastFold"]
 	path = pack/plugins/start/FastFold
 	url = https://github.com/Konfekt/FastFold.git
-[submodule "pack/plugins/start/slimv"]
-	path = pack/plugins/start/slimv
-	url = https://github.com/kovisoft/slimv.git
 [submodule "pack/plugins/start/NrrwRgn"]
 	path = pack/plugins/start/NrrwRgn
 	url = https://github.com/chrisbra/NrrwRgn.git
@@ -49,18 +46,9 @@
 [submodule "pack/plugins/start/Vim-Jinja2-Syntax"]
 	path = pack/plugins/start/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "pack/plugins/start/vim-monokai"]
-	path = pack/plugins/start/vim-monokai
-	url = https://github.com/crusoexia/vim-monokai.git
-[submodule "pack/plugins/start/reply.vim"]
-	path = pack/plugins/start/reply.vim
-	url = https://github.com/rhysd/reply.vim.git
 [submodule "pack/plugins/start/typescript-vim"]
 	path = pack/plugins/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
-[submodule "pack/plugins/start/vim-coiled-snake"]
-	path = pack/plugins/start/vim-coiled-snake
-	url = https://github.com/kalekundert/vim-coiled-snake.git
 [submodule "pack/plugins/start/vim-signify"]
 	path = pack/plugins/start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
@@ -76,12 +64,6 @@
 [submodule "pack/plugins/start/rainbow_parentheses.vim"]
 	path = pack/plugins/start/rainbow_parentheses.vim
 	url = https://github.com/junegunn/rainbow_parentheses.vim.git
-[submodule "pack/plugins/start/vim-dirvish"]
-	path = pack/plugins/start/vim-dirvish
-	url = https://github.com/justinmk/vim-dirvish.git
-[submodule "pack/plugins/start/gopher.vim"]
-	path = pack/plugins/start/gopher.vim
-	url = https://github.com/seanyeh/gopher.vim
 [submodule "pack/plugins/start/tlib_vim"]
 	path = pack/plugins/start/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
@@ -91,9 +73,6 @@
 [submodule "pack/plugins/start/dracula.vim"]
 	path = pack/plugins/start/dracula.vim
 	url = https://github.com/dracula/vim.git
-[submodule "pack/plugins/start/emmet-vim"]
-	path = pack/plugins/start/emmet-vim
-	url = https://github.com/mattn/emmet-vim.git
 [submodule "pack/plugins/start/guile.vim"]
 	path = pack/plugins/start/guile.vim
 	url = https://gitlab.com/HiPhish/guile.vim.git
