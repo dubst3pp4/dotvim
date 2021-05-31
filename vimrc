@@ -197,20 +197,6 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 " }}}
 
-" YouCompleteMe {{{
-" disable diagnostics
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_min_num_of_chars_for_completion = 3
-let g:ycm_complete_in_comments = 1
-let g:ycm_collect_identifiers_from_comments_and_strings = 0
-let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
-nnoremap <leader>yd :YcmCompleter GoTo<CR>
-nnoremap <leader>yr :YcmCompleter GoToReferences<CR>
-nnoremap <leader>yt :YcmCompleter GetType<CR>
-nnoremap <leader>yh :YcmCompleter GetDoc<CR>
-" }}}
-
 " Ale {{{
 " only lint when saving files {{{
 let g:ale_lint_on_text_changed = 'never'
@@ -239,6 +225,10 @@ nnoremap <leader>al :ALELint<CR>
 nnoremap <leader>ag :ALEGoToDefinition<CR>
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+" }}}
+
+" LSP {{{
+let g:lsp_diagnostics_enabled = 0
 " }}}
 
 " Fastfold {{{
@@ -282,17 +272,6 @@ let g:which_key_map['a'] = {
     \ 'g' : ['ALEGoToDefinition' , 'goto definition'] ,
     \ }
 " }}}
-
-" y YouCompleteMe {{{
-let g:which_key_map['y'] = {
-    \ 'name' : '+YouCompleteMe' ,
-    \ 'd' : ['YcmCompleter GoTo' , 'Go to definition'] ,
-    \ 'r' : ['YcmCompleter GoToReferences' , 'Go to references'] ,
-    \ 't' : ['YcmCompleter GetType' , 'Get type information'] ,
-    \ 'h' : ['YcmCompleter GetDoc' , 'Get documentation'] ,
-    \ }
-" }}}
- 
 " register the maps {{{
 augroup whichKeySettings
     autocmd!
