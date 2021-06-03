@@ -66,8 +66,8 @@ set hlsearch
 set ignorecase
 set smartcase
 set incsearch
-" Press leader + SPACE to toggle highlighting on/off, and show current value.
-nnoremap <leader><space> :set hlsearch! hlsearch?<CR>
+" Press leader + h to toggle highlighting on/off, and show current value.
+nnoremap <leader>h :set hlsearch! hlsearch?<CR>
 
 " custom highlight groups to use with :match
 highlight Red ctermfg=white ctermbg=red guifg=white guibg=red
@@ -229,6 +229,9 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " LSP {{{
 let g:lsp_diagnostics_enabled = 0
+nnoremap <leader><space> :LspHover<CR>
+nnoremap <leader>ld :LspPeekDefinition<CR>
+nnoremap <leader>lg :LspDefinition<CR>
 " }}}
 
 " Fastfold {{{
@@ -239,7 +242,7 @@ let g:fastfold_skip_filetypes=['html']
 " vim-which-key {{{
 let g:which_key_map = {}
 
-let g:which_key_map[' '] = 'toggle highlight'
+let g:which_key_map[' '] = 'LspHover'
 let g:which_key_map['#'] = 'goto tag'
 let g:which_key_map['nr'] = 'edit visual selection'
 
@@ -264,7 +267,7 @@ let g:which_key_map[',']['t'] = {
     \ }
 " }}}
 
-" a {{{
+" ale {{{
 let g:which_key_map['a'] = {
     \ 'name' : '+ALE' ,
     \ 'f' : ['ALEFix' , 'fix buffer'] ,
@@ -272,6 +275,15 @@ let g:which_key_map['a'] = {
     \ 'g' : ['ALEGoToDefinition' , 'goto definition'] ,
     \ }
 " }}}
+
+" lsp {{{
+let g:which_key_map['l'] = {
+    \ 'name' : '+LSP' ,
+    \ 'g' : ['LspDefinition' , 'goto definition'] ,
+    \ 'd' : ['LspPeekDefinition' , 'peek definition']
+    \ }
+" }}}
+
 " register the maps {{{
 augroup whichKeySettings
     autocmd!
@@ -299,6 +311,7 @@ highlight link SignifySignDeleteFirstLine SignifySignDelete
 " Doge {{{
 let g:doge_doc_standard_python = 'numpy'
 let g:doge_doc_standard_javascript = 'jsdoc'
+let g:doge_doc_standard_typescript = 'jsdoc'
 let g:doge_filetype_aliases = {
 \  'javascript': ['typescript', 'vue']
 \}
