@@ -73,6 +73,9 @@ nnoremap <leader>h :set hlsearch! hlsearch?<CR>
 highlight Red ctermfg=white ctermbg=red guifg=white guibg=red
 highlight Yellow ctermfg=DarkBlue ctermbg=yellow guifg=DarkBlue guibg=yellow
 highlight Green ctermfg=white ctermbg=DarkGreen guifg=white guibg=DarkGreen
+
+" Press leader + s to search and replace the word under the cursort
+:nnoremap <leader>s :%s/\<<C-r><C-w>\>/
 " }}}
 
 " *** FILE BROWSING *** {{{
@@ -244,7 +247,9 @@ let g:which_key_map = {}
 
 let g:which_key_map[' '] = 'LspHover'
 let g:which_key_map['#'] = 'goto tag'
+let g:which_key_map['h'] = 'toggle highlights'
 let g:which_key_map['nr'] = 'edit visual selection'
+let g:which_key_map['s'] = 'replace word under cursor'
 
 " , {{{
 let g:which_key_map[','] = {
@@ -253,17 +258,17 @@ let g:which_key_map[','] = {
     \ 'c' : ['commands' , 'list command history'] ,
     \ 'j' : ['jumps' , 'list jumps'] ,
     \ 'm' : ['marks' , 'list marks'] ,
-    \ 'r' : ['registers' , 'list registers'] ,
-    \ 'p' : [':set invpaste' , 'toggle pastemode'] ,
     \ 'n' : [':set rnu!' , 'toggle relative numbers'] ,
+    \ 'p' : [':set invpaste' , 'toggle pastemode'] ,
+    \ 'r' : ['registers' , 'list registers'] ,
     \ }
 " }}}
 
 " ,t {{{
 let g:which_key_map[',']['t'] = {
     \ 'name' : '+toggle windows' ,
-    \ 'q' : ['cwindow' , 'toggle Quickfix window'] ,
     \ 'l' : ['lwindow' , 'toggle Location list'] ,
+    \ 'q' : ['cwindow' , 'toggle Quickfix window'] ,
     \ }
 " }}}
 
@@ -271,16 +276,16 @@ let g:which_key_map[',']['t'] = {
 let g:which_key_map['a'] = {
     \ 'name' : '+ALE' ,
     \ 'f' : ['ALEFix' , 'fix buffer'] ,
-    \ 'l' : ['ALELint' , 'lint buffer'] ,
     \ 'g' : ['ALEGoToDefinition' , 'goto definition'] ,
+    \ 'l' : ['ALELint' , 'lint buffer'] ,
     \ }
 " }}}
 
 " lsp {{{
 let g:which_key_map['l'] = {
     \ 'name' : '+LSP' ,
-    \ 'g' : ['LspDefinition' , 'goto definition'] ,
     \ 'd' : ['LspPeekDefinition' , 'peek definition']
+    \ 'g' : ['LspDefinition' , 'goto definition'] ,
     \ }
 " }}}
 
