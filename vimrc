@@ -284,7 +284,7 @@ let g:which_key_map['a'] = {
 " lsp {{{
 let g:which_key_map['l'] = {
     \ 'name' : '+LSP' ,
-    \ 'd' : ['LspPeekDefinition' , 'peek definition']
+    \ 'd' : ['LspPeekDefinition' , 'peek definition'] ,
     \ 'g' : ['LspDefinition' , 'goto definition'] ,
     \ }
 " }}}
