@@ -171,9 +171,6 @@ nnoremap <leader>,p :set invpaste<CR>
 nnoremap <leader>,n :set rnu!<CR>
 " }}}
 
-" use popup windows in completeopt settings
-set completeopt=popup
-
 " }}}
 
 " *** PLUGINS *** {{{
@@ -246,7 +243,12 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " }}}
 
-" LSP {{{
+" Asyncomplete + vim-lsp {{{
+" allow modifying the completeopt variable, or it will
+" be overridden all the time
+let g:asyncomplete_auto_completeopt = 0
+set completeopt=menuone,popup,noinsert
+" disable diagnosticts (Ale use used for that)
 let g:lsp_diagnostics_enabled = 0
 nnoremap <leader><space> :LspHover<CR>
 nnoremap <leader>ld :LspPeekDefinition<CR>
