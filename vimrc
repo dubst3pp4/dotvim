@@ -117,10 +117,12 @@ nnoremap j gj
 nnoremap k gk
 
 " when opening a file, jump to last position ('.) {{{
-au BufReadPost *
-   \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' 
-   \ |   exe "normal! g`\""
-   \ | endif
+augroup jumpToLastPosition
+    au BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' 
+    \ |   exe "normal! g`\""
+    \ | endif
+augroup END
 " }}}
 
 " Definition of tag = Leader + #
@@ -344,7 +346,9 @@ let g:doge_filetype_aliases = {
 " }}}
 
 " Rainbow Parentheses {{{
-autocmd FileType lisp,scheme,clojure RainbowParentheses
+augroup enableRainbowParentheses
+    autocmd FileType lisp,scheme,clojure RainbowParentheses
+augroup END
 "}}}
 
 " vim-vue-plugin {{{
