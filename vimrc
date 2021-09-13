@@ -71,14 +71,13 @@ set smartcase
 set incsearch
 " Press leader + h to toggle highlighting on/off, and show current value.
 nnoremap <leader>h :set hlsearch! hlsearch?<CR>
+" Press leader + s to search and replace the word under the cursort
+nnoremap <leader>s :%s/\<<C-r><C-w>\>/
 
 " custom highlight groups to use with :match
 highlight Red ctermfg=white ctermbg=red guifg=white guibg=red
 highlight Yellow ctermfg=DarkBlue ctermbg=yellow guifg=DarkBlue guibg=yellow
 highlight Green ctermfg=white ctermbg=DarkGreen guifg=white guibg=DarkGreen
-
-" Press leader + s to search and replace the word under the cursort
-:nnoremap <leader>s :%s/\<<C-r><C-w>\>/
 " }}}
 
 " *** FILE BROWSING *** {{{
