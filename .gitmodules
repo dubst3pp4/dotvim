@@ -109,3 +109,6 @@
 [submodule "pack/plugins/start/vim-grammarous"]
 	path = pack/plugins/start/vim-grammarous
 	url = git@github.com:rhysd/vim-grammarous.git
+[submodule "pack/plugins/start/srcery-vim"]
+	path = pack/plugins/start/srcery-vim
+	url = git@github.com:srcery-colors/srcery-vim.git

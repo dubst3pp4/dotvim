@@ -29,6 +29,7 @@ endif
 "colorscheme night-owl
 "colorscheme PaperColor
 "colorscheme vim-monokai-tasty
+"colorscheme srcery
 packadd! dracula.vim
 colorscheme dracula
 set ruler            " show rows and column info
