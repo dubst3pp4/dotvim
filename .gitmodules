@@ -112,3 +112,6 @@
 [submodule "pack/plugins/start/srcery-vim"]
 	path = pack/plugins/start/srcery-vim
 	url = git@github.com:srcery-colors/srcery-vim.git
+[submodule "pack/plugins/start/dart-vim-plugin"]
+	path = pack/plugins/start/dart-vim-plugin
+	url = git@github.com:dart-lang/dart-vim-plugin.git
