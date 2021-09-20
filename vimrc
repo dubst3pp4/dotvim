@@ -28,10 +28,11 @@ endif
 " }}}
 "colorscheme night-owl
 "colorscheme PaperColor
-"colorscheme vim-monokai-tasty
+colorscheme vim-monokai-tasty
+let g:airline_theme='monokai_tasty'
 "colorscheme srcery
-packadd! dracula.vim
-colorscheme dracula
+"packadd! dracula.vim
+"colorscheme dracula
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
