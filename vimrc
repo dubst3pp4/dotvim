@@ -82,8 +82,10 @@ highlight Yellow ctermfg=DarkBlue ctermbg=yellow guifg=DarkBlue guibg=yellow
 highlight Green ctermfg=white ctermbg=DarkGreen guifg=white guibg=DarkGreen
 " }}}
 
-" *** FILE BROWSING *** {{{
+" *** FILE AND BUFFER BROWSING *** {{{
 set path+=**
+" sorts the wildmenu list by last time used
+set wildmode=full:lastused
 " list available items
 set wildmenu
 " ignore some the following directorys when using fuzzy search
