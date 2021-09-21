@@ -115,3 +115,6 @@
 [submodule "pack/plugins/start/dart-vim-plugin"]
 	path = pack/plugins/start/dart-vim-plugin
 	url = git@github.com:dart-lang/dart-vim-plugin.git
+[submodule "pack/plugins/start/bufexplorer"]
+	path = pack/plugins/start/bufexplorer
+	url = git@github.com:jlanzarotta/bufexplorer.git
