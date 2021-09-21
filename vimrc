@@ -375,6 +375,10 @@ let g:asciidoctor_syntax_conceal = 1
 let g:asciidoctor_fenced_languages = ['bash', 'python', 'javascript']
 " }}}
 
+" bufexplorer {{{
+let g:bufExplorerShowRelativePath=1"
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
