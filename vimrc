@@ -22,8 +22,12 @@ set t_Co=256         " 256 colors in terminal
 set background=dark
 " enable 24bit true color {{{
 if (has("termguicolors"))
-  " disabled as this causes problems in tmux and screen:
-  "set termguicolors  
+    " Fix for termguicolors in tmux, see
+    " https://github.com/vim/vim/issues/3608#issuecomment-438487463
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    " disabled as this causes problems in tmux and screen:
+    set termguicolors
 endif
 " }}}
 colorscheme night-owl
