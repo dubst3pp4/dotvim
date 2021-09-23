@@ -118,3 +118,6 @@
 [submodule "pack/plugins/start/bufexplorer"]
 	path = pack/plugins/start/bufexplorer
 	url = git@github.com:jlanzarotta/bufexplorer.git
+[submodule "pack/plugins/start/nord-vim"]
+	path = pack/plugins/start/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
