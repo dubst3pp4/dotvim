@@ -26,7 +26,7 @@
 	path = pack/plugins/start/ale
 	url = https://github.com/w0rp/ale.git
 [submodule "pack/plugins/start/night-owl-color-schema"]
-	path = pack/plugins/start/night-owl-color-schema
+	path = pack/plugins/start/night-owl
 	url = https://github.com/haishanh/night-owl.vim.git
 [submodule "pack/plugins/start/vim-airline-themes"]
 	path = pack/plugins/start/vim-airline-themes
