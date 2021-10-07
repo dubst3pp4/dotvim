@@ -59,7 +59,9 @@ set synmaxcol=1024   " disable systax hightlighting after column n (speeds up dr
 set splitright       " puts new vsplit windows to the right
 set splitbelow       " puts new split windows to the bottom
 set cursorline
-set cursorlineopt=number
+if exists('&cursorlineopt')
+    set cursorlineopt=number
+endif
 " }}}
 
 " *** INDENTING *** {{{
