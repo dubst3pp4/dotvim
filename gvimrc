@@ -1,4 +1,4 @@
-set guifont=FantasqueSansMono\ Nerd\ Font\ 13
+set guifont=FantasqueSansMono\ Nerd\ Font\ 11
 "set guifont=FiraCode\ Nerd\ Font\ 11
 if &background =~# 'dark'
   set guioptions+=d "enable dark theme
