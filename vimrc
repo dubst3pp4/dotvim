@@ -91,8 +91,8 @@ highlight Green ctermfg=white ctermbg=DarkGreen guifg=white guibg=DarkGreen
 
 " *** FILE AND BUFFER BROWSING *** {{{
 set path+=**
-" sorts the wildmenu list by last time used
-set wildmode=full:lastused
+" sorts the wildmenu list by matching the longest string
+set wildmode=list:longest
 " list available items
 set wildmenu
 " ignore some the following directorys when using fuzzy search
@@ -257,7 +257,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " allow modifying the completeopt variable, or it will
 " be overridden all the time
 let g:asyncomplete_auto_completeopt = 0
-set completeopt=menuone,popup,noinsert
+set completeopt=menuone,noinsert
 " disable diagnosticts (Ale use used for that)
 let g:lsp_diagnostics_enabled = 0
 nnoremap <leader><space> :LspHover<CR>
