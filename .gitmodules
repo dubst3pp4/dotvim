@@ -124,3 +124,6 @@
 [submodule "pack/plugins/start/vim-lsp-ale"]
 	path = pack/plugins/opt/vim-lsp-ale
 	url = git@github.com:rhysd/vim-lsp-ale.git
+[submodule "pack/plugins/start/conflict-marker.vim"]
+	path = pack/plugins/start/conflict-marker.vim
+	url = git@github.com:rhysd/conflict-marker.vim.git
