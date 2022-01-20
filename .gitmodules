@@ -121,3 +121,6 @@
 [submodule "pack/plugins/start/nord-vim"]
 	path = pack/plugins/start/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim
+[submodule "pack/plugins/start/vim-lsp-ale"]
+	path = pack/plugins/opt/vim-lsp-ale
+	url = git@github.com:rhysd/vim-lsp-ale.git
