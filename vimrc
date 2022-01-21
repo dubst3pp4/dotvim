@@ -249,8 +249,8 @@ let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
 nnoremap <leader>ag :ALEGoToDefinition<CR>
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nnoremap <leader>a> :ALENextWrap<CR>
+nnoremap <leader>a<lt> :ALEPreviousWrap<CR>
 " }}}
 
 " Asyncomplete + vim-lsp {{{
@@ -263,6 +263,11 @@ let g:lsp_diagnostics_enabled = 0
 nnoremap <leader><space> :LspHover<CR>
 nnoremap <leader>ld :LspPeekDefinition<CR>
 nnoremap <leader>lg :LspDefinition<CR>
+" }}}
+
+" conflict-marker {{{
+nnoremap <leader>c> :ConflictMarkerNextHunk<CR>
+nnoremap <leader>c<lt> :ConflictMarkerPrevHunk<CR>
 " }}}
 
 " Fastfold {{{
@@ -306,14 +311,24 @@ let g:which_key_map['a'] = {
     \ 'f' : ['ALEFix' , 'fix buffer'] ,
     \ 'g' : ['ALEGoToDefinition' , 'goto definition'] ,
     \ 'l' : ['ALELint' , 'lint buffer'] ,
+    \ '>' : ['ALENextWrap' , 'goto next error'] ,
+    \ '<' : ['ALEPreviousWrap' , 'goto previous error'] ,
     \ }
 " }}}
 
 " lsp {{{
 let g:which_key_map['l'] = {
-    \ 'name' : '+LSP' ,
+    \ 'name' : '+Lsp' ,
     \ 'd' : ['LspPeekDefinition' , 'peek definition'] ,
     \ 'g' : ['LspDefinition' , 'goto definition'] ,
+    \ }
+" }}}
+
+" conflict-marker {{{
+let g:which_key_map['c'] = {
+    \ 'name' : '+conflict-Marker' ,
+    \ '>' : ['ConflictMarkerNextHunk' , 'goto next conflict'] ,
+    \ '<' : ['ConflictMarkerPrevHunk' , 'goto previous conflict'] ,
     \ }
 " }}}
 
