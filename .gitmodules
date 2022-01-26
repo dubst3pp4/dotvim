@@ -127,3 +127,6 @@
 [submodule "pack/plugins/start/conflict-marker.vim"]
 	path = pack/plugins/start/conflict-marker.vim
 	url = git@github.com:rhysd/conflict-marker.vim.git
+[submodule "pack/plugins/start/goyo.vim"]
+	path = pack/plugins/start/goyo.vim
+	url = git@github.com:junegunn/goyo.vim.git

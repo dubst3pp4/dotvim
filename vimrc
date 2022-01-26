@@ -398,7 +398,25 @@ let g:asciidoctor_fenced_languages = ['bash', 'python', 'javascript']
 " }}}
 
 " bufexplorer {{{
-let g:bufExplorerShowRelativePath=1"
+let g:bufExplorerShowRelativePath=1
+" }}}
+
+" Goyo {{{
+let g:goyo_width=120
+" do things when goyo mode is entered
+function! s:goyo_enter()
+  " disable automatic openening of quickfix list
+  let g:ale_open_list=0
+endfunction
+
+" do things when leaving goyo mode
+function! s:goyo_leave()
+  " enable automatic openening of quickfix list
+  let g:ale_open_list=1
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 " }}}
 
 " }}}
