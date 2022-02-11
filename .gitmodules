@@ -46,9 +46,6 @@
 [submodule "pack/plugins/start/Vim-Jinja2-Syntax"]
 	path = pack/plugins/start/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "pack/plugins/start/typescript-vim"]
-	path = pack/plugins/start/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "pack/plugins/start/vim-signify"]
 	path = pack/plugins/start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
@@ -130,3 +127,6 @@
 [submodule "pack/plugins/start/goyo.vim"]
 	path = pack/plugins/start/goyo.vim
 	url = git@github.com:junegunn/goyo.vim.git
+[submodule "pack/plugins/start/yats.vim"]
+	path = pack/plugins/start/yats.vim
+	url = git@github.com:HerringtonDarkholme/yats.vim.git
