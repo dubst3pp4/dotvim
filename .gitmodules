@@ -130,3 +130,9 @@
 [submodule "pack/plugins/start/yats.vim"]
 	path = pack/plugins/start/yats.vim
 	url = git@github.com:HerringtonDarkholme/yats.vim.git
+[submodule "pack/plugins/start/vim-lucius-color-scheme"]
+	path = pack/plugins/start/vim-lucius-color-scheme
+	url = git@github.com:jonathanfilip/vim-lucius.git
+[submodule "pack/plugins/start/onehalf-color-scheme"]
+	path = pack/plugins/start/onehalf-color-scheme
+	url = git@github.com:sonph/onehalf.git
