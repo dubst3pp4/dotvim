@@ -327,6 +327,14 @@ let g:which_key_map['c'] = {
     \ }
 " }}}
 
+" Vista {{{
+let g:which_key_map['v'] = {
+    \ 'name' : '+Vista' ,
+    \ 'vv' : ['Vista vim_lsp' , 'show Vista with LSP symbols'] ,
+    \ 'vh' : ['Vista!' , 'hide Vista window'] ,
+    \ }
+" }}}
+
 " register the maps {{{
 augroup whichKeySettings
     autocmd!
@@ -412,6 +420,13 @@ endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
+" }}}
+
+" Vista + vim-lsp {{{
+" Show / hide Vista windows
+nnoremap <leader><space> :LspHover<CR>
+nnoremap <leader>vv :Vista vim_lsp<CR>
+nnoremap <leader>vh :Vista!<CR>
 " }}}
 
 " }}}

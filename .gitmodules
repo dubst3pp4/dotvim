@@ -130,3 +130,6 @@
 [submodule "pack/plugins/start/vim-lucius-color-scheme"]
 	path = pack/plugins/start/vim-lucius-color-scheme
 	url = git@github.com:jonathanfilip/vim-lucius.git
+[submodule "pack/plugins/start/vista.vim"]
+	path = pack/plugins/start/vista.vim
+	url = git@github.com:liuchengxu/vista.vim.git
