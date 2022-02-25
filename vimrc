@@ -32,7 +32,7 @@ if (has("termguicolors"))
 endif
 " }}}
 "colorscheme night-owl
-colorscheme lucius
+colorscheme xcodedark
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
@@ -347,11 +347,10 @@ set timeoutlen=500
 " }}}
 
 " Signify {{{
-let g:signify_sign_add               = '+'
-let g:signify_sign_delete            = '-'
-let g:signify_sign_delete_first_line = '‾'
-let g:signify_sign_change            = '~'
-let g:signify_sign_changedelete      = '↛'
+let g:signify_sign_add    = '┃'
+let g:signify_sign_change = '┃'
+let g:signify_sign_delete = '•'
+let g:signify_sign_show_count = 0 " Don’t show the number of deleted lines.
 highlight link SignifySignAdd             diffAdded
 highlight link SignifySignDelete          diffRemoved
 highlight SignifySignChange ctermfg=222 guifg=#ecc48d cterm=NONE gui=NONE 

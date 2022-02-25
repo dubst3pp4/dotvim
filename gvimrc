@@ -1,4 +1,4 @@
-set background=light
+"set background=light
 set guifont=FantasqueSansMono\ Nerd\ Font\ 12
 set linespace=3
 if &background =~# 'dark'
