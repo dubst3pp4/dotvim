@@ -82,9 +82,6 @@
 [submodule "pack/plugins/start/papercolor-theme"]
 	path = pack/plugins/start/papercolor-theme
 	url = https://github.com/NLKNguyen/papercolor-theme
-[submodule "pack/plugins/start/vim-monokai-tasty"]
-	path = pack/plugins/start/vim-monokai-tasty
-	url = git@github.com:patstockwell/vim-monokai-tasty.git
 [submodule "pack/plugins/start/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
@@ -112,9 +109,6 @@
 [submodule "pack/plugins/start/bufexplorer"]
 	path = pack/plugins/start/bufexplorer
 	url = git@github.com:jlanzarotta/bufexplorer.git
-[submodule "pack/plugins/start/nord-vim"]
-	path = pack/plugins/start/nord-vim
-	url = https://github.com/arcticicestudio/nord-vim
 [submodule "pack/plugins/start/vim-lsp-ale"]
 	path = pack/plugins/opt/vim-lsp-ale
 	url = git@github.com:rhysd/vim-lsp-ale.git
@@ -127,9 +121,6 @@
 [submodule "pack/plugins/start/yats.vim"]
 	path = pack/plugins/start/yats.vim
 	url = git@github.com:HerringtonDarkholme/yats.vim.git
-[submodule "pack/plugins/start/vim-lucius-color-scheme"]
-	path = pack/plugins/start/vim-lucius-color-scheme
-	url = git@github.com:jonathanfilip/vim-lucius.git
 [submodule "pack/plugins/start/vista.vim"]
 	path = pack/plugins/start/vista.vim
 	url = git@github.com:liuchengxu/vista.vim.git
