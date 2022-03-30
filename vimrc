@@ -428,6 +428,14 @@ nnoremap <leader>vv :Vista vim_lsp<CR>
 nnoremap <leader>vh :Vista!<CR>
 " }}}
 
+" Zepl {{{
+" register filetypes and repl commands
+let g:repl_config = {
+            \   'javascript': { 'cmd': 'node' },
+            \   'racket': { 'cmd': 'racket'  }
+            \ }
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
