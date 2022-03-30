@@ -136,3 +136,9 @@
 [submodule "pack/plugins/start/vim-colors-xcode"]
 	path = pack/plugins/start/vim-colors-xcode
 	url = https://github.com/arzg/vim-colors-xcode.git
+[submodule "pack/plugins/start/vim-racket"]
+	path = pack/plugins/start/vim-racket
+	url = git@github.com:benknoble/vim-racket.git
+[submodule "pack/plugins/start/zepl.vim"]
+	path = pack/plugins/start/zepl.vim
+	url = git@github.com:axvr/zepl.vim.git
