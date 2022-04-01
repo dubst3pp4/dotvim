@@ -41,6 +41,9 @@ set lazyredraw       " speedup rendering while scrolling
 set laststatus=2     " always show last status
 set nowrap           " don't break long lines
 set listchars=trail:·,tab:▸\ ,extends:‥
+set scrolloff=1
+set sidescroll=5
+set display+=lastline
 " workaround for local listchars, see
 " https://www.reddit.com/r/vim/comments/f37vrm/problem_with_listchars_option_in_buffers/fhh5lqy/
 let g:listchars = &listchars
@@ -64,6 +67,7 @@ set autoindent
 set tabstop=4
 set shiftwidth=4
 set shiftround
+set smarttab
 set expandtab
 " }}}
 
@@ -191,14 +195,19 @@ packadd! matchit
 
 " Airline {{{
 let g:airline_powerline_fonts=1
+" support for airline
+let g:airline#extensions#ale#enabled = 1
 " don't show whitespace info
 let g:airline#extensions#whitespace#enabled = 0
 " show a tabline with buffer numbers and filenames
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tabline#buffer_nr_show=1
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#show_tab_count = 1
+let g:airline#extensions#tabline#current_first = 1
 " hide preview buffers
 let g:airline#extensions#tabline#exclude_preview = 1
 
@@ -228,8 +237,6 @@ let g:ale_open_list = 1
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
 " }}}
-" support for airline
-let g:airline#extensions#ale#enabled = 1
 " do not always show the gutter
 let g:ale_sign_column_always = 0
 " error and warnings {{{
@@ -253,7 +260,7 @@ nnoremap <leader>a<lt> :ALEPreviousWrap<CR>
 " be overridden all the time
 let g:asyncomplete_auto_completeopt = 0
 set completeopt=menuone,popup,noinsert
-" disable diagnosticts (Ale use used for that)
+" disable diagnosticts (Ale is used for that)
 let g:lsp_diagnostics_enabled = 0
 nnoremap <leader><space> :LspHover<CR>
 nnoremap <leader>ld :LspPeekDefinition<CR>
