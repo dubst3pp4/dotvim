@@ -201,13 +201,10 @@ let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
 " show a tabline with buffer numbers and filenames
 let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tabline#buffer_nr_show=1
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#show_tab_count = 1
-let g:airline#extensions#tabline#current_first = 1
 " hide preview buffers
 let g:airline#extensions#tabline#exclude_preview = 1
 
