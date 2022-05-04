@@ -118,9 +118,6 @@
 [submodule "pack/plugins/start/goyo.vim"]
 	path = pack/plugins/start/goyo.vim
 	url = git@github.com:junegunn/goyo.vim.git
-[submodule "pack/plugins/start/yats.vim"]
-	path = pack/plugins/start/yats.vim
-	url = git@github.com:HerringtonDarkholme/yats.vim.git
 [submodule "pack/plugins/start/vista.vim"]
 	path = pack/plugins/start/vista.vim
 	url = git@github.com:liuchengxu/vista.vim.git
