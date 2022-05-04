@@ -130,3 +130,6 @@
 [submodule "pack/plugins/start/zepl.vim"]
 	path = pack/plugins/start/zepl.vim
 	url = git@github.com:axvr/zepl.vim.git
+[submodule "pack/plugins/start/typescript-vim"]
+	path = pack/plugins/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git

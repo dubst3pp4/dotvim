@@ -9,8 +9,7 @@ set nu
 syn on
 " use the old regexp engine to speed up rendering by setting re=1
 " see https://github.com/joshukraine/dotfiles/blob/master/vim-performance.md
-" unfortunately, yats requires automatic selection (0) of the regexp engine
-set re=0
+set re=1
 filetype plugin indent on
 let mapleader=","
 " Enable persistent undo so that undo history persists across vim sessions
