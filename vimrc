@@ -101,6 +101,7 @@ set wildignore+=**/.venv/**
 set wildignore+=**/__pycache__/**
 set wildignore+=**/node_modules/**
 set wildignore+=**/vendor/**
+set wildignore+=**/coverage/**
 " define mappings for Explore and Rexplore
 nnoremap <leader>e :Explore<CR>
 nnoremap <leader>r :Rexplore<CR>
