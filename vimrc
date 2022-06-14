@@ -259,6 +259,7 @@ let g:asyncomplete_auto_completeopt = 0
 set completeopt=menuone,popup,noinsert
 " disable diagnosticts (Ale is used for that)
 let g:lsp_diagnostics_enabled = 0
+let g:lsp_settings_filetype_vue = 'vls'
 nnoremap <leader><space> :LspHover<CR>
 nnoremap <leader>ld :LspPeekDefinition<CR>
 nnoremap <leader>lg :LspDefinition<CR>
