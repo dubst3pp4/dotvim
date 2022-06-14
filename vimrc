@@ -265,6 +265,10 @@ nnoremap <leader>ld :LspPeekDefinition<CR>
 nnoremap <leader>lg :LspDefinition<CR>
 " }}}
 
+" LSP + ALE integration {{{
+let g:lsp_ale_auto_enable_linter = 0
+" }}}
+
 " conflict-marker {{{
 nnoremap <leader>c> :ConflictMarkerNextHunk<CR>
 nnoremap <leader>c<lt> :ConflictMarkerPrevHunk<CR>

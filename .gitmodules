@@ -110,7 +110,7 @@
 	path = pack/plugins/start/bufexplorer
 	url = git@github.com:jlanzarotta/bufexplorer.git
 [submodule "pack/plugins/start/vim-lsp-ale"]
-	path = pack/plugins/start/vim-lsp-ale
+	path = pack/plugins/opt/vim-lsp-ale
 	url = git@github.com:rhysd/vim-lsp-ale.git
 [submodule "pack/plugins/start/conflict-marker.vim"]
 	path = pack/plugins/start/conflict-marker.vim
