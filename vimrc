@@ -16,6 +16,8 @@ let mapleader=","
 set undofile
 set undodir=~/.vim_undo
 " }}}
+" more powerful backspacing
+set backspace=indent,eol,start
 
 " *** VISUALS *** {{{
 set t_Co=256         " 256 colors in terminal
