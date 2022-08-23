@@ -227,9 +227,11 @@ nmap <leader>+ <Plug>AirlineSelectNextTab
 " }}}
 
 " Ale {{{
-" only lint when saving files {{{
+" when to lint {{{
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 0
+let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_save = 1
 " }}}
 " open errors in quickfix {{{
 let g:ale_open_list = 1
@@ -240,9 +242,7 @@ let g:ale_set_quickfix = 1
 let g:ale_sign_column_always = 0
 " error and warnings {{{
 let g:ale_sign_error = ' »'
-let g:ale_sign_warning = 'ℹ'
-"highlight clear ALEErrorSign
-"highlight clear ALEWarningSign
+let g:ale_sign_warning = '!'
 " set a custon ALE msg to prepend linter name before the error
 let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
 " }}}
