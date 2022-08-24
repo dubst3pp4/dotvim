@@ -10,3 +10,7 @@ setlocal softtabstop=2
 " https://github.com/dense-analysis/ale/issues/927#issuecomment-829533341
 let b:ale_linters = ['eslint', 'vls']
 let b:ale_fixers = ['eslint', 'vls']
+" Use folding infos from lsp
+setlocal foldmethod=expr
+  \ foldexpr=lsp#ui#vim#folding#foldexpr()
+  \ foldtext=lsp#ui#vim#folding#foldtext()
