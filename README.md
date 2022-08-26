@@ -9,7 +9,7 @@ CSS/SASS, Python, AsciiDoc and Markdown files.
 
 At the moment the following features are provided:
 
-- Autocompletion (vim-lsp)
+- Autocompletion (vim-lsp + asyncomplete)
 - Syntax linting and checking (Ale)
 - Git support (vim-fugitive & vim-signify)
 - Matching of XML/HTML tags (matchit)
