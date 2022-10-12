@@ -21,7 +21,6 @@ set backspace=indent,eol,start
 
 " *** VISUALS *** {{{
 set t_Co=256         " 256 colors in terminal
-set background=dark
 " enable 24bit true color {{{
 if (has("termguicolors"))
     " Fix for termguicolors in tmux, see
@@ -32,8 +31,9 @@ if (has("termguicolors"))
     set termguicolors
 endif
 " }}}
+set background=light
 "colorscheme night-owl
-colorscheme xcodedark
+colorscheme xcodelight
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
