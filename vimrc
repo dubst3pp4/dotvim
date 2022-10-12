@@ -207,6 +207,8 @@ let g:airline#extensions#tabline#buffer_nr_show=1
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+" disable git changes
+let g:airline#extensions#hunks#enabled = 0
 " hide preview buffers
 let g:airline#extensions#tabline#exclude_preview = 1
 
