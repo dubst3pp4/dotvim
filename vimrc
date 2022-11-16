@@ -187,6 +187,8 @@ nnoremap <leader>,p :set invpaste<CR>
 nnoremap <leader>,n :set rnu!<CR>
 " }}}
 
+set history=1000
+
 " }}}
 
 " *** PLUGINS *** {{{
