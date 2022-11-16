@@ -191,6 +191,11 @@ nnoremap <leader>,n :set rnu!<CR>
 
 " *** PLUGINS *** {{{
 
+" fugitive {{{
+" Press leader + G to display fugitive status window
+nnoremap <leader>G :vert topleft Git<CR>
+" }}}
+
 " matchit.vim {{{
 packadd! matchit
 " }}}
@@ -291,6 +296,7 @@ let g:which_key_map['#'] = 'goto tag'
 let g:which_key_map['h'] = 'toggle highlights'
 let g:which_key_map['nr'] = 'edit visual selection'
 let g:which_key_map['s'] = 'replace word under cursor'
+let g:which_key_map['G'] = 'show Git status'
 
 " , {{{
 let g:which_key_map[','] = {
