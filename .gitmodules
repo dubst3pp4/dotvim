@@ -43,9 +43,6 @@
 [submodule "pack/plugins/start/vim-which-key"]
 	path = pack/plugins/start/vim-which-key
 	url = https://github.com/liuchengxu/vim-which-key.git
-[submodule "pack/plugins/start/Vim-Jinja2-Syntax"]
-	path = pack/plugins/start/Vim-Jinja2-Syntax
-	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
 [submodule "pack/plugins/start/vim-signify"]
 	path = pack/plugins/start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
@@ -139,3 +136,6 @@
 [submodule "pack/plugins/start/python-indent.vim"]
 	path = pack/plugins/start/python-indent.vim
 	url = git@github.com:hattya/python-indent.vim.git
+[submodule "pack/plugins/start/django-plus.vim"]
+	path = pack/plugins/start/django-plus.vim
+	url = git@github.com:tweekmonster/django-plus.vim.git
