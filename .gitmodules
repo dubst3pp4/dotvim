@@ -139,3 +139,6 @@
 [submodule "pack/plugins/start/django-plus.vim"]
 	path = pack/plugins/start/django-plus.vim
 	url = git@github.com:tweekmonster/django-plus.vim.git
+[submodule "pack/plugins/start/vim-crystal"]
+	path = pack/plugins/start/vim-crystal
+	url = git@github.com:vim-crystal/vim-crystal.git
