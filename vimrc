@@ -457,6 +457,15 @@ let g:repl_config = {
             \ }
 " }}}
 
+" DelimitMate {{{
+" DelimitMate, which automatically inserts matching brackets and braces
+" clashes with vim-closetag, which closes xml/html tags.
+" So entering '<sometag>' results in '<sometag></sometag>>'.
+" I've googled around and found this solution by myself ;-)
+" https://github.com/alvan/vim-closetag/issues/40#issuecomment-550188937
+au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
