@@ -145,3 +145,6 @@
 [submodule "pack/plugins/start/vim-closetag"]
 	path = pack/plugins/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
+[submodule "pack/plugins/start/vim-lsp-ale"]
+	path = pack/plugins/start/vim-lsp-ale
+	url = git@github.com:rhysd/vim-lsp-ale.git
