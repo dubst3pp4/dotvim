@@ -33,7 +33,8 @@ endif
 " }}}
 set background=dark
 "colorscheme night-owl
-colorscheme xcodedark
+"colorscheme xcodedark
+colorscheme dracula
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline
