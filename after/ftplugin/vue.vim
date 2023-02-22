@@ -8,7 +8,7 @@ setlocal softtabstop=2
 " use vls instead of tsserver to ensure correct linting of typescript in vue
 " files, see
 " https://github.com/dense-analysis/ale/issues/927#issuecomment-829533341
-let b:ale_linters = ['eslint', 'vls']
+let b:ale_linters = ['eslint']
 let b:ale_fixers = ['eslint', 'vls']
 " Use folding infos from lsp
 setlocal foldmethod=expr
