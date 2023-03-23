@@ -269,16 +269,14 @@ nnoremap <leader>a<lt> :ALEPreviousWrap<CR>
 " be overridden all the time
 let g:asyncomplete_auto_completeopt = 0
 set completeopt=menuone,popup,noinsert
-" disable diagnosticts (Ale is used for that)
-let g:lsp_diagnostics_enabled = 0
-let g:lsp_settings_filetype_vue = 'vls'
 nnoremap <leader><space> :LspHover<CR>
 nnoremap <leader>ld :LspPeekDefinition<CR>
 nnoremap <leader>lg :LspDefinition<CR>
 " }}}
 
-" LSP + ALE integration {{{
-let g:lsp_ale_auto_enable_linter = 0
+" vim-lsp-ale LSP + ALE integration {{{
+" this will enable diagnostics via LSP and shows the errors in ALE
+let g:lsp_ale_auto_enable_linter = 1
 " }}}
 
 " conflict-marker {{{
@@ -445,7 +443,6 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " Vista + vim-lsp {{{
 " Show / hide Vista windows
-nnoremap <leader><space> :LspHover<CR>
 nnoremap <leader>vv :Vista vim_lsp<CR>
 nnoremap <leader>vh :Vista!<CR>
 " }}}
