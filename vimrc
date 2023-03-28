@@ -396,16 +396,16 @@ augroup END
 " vim-vue-plugin {{{
 " enable typescript
 let g:vim_vue_plugin_config = {
-      \'syntax': {
-          \   'template': ['html'],
-          \   'script': ['javascript', 'typescript'],
-          \   'style': ['css', 'scss'],
-          \},
-          \'full_syntax': ['html', 'css', 'scss', 'javascript', 'typescript'],
-          \'attribute': 1,
-          \'keyword': 1,
-          \'foldexpr': 0,
-          \'debug': 0,
+    \'syntax': {
+    \   'template': ['html'],
+    \   'script': ['javascript', 'typescript'],
+    \   'style': ['css', 'scss'],
+    \},
+    \'full_syntax': [],
+    \'attribute': 1,
+    \'keyword': 1,
+    \'foldexpr': 0,
+    \'debug': 0,
 \}
 "}}}
 
