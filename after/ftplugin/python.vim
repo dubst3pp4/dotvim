@@ -1,4 +1,4 @@
-let b:ale_linters = ['flake8']
+let b:ale_linters = ['pylsp', 'flake8']
 let b:ale_fixers = ['black', 'isort']
 let b:ale_python_auto_pipenv = 1
 let b:ale_python_auto_poetry = 1

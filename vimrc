@@ -256,6 +256,9 @@ let g:ale_sign_warning = '!'
 " set a custon ALE msg to prepend linter name before the error
 let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
 " }}}
+" enable ompletion {{{
+let g:ale_completion_enabled = 1
+" }}}
 
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
