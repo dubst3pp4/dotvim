@@ -264,21 +264,6 @@ nnoremap <leader>a> :ALENextWrap<CR>
 nnoremap <leader>a<lt> :ALEPreviousWrap<CR>
 " }}}
 
-" Asyncomplete + vim-lsp {{{
-" allow modifying the completeopt variable, or it will
-" be overridden all the time
-let g:asyncomplete_auto_completeopt = 0
-set completeopt=menuone,popup,noinsert
-nnoremap <leader><space> :LspHover<CR>
-nnoremap <leader>ld :LspPeekDefinition<CR>
-nnoremap <leader>lg :LspDefinition<CR>
-" }}}
-
-" vim-lsp-ale LSP + ALE integration {{{
-" this will enable diagnostics via LSP and shows the errors in ALE
-let g:lsp_ale_auto_enable_linter = 1
-" }}}
-
 " conflict-marker {{{
 nnoremap <leader>c> :ConflictMarkerNextHunk<CR>
 nnoremap <leader>c<lt> :ConflictMarkerPrevHunk<CR>
@@ -292,7 +277,6 @@ let g:fastfold_skip_filetypes=['html']
 " vim-which-key {{{
 let g:which_key_map = {}
 
-let g:which_key_map[' '] = 'LspHover'
 let g:which_key_map['#'] = 'goto tag'
 let g:which_key_map['h'] = 'toggle highlights'
 let g:which_key_map['nr'] = 'edit visual selection'
@@ -331,27 +315,11 @@ let g:which_key_map['a'] = {
     \ }
 " }}}
 
-" lsp {{{
-let g:which_key_map['l'] = {
-    \ 'name' : '+Lsp' ,
-    \ 'd' : ['LspPeekDefinition' , 'peek definition'] ,
-    \ 'g' : ['LspDefinition' , 'goto definition'] ,
-    \ }
-" }}}
-
 " conflict-marker {{{
 let g:which_key_map['c'] = {
     \ 'name' : '+conflict-Marker' ,
     \ '>' : ['ConflictMarkerNextHunk' , 'goto next conflict'] ,
     \ '<' : ['ConflictMarkerPrevHunk' , 'goto previous conflict'] ,
-    \ }
-" }}}
-
-" Vista {{{
-let g:which_key_map['v'] = {
-    \ 'name' : '+Vista' ,
-    \ 'vv' : ['Vista vim_lsp' , 'show Vista with LSP symbols'] ,
-    \ 'vh' : ['Vista!' , 'hide Vista window'] ,
     \ }
 " }}}
 
@@ -439,12 +407,6 @@ endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
-" }}}
-
-" Vista + vim-lsp {{{
-" Show / hide Vista windows
-nnoremap <leader>vv :Vista vim_lsp<CR>
-nnoremap <leader>vh :Vista!<CR>
 " }}}
 
 " Zepl {{{
