@@ -5,11 +5,11 @@ Guide on building dotvim repository: <https://gist.github.com/manasthakur/d4dc9a
 ## Mission
 
 Build a configuration for daily editing of TypeScript, JavaScript, Vue, HTML,
-CSS/SASS, Python, AsciiDoc and Markdown files.
+CSS/SASS, Python and Markdown files.
 
 At the moment the following features are provided:
 
-- Autocompletion (vim-lsp + asyncomplete)
+- Autocompletion (Ale)
 - Syntax linting and checking (Ale)
 - Git support (vim-fugitive & vim-signify)
 - Matching of XML/HTML tags (matchit)
