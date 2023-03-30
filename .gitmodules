@@ -10,9 +10,6 @@
 [submodule "pack/plugins/start/vim-markdown"]
 	path = pack/plugins/start/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "pack/plugins/start/vim-freepascal"]
-	path = pack/plugins/start/vim-freepascal
-	url = https://github.com/boeckmann/vim-freepascal.git
 [submodule "pack/plugins/start/vim-signature"]
 	path = pack/plugins/start/vim-signature
 	url = https://github.com/kshenoy/vim-signature.git
@@ -37,9 +34,6 @@
 [submodule "pack/plugins/start/FastFold"]
 	path = pack/plugins/start/FastFold
 	url = https://github.com/Konfekt/FastFold.git
-[submodule "pack/plugins/start/NrrwRgn"]
-	path = pack/plugins/start/NrrwRgn
-	url = https://github.com/chrisbra/NrrwRgn.git
 [submodule "pack/plugins/start/vim-which-key"]
 	path = pack/plugins/start/vim-which-key
 	url = https://github.com/liuchengxu/vim-which-key.git
@@ -49,9 +43,6 @@
 [submodule "pack/plugins/start/vim-doge"]
 	path = pack/plugins/start/vim-doge
 	url = https://github.com/kkoomen/vim-doge.git
-[submodule "pack/plugins/start/vim-asciidoctor"]
-	path = pack/plugins/start/vim-asciidoctor
-	url = https://github.com/habamax/vim-asciidoctor.git
 [submodule "pack/plugins/start/rainbow_parentheses.vim"]
 	path = pack/plugins/start/rainbow_parentheses.vim
 	url = https://github.com/junegunn/rainbow_parentheses.vim.git
@@ -64,39 +55,18 @@
 [submodule "pack/plugins/start/dracula.vim"]
 	path = pack/plugins/start/dracula.vim
 	url = https://github.com/dracula/vim.git
-[submodule "pack/plugins/start/guile.vim"]
-	path = pack/plugins/start/guile.vim
-	url = https://gitlab.com/HiPhish/guile.vim.git
-[submodule "pack/plugins/start/vala.vim"]
-	path = pack/plugins/start/vala.vim
-	url = https://github.com/arrufat/vala.vim.git
 [submodule "pack/plugins/start/vim-surround"]
 	path = pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "pack/plugins/start/delimitMate"]
 	path = pack/plugins/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "pack/plugins/start/papercolor-theme"]
-	path = pack/plugins/start/papercolor-theme
-	url = https://github.com/NLKNguyen/papercolor-theme
-[submodule "pack/plugins/start/editorconfig-vim"]
-	path = pack/plugins/start/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
-[submodule "pack/plugins/start/vim-grammarous"]
-	path = pack/plugins/start/vim-grammarous
-	url = git@github.com:rhysd/vim-grammarous.git
-[submodule "pack/plugins/start/dart-vim-plugin"]
-	path = pack/plugins/start/dart-vim-plugin
-	url = git@github.com:dart-lang/dart-vim-plugin.git
 [submodule "pack/plugins/start/bufexplorer"]
 	path = pack/plugins/start/bufexplorer
 	url = git@github.com:jlanzarotta/bufexplorer.git
 [submodule "pack/plugins/start/conflict-marker.vim"]
 	path = pack/plugins/start/conflict-marker.vim
 	url = git@github.com:rhysd/conflict-marker.vim.git
-[submodule "pack/plugins/start/goyo.vim"]
-	path = pack/plugins/start/goyo.vim
-	url = git@github.com:junegunn/goyo.vim.git
 [submodule "pack/plugins/start/vim-colors-xcode"]
 	path = pack/plugins/start/vim-colors-xcode
 	url = https://github.com/arzg/vim-colors-xcode.git
@@ -112,18 +82,12 @@
 [submodule "pack/plugins/start/vim-commentary"]
 	path = pack/plugins/start/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
-[submodule "pack/plugins/start/vim-one"]
-	path = pack/plugins/start/vim-one
-	url = git@github.com:rakr/vim-one.git
 [submodule "pack/plugins/start/python-indent.vim"]
 	path = pack/plugins/start/python-indent.vim
 	url = git@github.com:hattya/python-indent.vim.git
 [submodule "pack/plugins/start/django-plus.vim"]
 	path = pack/plugins/start/django-plus.vim
 	url = git@github.com:tweekmonster/django-plus.vim.git
-[submodule "pack/plugins/start/vim-crystal"]
-	path = pack/plugins/start/vim-crystal
-	url = git@github.com:vim-crystal/vim-crystal.git
 [submodule "pack/plugins/start/vim-closetag"]
 	path = pack/plugins/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
