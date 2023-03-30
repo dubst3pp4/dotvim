@@ -194,6 +194,62 @@ set history=1000
 
 " *** PLUGINS *** {{{
 
+" vim-which-key {{{
+" define which_key_map before the other plugins, so that we can use the map to
+" define plugin key maps later
+let g:which_key_map = {}
+
+" plugin independent mappings {{{
+let g:which_key_map['#'] = 'goto tag'
+let g:which_key_map['h'] = 'toggle highlights'
+let g:which_key_map['nr'] = 'edit visual selection'
+let g:which_key_map['s'] = 'replace word under cursor'
+let g:which_key_map['G'] = 'show Git status'
+let g:which_key_map['e'] = 'Explore'
+let g:which_key_map['r'] = 'Rexplore'
+" }}}
+
+" <leader> + , {{{
+let g:which_key_map[','] = {
+    \ 'name' : '+custom' ,
+    \ 'b' : 'list buffers',
+    \ 'c' : 'list command history',
+    \ 'j' : 'list jumps',
+    \ 'm' : 'list marks',
+    \ 'n' : 'toggle relative numbers',
+    \ 'p' : 'toggle pastemode',
+    \ 'r' : 'list registers',
+    \ }
+" }}}
+
+" <leader> + , + t {{{
+let g:which_key_map[',']['t'] = {
+    \ 'name' : '+toggle lists' ,
+    \ 'l' : 'toggle Location list',
+    \ 'q' : 'toggle Quickfix window',
+    \ }
+" }}}
+
+" conflict-marker {{{
+let g:which_key_map['c'] = {
+    \ 'name' : '+conflict-Marker' ,
+    \ '>' : ['ConflictMarkerNextHunk' , 'goto next conflict'] ,
+    \ '<' : ['ConflictMarkerPrevHunk' , 'goto previous conflict'] ,
+    \ }
+" }}}
+
+" register the maps {{{
+augroup whichKeySettings
+    autocmd!
+    autocmd VimEnter * call which_key#register(',', "g:which_key_map")
+augroup END
+" }}}
+
+nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
+vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
+set timeoutlen=500
+" }}}
+
 " fugitive {{{
 " Press leader + G to display fugitive status window
 nnoremap <leader>G :vert topleft Git<CR>
@@ -250,91 +306,105 @@ let g:ale_set_quickfix = 1
 " }}}
 " do not always show the gutter
 let g:ale_sign_column_always = 0
+let g:ale_sign_highlight_linenrs = 1
 " error and warnings {{{
 let g:ale_sign_error = ' »'
 let g:ale_sign_warning = '!'
 " set a custon ALE msg to prepend linter name before the error
 let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
+" show warnings in the preview window
+let g:ale_cursor_detail = 1
+" but close it in insert mode
+let g:ale_close_preview_on_insert = 1
+" display details and hover information in floating window
+let g:ale_floating_preview = 1
+let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰', '│', '─']
 " }}}
-" enable ompletion {{{
+" enable completion / lsp {{{
 let g:ale_completion_enabled = 1
+" show lsp infos, warnings and errors
+let g:ale_lsp_show_message_severity = 'information'
+" show lsp hints
+let g:ale_lsp_suggestions = 1
+" completion symbols {{{
+let g:ale_completion_symbols = {
+            \ 'text': '',
+            \ 'method': '',
+            \ 'function': '',
+            \ 'constructor': '',
+            \ 'field': '',
+            \ 'variable': '',
+            \ 'class': '',
+            \ 'interface': '',
+            \ 'module': '',
+            \ 'property': '',
+            \ 'unit': 'v',
+            \ 'value': 'v',
+            \ 'enum': 't',
+            \ 'keyword': 'v',
+            \ 'snippet': 'v',
+            \ 'color': 'v',
+            \ 'file': 'v',
+            \ 'reference': 'v',
+            \ 'folder': 'v',
+            \ 'enum_member': 'm',
+            \ 'constant': 'm',
+            \ 'struct': 't',
+            \ 'event': 'v',
+            \ 'operator': 'f',
+            \ 'type_parameter': 'p',
+            \ '<default>': 'v'
+            \ }
+" }}}
 " }}}
 
+" mappings {{{
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
-nnoremap <leader>ag :ALEGoToDefinition<CR>
+nnoremap <leader>ah <Plug>(ale_hover)
+nnoremap <leader>add <Plug>(ale_go_to_definition)
+nnoremap <leader>adt <Plug>(ale_go_to_definition_in_tab)
+nnoremap <leader>ads <Plug>(ale_go_to_definition_in_split)
+nnoremap <leader>adv <Plug>(ale_go_to_definition_in_vsplit)
 nnoremap <leader>a> :ALENextWrap<CR>
 nnoremap <leader>a<lt> :ALEPreviousWrap<CR>
+" }}}
+
+" whichkey configuration {{{
+let g:which_key_map['a'] = {
+    \ 'name' : '+ALE' ,
+    \ 'f' : 'fix buffer',
+    \ 'l' : 'lint buffer',
+    \ 'h' : 'show hover information',
+    \ '>' : 'goto next error',
+    \ '<' : 'goto previous error',
+    \ }
+let g:which_key_map['a']['d'] = {
+    \ 'name' : '+jump to definitions' ,
+    \ 'd' : 'go to definition' ,
+    \ 't' : 'go to definition in tab' ,
+    \ 's' : 'go to definition in split' ,
+    \ 'v' : 'go to definition in vsplit' ,
+    \ }
+" }}}
 " }}}
 
 " conflict-marker {{{
 nnoremap <leader>c> :ConflictMarkerNextHunk<CR>
 nnoremap <leader>c<lt> :ConflictMarkerPrevHunk<CR>
+
+" whichkey configuration {{{
+let g:which_key_map['c'] = {
+    \ 'name' : '+ConflictMarker' ,
+    \ '>' : 'next hunk',
+    \ '<' : 'previous hunk',
+    \ }
+" }}}
 " }}}
 
 " Fastfold {{{
 " disable FastFold for HTML files
 let g:fastfold_skip_filetypes=['html']
-" }}}
-
-" vim-which-key {{{
-let g:which_key_map = {}
-
-let g:which_key_map['#'] = 'goto tag'
-let g:which_key_map['h'] = 'toggle highlights'
-let g:which_key_map['nr'] = 'edit visual selection'
-let g:which_key_map['s'] = 'replace word under cursor'
-let g:which_key_map['G'] = 'show Git status'
-
-" , {{{
-let g:which_key_map[','] = {
-    \ 'name' : '+custom' ,
-    \ 'b' : ['buffers' , 'list buffers'] ,
-    \ 'c' : ['commands' , 'list command history'] ,
-    \ 'j' : ['jumps' , 'list jumps'] ,
-    \ 'm' : ['marks' , 'list marks'] ,
-    \ 'n' : [':set rnu!' , 'toggle relative numbers'] ,
-    \ 'p' : [':set invpaste' , 'toggle pastemode'] ,
-    \ 'r' : ['registers' , 'list registers'] ,
-    \ }
-" }}}
-
-" ,t {{{
-let g:which_key_map[',']['t'] = {
-    \ 'name' : '+toggle windows' ,
-    \ 'l' : ['lwindow' , 'toggle Location list'] ,
-    \ 'q' : ['cwindow' , 'toggle Quickfix window'] ,
-    \ }
-" }}}
-
-" ale {{{
-let g:which_key_map['a'] = {
-    \ 'name' : '+ALE' ,
-    \ 'f' : ['ALEFix' , 'fix buffer'] ,
-    \ 'g' : ['ALEGoToDefinition' , 'goto definition'] ,
-    \ 'l' : ['ALELint' , 'lint buffer'] ,
-    \ '>' : ['ALENextWrap' , 'goto next error'] ,
-    \ '<' : ['ALEPreviousWrap' , 'goto previous error'] ,
-    \ }
-" }}}
-
-" conflict-marker {{{
-let g:which_key_map['c'] = {
-    \ 'name' : '+conflict-Marker' ,
-    \ '>' : ['ConflictMarkerNextHunk' , 'goto next conflict'] ,
-    \ '<' : ['ConflictMarkerPrevHunk' , 'goto previous conflict'] ,
-    \ }
-" }}}
-
-" register the maps {{{
-augroup whichKeySettings
-    autocmd!
-    autocmd VimEnter * call which_key#register(',', "g:which_key_map")
-augroup END
-" }}}
-nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
-vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
-set timeoutlen=500
 " }}}
 
 " Signify {{{
@@ -380,36 +450,8 @@ let g:vim_vue_plugin_config = {
 \}
 "}}}
 
-" editorconfig {{{
-" make sure editorconfig rules don't apply to fugitive buffers
-let g:EditorConfig_exclude_patterns = ['fugitive://.*']
-" }}}
-
-" asciidoctor {{{
-let g:asciidoctor_syntax_conceal = 1
-let g:asciidoctor_fenced_languages = ['bash', 'python', 'javascript']
-" }}}
-
 " bufexplorer {{{
 let g:bufExplorerShowRelativePath=1
-" }}}
-
-" Goyo {{{
-let g:goyo_width=120
-" do things when goyo mode is entered
-function! s:goyo_enter()
-  " disable automatic openening of quickfix list
-  let g:ale_open_list=0
-endfunction
-
-" do things when leaving goyo mode
-function! s:goyo_leave()
-  " enable automatic openening of quickfix list
-  let g:ale_open_list=1
-endfunction
-
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
 " }}}
 
 " Zepl {{{
