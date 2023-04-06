@@ -7,9 +7,8 @@
 set nocompatible
 set nu
 syn on
-" use the old regexp engine to speed up rendering by setting re=1
-" see https://github.com/joshukraine/dotfiles/blob/master/vim-performance.md
-"set re=1
+" use the new regexp engine (needed by yats)
+set re=0
 filetype plugin indent on
 let mapleader=","
 " Enable persistent undo so that undo history persists across vim sessions
