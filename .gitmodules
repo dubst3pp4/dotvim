@@ -82,9 +82,6 @@
 [submodule "pack/plugins/start/python-indent.vim"]
 	path = pack/plugins/start/python-indent.vim
 	url = git@github.com:hattya/python-indent.vim.git
-[submodule "pack/plugins/start/django-plus.vim"]
-	path = pack/plugins/start/django-plus.vim
-	url = git@github.com:tweekmonster/django-plus.vim.git
 [submodule "pack/plugins/start/vim-closetag"]
 	path = pack/plugins/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
