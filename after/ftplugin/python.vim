@@ -10,6 +10,7 @@ let b:ale_python_black_auto_poetry = 1
 let b:ale_python_isort_auto_pipenv = 1
 let b:ale_python_isort_auto_poetry = 1
 let b:ale_fix_on_save = 0
+let b:ale_python_pylsp_use_global = 1
 " tell pylsp to use flake8 for linting
 " see https://github.com/python-lsp/python-lsp-server#configuration
 let b:ale_python_pylsp_config = {
