@@ -392,7 +392,7 @@ let g:which_key_map['a']['d'] = {
 " Use ALE as completion sources for Deoplete
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option('sources', {
-\ '_': ['ale', 'foobar'],
+\ '_': ['ale', 'tabnine'],
 \})
 "}}}
 

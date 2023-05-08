@@ -100,3 +100,6 @@
 [submodule "pack/plugins/start/nvim-yarp"]
 	path = pack/plugins/start/nvim-yarp
 	url = git@github.com:roxma/nvim-yarp.git
+[submodule "pack/plugins/start/deoplete-tabnine"]
+	path = pack/plugins/start/deoplete-tabnine
+	url = git@github.com:tbodt/deoplete-tabnine.git
