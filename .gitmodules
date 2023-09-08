@@ -103,3 +103,6 @@
 [submodule "pack/plugins/start/deoplete-tabnine"]
 	path = pack/plugins/start/deoplete-tabnine
 	url = git@github.com:tbodt/deoplete-tabnine.git
+[submodule "pack/plugins/start/editorconfig-vim"]
+	path = pack/plugins/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git

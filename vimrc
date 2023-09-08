@@ -478,6 +478,11 @@ let g:repl_config = {
 au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
 " }}}
 
+" Editorconfig {{{
+" ignore fugitive
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
