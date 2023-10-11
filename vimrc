@@ -318,6 +318,7 @@ let g:ale_close_preview_on_insert = 1
 " display details and hover information in floating window
 let g:ale_floating_preview = 1
 let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰', '│', '─']
+let g:ale_hover_cursor = 1
 " }}}
 " enable completion / lsp {{{
 let g:ale_completion_enabled = 0
