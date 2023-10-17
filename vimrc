@@ -188,6 +188,8 @@ nnoremap <leader>,n :set rnu!<CR>
 " }}}
 
 set history=1000
+" decrease timeouts so that some commands are more responsive
+set timeout timeoutlen=500 ttimeoutlen=100
 
 " }}}
 
@@ -246,7 +248,6 @@ augroup END
 
 nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
-set timeoutlen=500
 " }}}
 
 " fugitive {{{
