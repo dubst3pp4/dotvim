@@ -91,18 +91,6 @@
 [submodule "pack/plugins/start/vim-cwl"]
 	path = pack/plugins/start/vim-cwl
 	url = https://github.com/manabuishii/vim-cwl.git
-[submodule "pack/plugins/start/deoplete.vim"]
-	path = pack/plugins/start/deoplete.vim
-	url = git@github.com:Shougo/deoplete.nvim.git
-[submodule "pack/plugins/start/vim-hug-neovim-rpc"]
-	path = pack/plugins/start/vim-hug-neovim-rpc
-	url = git@github.com:roxma/vim-hug-neovim-rpc.git
-[submodule "pack/plugins/start/nvim-yarp"]
-	path = pack/plugins/start/nvim-yarp
-	url = git@github.com:roxma/nvim-yarp.git
-[submodule "pack/plugins/start/deoplete-tabnine"]
-	path = pack/plugins/start/deoplete-tabnine
-	url = git@github.com:tbodt/deoplete-tabnine.git
 [submodule "pack/plugins/start/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git

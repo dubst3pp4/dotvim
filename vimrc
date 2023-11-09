@@ -322,7 +322,7 @@ let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰', '�
 let g:ale_hover_cursor = 1
 " }}}
 " enable completion / lsp {{{
-let g:ale_completion_enabled = 0
+let g:ale_completion_enabled = 1
 " show lsp infos, warnings and errors
 let g:ale_lsp_show_message_severity = 'information'
 " show lsp hints
@@ -389,14 +389,6 @@ let g:which_key_map['a']['d'] = {
     \ }
 " }}}
 " }}}
-
-" Deoplete {{{
-" Use ALE and tabnine as completion sources for Deoplete
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option('sources', {
-\ '_': ['ale', 'tabnine'],
-\})
-"}}}
 
 " conflict-marker {{{
 nnoremap <leader>c> :ConflictMarkerNextHunk<CR>
