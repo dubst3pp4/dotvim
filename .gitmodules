@@ -94,3 +94,6 @@
 [submodule "pack/plugins/start/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "pack/plugins/start/vim-rainbow-trails"]
+	path = pack/plugins/start/vim-rainbow-trails
+	url = git@github.com:sedm0784/vim-rainbow-trails.git
