@@ -88,9 +88,6 @@
 [submodule "pack/plugins/start/yats.vim"]
 	path = pack/plugins/start/yats.vim
 	url = git@github.com:HerringtonDarkholme/yats.vim.git
-[submodule "pack/plugins/start/vim-cwl"]
-	path = pack/plugins/start/vim-cwl
-	url = https://github.com/manabuishii/vim-cwl.git
 [submodule "pack/plugins/start/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
