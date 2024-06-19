@@ -255,10 +255,6 @@ vnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 nnoremap <leader>G :vert topleft Git<CR>
 " }}}
 
-" matchit.vim {{{
-packadd! matchit
-" }}}
-
 " Airline {{{
 let g:airline_powerline_fonts=1
 " support for airline
@@ -472,10 +468,18 @@ let g:repl_config = {
 au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
 " }}}
 
-" new build-in editorconfig package {{{
+" enable build-in editorconfig.vim {{{
 packadd! editorconfig
 " ignore fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+" }}}
+
+" enable build-in matchit.vim {{{
+packadd! matchit
+" }}}
+
+" enable build-in comment.vim {{{
+packadd! comment
 " }}}
 
 " }}}
