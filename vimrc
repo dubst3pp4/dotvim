@@ -474,6 +474,8 @@ au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
 
 " new build-in editorconfig package {{{
 packadd! editorconfig
+" ignore fugitive
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 " }}}
 
 " }}}
