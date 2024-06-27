@@ -95,6 +95,8 @@ set path+=**
 set wildmode=full:lastused
 " list available items
 set wildmenu
+" ignore case
+set wildignorecase
 " ignore some the following directorys when using fuzzy search
 set wildignore+=**/.git/**
 set wildignore+=**/.npm/**
