@@ -89,6 +89,11 @@ highlight Yellow ctermfg=DarkBlue ctermbg=yellow guifg=DarkBlue guibg=yellow
 highlight Green ctermfg=white ctermbg=DarkGreen guifg=white guibg=DarkGreen
 " }}}
 
+" *** OMNI COMPLETION *** {{{
+set omnifunc=syntaxcomplete#Complete
+inoremap <C-n> <C-x><C-n>
+" }}}
+
 " *** FILE AND BUFFER BROWSING *** {{{
 set path+=**
 " sorts the wildmenu list by last time used
