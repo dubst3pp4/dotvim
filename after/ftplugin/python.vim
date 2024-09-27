@@ -1,3 +1,7 @@
+" always indent PEP8 style
+setlocal expandtab
+setlocal shiftwidth=4
+setlocal softtabstop=4
 " no need to use flake8 as pylsp supports flake8 already (see below)
 let b:ale_linters = ['pylsp']
 let b:ale_fixers = ['black', 'isort']
