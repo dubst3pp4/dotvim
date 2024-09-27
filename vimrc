@@ -476,9 +476,9 @@ au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
 " }}}
 
 " enable build-in editorconfig.vim {{{
-packadd! editorconfig
-" ignore fugitive
-let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+" packadd! editorconfig
+" " ignore fugitive
+" let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 " }}}
 
 " enable build-in matchit.vim {{{
