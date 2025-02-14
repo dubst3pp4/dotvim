@@ -120,8 +120,8 @@ let g:netrw_winsize = 25
 let g:netrw_browse_split = 0
 let g:netrw_altv = 1
 " open preview windows vertically
-let g:netrw_preview   = 1
-let g:netrw_list_hide= netrw_gitignore#Hide() . ',.*\.swp$,.*\.bak$'
+let g:netrw_preview = 1
+" let g:netrw_list_hide = netrw_gitignore#Hide() . ',.*\.swp$,.*\.bak$'
 " Per default, netrw leaves unmodified buffers open. This autocommand
 " deletes netrw's buffer once it's hidden (using ':q', for example)
 augroup netrwCloseBuffer
@@ -492,7 +492,7 @@ packadd! comment
 " VimWiki {{{
 " use markdown as standard format
 let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': 'md'}]
+                      \ 'syntax': 'markdown', 'ext': 'md', 'auto_tags': 1}]
 " don't handle markdown files outsite of ~/vimwiki as wiki files
 let g:vimwiki_global_ext = 0
 " }}}
