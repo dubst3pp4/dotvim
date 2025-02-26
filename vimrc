@@ -31,8 +31,6 @@ if (has("termguicolors"))
 endif
 " }}}
 set background=dark
-"colorscheme night-owl
-"colorscheme xcodedark
 colorscheme dracula
 set ruler            " show rows and column info
 set showmode         " shows current mode

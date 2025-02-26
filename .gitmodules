@@ -91,3 +91,6 @@
 [submodule "pack/plugins/start/vimwiki"]
 	path = pack/plugins/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "pack/colors/start/papercolor-theme"]
+	path = pack/colors/start/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme.git
