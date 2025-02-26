@@ -14,7 +14,7 @@ for BASE_DIR in "${HOME}/.vim"; do
                 if [[ -e "${plugin}/.git" ]]; then
                     echo "plugin: ${plugin}..."
                     cd "${plugin}"
-                    git submodule update --init --recursive && git checkout master && git pull
+                    git submodule update --init --recursive && git checkout && git pull
                     if [[ -e "${plugin}/doc" ]]; then
                         vim --cmd "helptags ${plugin}/doc" --cmd "q"
                     fi
