@@ -499,6 +499,11 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
                      \}}]
 " don't handle markdown files outsite of ~/vimwiki as wiki files
 let g:vimwiki_global_ext = 0
+
+" Press leader + w, leader + s to search in VimWiki
+nnoremap <leader>w<leader>s :VimwikiSearch 
+" Press leader + w, leader + t to search for Tags in VimWiki
+nnoremap <leader>w<leader>t :VimwikiSearchTags 
 " }}}
 
 " }}}
