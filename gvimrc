@@ -1,8 +1,8 @@
 "set background=light
 set guifont=BlexMono\ Nerd\ Font\ 12
 set linespace=3
-set background=light
-colorscheme PaperColor
+set background=dark
+colorscheme dracula
 if &background =~# 'dark'
   set guioptions+=d "enable dark theme
 endif
