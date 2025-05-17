@@ -509,6 +509,16 @@ nnoremap <leader>w<leader>s :VimwikiSearch
 nnoremap <leader>w<leader>t :VimwikiSearchTags 
 " }}}
 
+" Neural {{{
+let g:neural = {
+\   'source': {
+\       'openai': {
+\           'api_key': $OPENAI_API_KEY,
+\       },
+\   },
+\}
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
