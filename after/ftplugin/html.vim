@@ -1,1 +1,1 @@
-let b:ale_linters = ['vscodehtml']
+let b:ale_linters = ['vscodehtml', 'eslint']
