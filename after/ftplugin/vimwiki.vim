@@ -1,5 +1,3 @@
-" apply markdown syntax to vimwiki files
-autocmd BufWinEnter *.md setlocal syntax=markdown
 set nolist
 set textwidth=0
 set wrap
