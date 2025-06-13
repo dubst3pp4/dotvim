@@ -144,8 +144,12 @@ augroup jumpToLastPosition
 augroup END
 " }}}
 
-" Definition of tag = Leader + #
+" Jump to tag: leader + # 
 nnoremap <Leader># <C-]>
+" Open location list with tags: leader + g + # 
+nnoremap <Leader>g# g]
+" Open tag in new window: leader + w + # 
+nnoremap <Leader>w# <C-W>]
 
 " Jumping in Diff mode
 " CTRL-j - next diff
