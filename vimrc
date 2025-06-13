@@ -199,6 +199,11 @@ set history=1000
 " decrease timeouts so that some commands are more responsive
 set timeout timeoutlen=500 ttimeoutlen=100
 
+" simple snippets {{{
+" enter cdate to get the full date in insertmode
+inoreabbrev cdate <C-r>=strftime('%Y-%m-%d, %A')<CR>
+" }}}
+
 " }}}
 
 " *** PLUGINS *** {{{
