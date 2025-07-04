@@ -100,3 +100,12 @@
 [submodule "pack/plugins/start/todo.txt-vim"]
 	path = pack/plugins/start/todo.txt-vim
 	url = https://github.com/freitass/todo.txt-vim.git
+[submodule "pack/colors/start/iceberg.vim"]
+	path = pack/colors/start/iceberg.vim
+	url = https://github.com/cocopon/iceberg.vim.git
+[submodule "pack/colors/start/nord.vim"]
+	path = pack/colors/start/nord.vim
+	url = https://github.com/nordtheme/vim.git
+[submodule "pack/colors/start/vim-nightfly-colors"]
+	path = pack/colors/start/vim-nightfly-colors
+	url = https://github.com/bluz71/vim-nightfly-colors.git
