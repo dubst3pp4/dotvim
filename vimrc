@@ -31,7 +31,7 @@ if (has("termguicolors"))
 endif
 " }}}
 set background=dark
-colorscheme xcodedark
+colorscheme nord
 set ruler            " show rows and column info
 set showmode         " shows current mode
 set showcmd          " shows partial commands in statusline

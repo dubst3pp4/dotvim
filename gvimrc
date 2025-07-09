@@ -2,7 +2,7 @@
 set guifont=BlexMono\ Nerd\ Font\ 12
 set linespace=3
 set background=dark
-colorscheme xcodedark
+colorscheme nord
 if &background =~# 'dark'
   set guioptions+=d "enable dark theme
 endif
