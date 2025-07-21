@@ -1,5 +1,6 @@
-"set background=light
-set guifont=BlexMono\ Nerd\ Font\ 12
+" disabled font specific settings as the new default font of GNOME 48 already
+" looks very good and provides the Nerd Font symbols
+"set guifont=BlexMono\ Nerd\ Font\ 12
 set linespace=3
 set background=dark
 colorscheme nord
