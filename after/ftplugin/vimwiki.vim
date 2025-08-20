@@ -6,6 +6,3 @@ set softtabstop=2
 set shiftwidth=2
 set showbreak=↪\ 
 setlocal spell spelllang=de_de,en
-augroup trails
-    au BufEnter *.md :RainbowTrails
-augroup END
