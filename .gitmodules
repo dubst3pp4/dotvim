@@ -109,3 +109,6 @@
 [submodule "pack/colors/start/vim-nightfly-colors"]
 	path = pack/colors/start/vim-nightfly-colors
 	url = https://github.com/bluz71/vim-nightfly-colors.git
+[submodule "pack/plugins/start/vim-rdf"]
+	path = pack/plugins/start/vim-rdf
+	url = git@github.com:niklasl/vim-rdf.git
