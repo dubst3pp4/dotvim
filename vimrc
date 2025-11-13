@@ -93,9 +93,6 @@ inoremap <C-n> <C-x><C-n>
 " }}}
 
 " *** FILE AND BUFFER BROWSING *** {{{
-" automatically set the dir to the directory of the current file
-" useful to autocomplete filenames from the location of the current file
-set autochdir
 set path+=**
 " sorts the wildmenu list by last time used
 set wildmode=full:lastused
