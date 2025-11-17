@@ -1,0 +1,8 @@
+# @DATE@
+
+## TODOs
+
+- [ ] ...
+
+## Notizen
+
