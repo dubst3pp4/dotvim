@@ -285,6 +285,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#hunks#enabled = 0
 " hide preview buffers
 let g:airline#extensions#tabline#exclude_preview = 1
+" enable vim-obsession support
+let g:airline#extensions#obsession#enabled = 1
 
 " quickly switch to the selected airline-tab (buffer)
 let g:airline#extensions#tabline#buffer_idx_mode = 1
