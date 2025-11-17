@@ -496,25 +496,6 @@ packadd! matchit
 packadd! comment
 " }}}
 
-" VimWiki {{{
-" use markdown as standard format
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-                     \ 'syntax': 'markdown',
-                     \ 'ext': 'md',
-                     \ 'auto_tags': 1, 
-                     \ 'nested_syntaxes': {
-                     \   'python': 'python',
-                     \   'js': 'javascript'
-                     \}}]
-" don't handle markdown files outsite of ~/vimwiki as wiki files
-let g:vimwiki_global_ext = 0
-
-" Press leader + w, leader + s to search in VimWiki
-nnoremap <leader>w<leader>s :VimwikiSearch 
-" Press leader + w, leader + t to search for Tags in VimWiki
-nnoremap <leader>w<leader>t :VimwikiSearchTags 
-" }}}
-
 " Neural {{{
 let g:neural = {
 \   'source': {
