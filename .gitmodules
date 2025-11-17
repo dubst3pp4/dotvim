@@ -112,3 +112,6 @@
 [submodule "pack/plugins/start/vim-startify"]
 	path = pack/plugins/start/vim-startify
 	url = git@github.com:mhinz/vim-startify.git
+[submodule "pack/plugins/start/vim-obsession"]
+	path = pack/plugins/start/vim-obsession
+	url = git@github.com:tpope/vim-obsession.git
