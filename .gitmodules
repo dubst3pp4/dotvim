@@ -115,3 +115,6 @@
 [submodule "pack/plugins/start/vim-obsession"]
 	path = pack/plugins/start/vim-obsession
 	url = git@github.com:tpope/vim-obsession.git
+[submodule "pack/plugins/start/vim-markdown"]
+	path = pack/plugins/start/vim-markdown
+	url = git@github.com:preservim/vim-markdown.git
