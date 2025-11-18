@@ -588,6 +588,15 @@ let g:neural = {
 \}
 " }}}
 
+" Startify {{{
+" where to save sessions
+let g:startify_session_dir = '~/.vim/session'
+let g:startify_bookmarks = [
+\    '~/Dokumente/Wiki',
+\    '~/Dokumente/Wiki/Journal',
+\]
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
