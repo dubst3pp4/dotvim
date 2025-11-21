@@ -1,4 +1,4 @@
-set nolist
+set list
 set wrap
 set linebreak
 set breakindent
