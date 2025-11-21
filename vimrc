@@ -214,74 +214,54 @@ let g:journal_base_dir = $HOME . '/Dokumente/Wiki/Journal'
 let g:date_placeholder = '@DATE@'
 
 " ==============================================================================
-" A. Automatisches Befüllen (Autocommand für manuelles Erstellen)
-"    -> Löst aus, wenn eine neue Datei unter ~/Wiki/Journal/**/*.md manuell erstellt wird.
+" Benutzerdefinierter Befehl :Journal [Datum]
+"    -> Erstellt oder öffnet einen Journal-Eintrag.
+"    -> OHNE Argument: Verwendet das aktuelle Datum (YYYY-MM-DD).
+"    -> MIT Argument: Verwendet das angegebene Datum.
 " ==============================================================================
-augroup JournalSkeleton
-  autocmd!
+" Definiert den neuen Befehl :Journal, der NULL oder EIN Argument (-nargs=? ) erwartet.
+command! -nargs=? Journal call CreateJournalEntry(<f-args>)
 
-  " Lädt das Template beim Öffnen einer neuen Datei und ruft die Anpassung auf.
-  autocmd BufNewFile $HOME/**/Wiki/Journal/**/*.md 0r =g:journal_template_file | call AdjustTemplateFromFilename()
-augroup END
-
-" Funktion zur Anpassung des Templates basierend auf dem Dateinamen
-function! AdjustTemplateFromFilename()
-  " 1. Datum aus Dateinamen extrahieren (z.B. '2025-11-18' aus '2025-11-18.md')
-  let filename    = fnamemodify(bufname('%'), ':t')
-  let date_string = substitute(filename, '\.md$', '', '')
-
-  " Abbruch, wenn kein gültiges Datum extrahiert wurde
-  if date_string !~ '^\d\{4}-\d\{2}-\d\{2}$'
-    " Ignoriere die Anpassung, aber Template bleibt (da 0r bereits geladen wurde)
-    return
-  endif
-
-  " 2. Platzhalter in Zeile 1 durch das Datum ersetzen
-  " Der substitute-Befehl ersetzt das Platzhalter-Muster durch den Datum-String.
-  silent! execute '1s/'. g:date_placeholder .'/'. date_string . '/'
-endfunction
-
-
-" ==============================================================================
-" B. Benutzerdefinierter Befehl :Journal <Datum>
-"    -> Erstellt Verzeichnisse und die Datei basierend auf dem Argument.
-" ==============================================================================
-" Definiert den neuen Befehl :Journal, der genau ein Argument (das Datum) erwartet.
-command! -nargs=1 Journal call CreateJournalEntry(<f-args>)
-
-" Die Hauptfunktion zur Erstellung der Journal-Datei
-function! CreateJournalEntry(date)
-    " 1. Überprüfung des Datumsformats
-    if a:date !~ '^\d\{4}-\d\{2}-\d\{2}$'
-        echohl ErrorMsg | echo "Fehler: Ungültiges Datumsformat. Verwenden Sie YYYY-MM-DD." | echohl None
-        return
+function! CreateJournalEntry(date_or_empty = '')
+    let date_str = a:date_or_empty
+    
+    " 1. Datum ermitteln
+    if empty(date_str)
+        " Ruft das aktuelle Datum im Format YYYY-MM-DD ab.
+        let date_str = strftime("%Y-%m-%d") 
+        echon "Journal-Eintrag für heute: " . date_str
+    else
+        " 2. Datumsformat-Überprüfung
+        if date_str !~ '^\d\{4}-\d\{2}-\d\{2}$'
+            echohl ErrorMsg | echo "Fehler: Ungültiges Datumsformat. Verwenden Sie YYYY-MM-DD." | echohl None
+            return
+        endif
     endif
 
-    " 2. Pfad-Variablen extrahieren
-    let parts = split(a:date, '-')
+    " 3. Pfad-Variablen extrahieren
+    let parts = split(date_str, '-')
     let year = parts[0]
     let month = parts[1]
-    let filename = a:date . '.md'
+    let filename = date_str . '.md'
     
-    " 3. Zielverzeichnis erstellen (z.B. ~/Wiki/Journal/JAHR/MONAT/)
+    " 4. Zielverzeichnis erstellen (z.B. ~/Wiki/Journal/JAHR/MONAT/)
     let journal_dir = g:journal_base_dir . '/' . year . '/' . month
     
-    " Verzeichnis erstellen, falls es nicht existiert
+    " Verzeichnis erstellen ('p' erstellt übergeordnete Verzeichnisse)
     if !isdirectory(journal_dir)
-        call mkdir(journal_dir, 'p')
+        call mkdir(journal_dir, 'p') 
     endif
     
     let fullpath = journal_dir . '/' . filename
 
-    " 4. Datei im neuen Puffer öffnen (oder erstellen)
+    " 5. Datei im neuen Puffer öffnen (oder erstellen)
     silent! execute 'e ' . fullpath
     
-    " 5. NUR BEI NEUER DATEI: Template laden und anpassen
+    " 6. NUR BEI NEUER DATEI: Template laden und anpassen
     if empty(join(getline(1, '$'), ''))
-        " Template-Datei in den Puffer einlesen
         execute '0r ' . g:journal_template_file
-        " Platzhalter @DATE_PLACEHOLDER@ durch das Datum aus dem Argument ersetzen
-        silent! execute '1s/'. g:date_placeholder . '/'. a:date . '/'
+        " Ersetzt den Platzhalter mit dem Datum
+        silent! execute '1s/'. g:date_placeholder . '/'. date_str . '/'
     endif
 endfunction
 
