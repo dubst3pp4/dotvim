@@ -201,8 +201,10 @@ set history=1000
 set timeout timeoutlen=500 ttimeoutlen=100
 
 " simple snippets {{{
-" enter cdate to get the full date in insertmode
-inoreabbrev cdate <C-r>=strftime('%Y-%m-%d, %A')<CR>
+" enter cdate|cwdatte|ctime to get the full date in insertmode
+inoreabbrev cdate <C-r>=strftime('%Y-%m-%d')<CR>
+inoreabbrev cwdate <C-r>=strftime('%Y-%m-%d, %A')<CR>
+inoreabbrev ctime <C-r>=strftime('%Y-%m-%d %H:%M')<CR>
 " }}}
 
 " }}}
