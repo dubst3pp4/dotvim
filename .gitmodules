@@ -118,3 +118,6 @@
 [submodule "pack/plugins/start/vim-markdown"]
 	path = pack/plugins/start/vim-markdown
 	url = git@github.com:preservim/vim-markdown.git
+[submodule "pack/syntax/start/vim-oberon"]
+	path = pack/syntax/start/vim-oberon
+	url = https://github.com/kekcleader/vim-oberon
