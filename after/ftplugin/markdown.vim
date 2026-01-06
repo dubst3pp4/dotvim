@@ -12,6 +12,7 @@ setlocal shiftwidth=2
 " Markdown specific settings
 setlocal spell spelllang=de_de,en
 setlocal conceallevel=2
+setlocal foldlevel=99
 " vim-markdown related
 let g:vim_markdown_new_list_item_indent = 0
 let g:vim_markdown_auto_insert_bullets = 1
