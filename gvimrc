@@ -2,7 +2,7 @@
 " looks very good and provides the Nerd Font symbols
 "set guifont=BlexMono\ Nerd\ Font\ 12
 set linespace=3
-set background=light
+set background=dark
 colorscheme PaperColor
 if &background =~# 'dark'
   set guioptions+=d "enable dark theme
