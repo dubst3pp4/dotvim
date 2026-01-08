@@ -121,3 +121,6 @@
 [submodule "pack/syntax/start/vim-oberon"]
 	path = pack/syntax/start/vim-oberon
 	url = https://github.com/kekcleader/vim-oberon
+[submodule "pack/plugins/start/django-plus.vim"]
+	path = pack/plugins/start/django-plus.vim
+	url = https://github.com/tweekmonster/django-plus.vim.git
