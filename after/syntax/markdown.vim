@@ -9,8 +9,9 @@ endif
 " --- Konfiguration: Spezial-Tags -> Icon ---
 let s:tag_icons = {
       \ 'bookmark':  '🔖',
-      \ 'important': '❗',
+      \ 'important': '🚩',
       \ 'idea':      '💡',
+      \ 'todo':      '🔧',
       \ 'A':         '🟥',
       \ 'B':         '🟧',
       \ 'C':         '🟨',
