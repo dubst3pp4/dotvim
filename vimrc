@@ -595,6 +595,8 @@ function! s:list_git_projects()
     return l:res
 endfunction
 
+" how many entries to show (default 10)
+let g:startify_files_number = 5
 " where to save sessions
 let g:startify_session_dir = '~/.vim/session'
 " define own bookmarks
