@@ -112,7 +112,10 @@ set wildignore+=**/coverage/**
 " define mappings for Explore and Rexplore
 nnoremap <leader>e :Explore<CR>
 nnoremap <leader>r :Rexplore<CR>
+" mapping to change to the directory of the current buffer
+nnoremap <leader>c :cd %:p:h<CR>:pwd<CR>
 " netrw settings {{{
+let g:netrw_keepdir = 0
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 let g:netrw_browse_split = 0
@@ -284,6 +287,7 @@ let g:which_key_map['s'] = 'replace word under cursor'
 let g:which_key_map['G'] = 'show Git status'
 let g:which_key_map['e'] = 'Explore'
 let g:which_key_map['r'] = 'Rexplore'
+let g:which_key_map['c'] = 'Change directory'
 " }}}
 
 " <leader> + , {{{
@@ -304,14 +308,6 @@ let g:which_key_map[',']['t'] = {
     \ 'name' : '+toggle lists' ,
     \ 'l' : 'toggle Location list',
     \ 'q' : 'toggle Quickfix window',
-    \ }
-" }}}
-
-" conflict-marker {{{
-let g:which_key_map['c'] = {
-    \ 'name' : '+conflict-Marker' ,
-    \ '>' : ['ConflictMarkerNextHunk' , 'goto next conflict'] ,
-    \ '<' : ['ConflictMarkerPrevHunk' , 'goto previous conflict'] ,
     \ }
 " }}}
 
@@ -465,14 +461,14 @@ let g:which_key_map['a']['d'] = {
 " }}}
 
 " conflict-marker {{{
-nnoremap <leader>c> :ConflictMarkerNextHunk<CR>
-nnoremap <leader>c<lt> :ConflictMarkerPrevHunk<CR>
+nnoremap <leader>C> :ConflictMarkerNextHunk<CR>
+nnoremap <leader>C<lt> :ConflictMarkerPrevHunk<CR>
 
 " whichkey configuration {{{
-let g:which_key_map['c'] = {
-    \ 'name' : '+ConflictMarker' ,
-    \ '>' : 'next hunk',
-    \ '<' : 'previous hunk',
+let g:which_key_map['C'] = {
+    \ 'name' : '+conflict-Marker' ,
+    \ '>' : ['ConflictMarkerNextHunk' , 'goto next conflict'] ,
+    \ '<' : ['ConflictMarkerPrevHunk' , 'goto previous conflict'] ,
     \ }
 " }}}
 " }}}
