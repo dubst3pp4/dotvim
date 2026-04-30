@@ -121,3 +121,6 @@
 [submodule "pack/plugins/start/django-plus.vim"]
 	path = pack/plugins/start/django-plus.vim
 	url = https://github.com/tweekmonster/django-plus.vim.git
+[submodule "pack/plugins/start/vim-ai"]
+	path = pack/plugins/start/vim-ai
+	url = https://github.com/madox2/vim-ai.git

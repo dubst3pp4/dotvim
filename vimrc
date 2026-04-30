@@ -602,6 +602,51 @@ let g:startify_lists = [
       \ ]
 " }}}
 
+" vim-ai {{{
+let s:initial_complete_prompt =<< trim END
+>>> system
+
+You are a concise coding assistant.
+Minimize your internal reasoning or thought process in the output.
+Keep explanations brief. Don't put code into markdown code blocks or backticks.
+END
+
+let s:custom_vim_ai_options = {
+\  "endpoint_url": "https://ai-chat.gfz.de/api/v1/chat/completions",
+\  "model": "gpt-oss120b-128k",
+\  "auth_type": "bearer",
+\  "max_tokens": 4096,
+\  "max_completion_tokens": 2048,
+\  "temperature": 0.4,
+\  "request_timeout": 60,
+\  "stream": 1,
+\  "token_file_path": "",
+\  "selection_boundary": "#####",
+\  "initial_prompt": s:initial_complete_prompt
+\}
+let g:vim_ai_complete = {
+\  "options": s:custom_vim_ai_options,
+\  "ui": {
+\    "paste_mode": 1,
+\  },
+\}
+let g:vim_ai_chat = {
+\  "options": s:custom_vim_ai_options,
+\  "ui": {
+\    "open_chat_command": "preset_below",
+\    "paste_mode": 1,
+\  },
+\}
+let g:vim_ai_edit = {
+\  "options": s:custom_vim_ai_options,
+\  "ui": {
+\    "paste_mode": 1,
+\  },
+\}
+" set wrap for the chat window to fit in long lines
+autocmd FileType aichat setlocal wrap linebreak
+" }}}
+
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
