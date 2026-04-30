@@ -91,9 +91,6 @@
 [submodule "pack/plugins/start/vim-repeat"]
 	path = pack/plugins/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
-[submodule "pack/plugins/start/neural"]
-	path = pack/plugins/start/neural
-	url = https://github.com/dense-analysis/neural.git
 [submodule "pack/plugins/start/todo.txt-vim"]
 	path = pack/plugins/start/todo.txt-vim
 	url = https://github.com/freitass/todo.txt-vim.git

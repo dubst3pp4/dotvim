@@ -556,16 +556,6 @@ packadd! matchit
 packadd! comment
 " }}}
 
-" Neural {{{
-let g:neural = {
-\   'source': {
-\       'openai': {
-\           'api_key': $OPENAI_API_KEY,
-\       },
-\   },
-\}
-" }}}
-
 " Startify {{{
 function! s:list_git_projects()
     let l:dirs = glob('~/Projects/*/', 0, 1)
