@@ -88,8 +88,12 @@ highlight Green ctermfg=white ctermbg=DarkGreen guifg=white guibg=DarkGreen
 " }}}
 
 " *** OMNI COMPLETION *** {{{
-set omnifunc=syntaxcomplete#Complete
-inoremap <C-n> <C-x><C-n>
+set omnifunc=ale#completion#OmniFunc
+" show the menu if there are one or more completion items, do not select the
+" first item automatically
+set completeopt=menu,menuone,noselect
+" use ENTER to select an item
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 " }}}
 
 " *** FILE AND BUFFER BROWSING *** {{{
@@ -390,6 +394,8 @@ let g:ale_close_preview_on_insert = 1
 let g:ale_floating_preview = 1
 let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰', '│', '─']
 let g:ale_hover_cursor = 1
+let g:ale_hover_to_floating_preview = 1
+let g:ale_detail_to_floating_preview = 1
 " }}}
 " enable completion / lsp {{{
 let g:ale_completion_enabled = 1
@@ -432,6 +438,7 @@ let g:ale_completion_symbols = {
 " mappings {{{
 nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>al :ALELint<CR>
+nnoremap <leader>ar :ALEFindReferences<CR>
 nnoremap <leader>ah <Plug>(ale_hover)
 nnoremap <leader>add <Plug>(ale_go_to_definition)
 nnoremap <leader>adt <Plug>(ale_go_to_definition_in_tab)
@@ -446,6 +453,7 @@ let g:which_key_map['a'] = {
     \ 'name' : '+ALE' ,
     \ 'f' : 'fix buffer',
     \ 'l' : 'lint buffer',
+    \ 'r' : 'find references',
     \ 'h' : 'show hover information',
     \ '>' : 'goto next error',
     \ '<' : 'goto previous error',
