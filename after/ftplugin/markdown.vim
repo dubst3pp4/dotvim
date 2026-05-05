@@ -20,11 +20,3 @@ let g:vim_markdown_folding_style_pythonic = 1
 " Mappings
 inoremap <buffer> <Tab> <C-t>
 inoremap <buffer> <S-Tab> <C-d>
-
-" Wiki / Workflow
-" allow to press gf on internal links
-setlocal includeexpr=substitute(v:fname,'^\[\|\]$','','g')
-" extend the search path to my Wiki directory
-setlocal path+=~/Dokumente/Wiki/**
-" allow to follow links without the .md and .txt suffix
-setlocal suffixesadd=.md,.txt
