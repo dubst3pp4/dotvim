@@ -558,52 +558,6 @@ packadd! matchit
 packadd! comment
 " }}}
 
-" Startify {{{
-function! s:list_git_projects()
-    let l:dirs = glob('~/Projects/*/', 0, 1)
-    let l:projects = []
-
-    for l:d in l:dirs
-        if isdirectory(l:d . '.git')
-            call add(l:projects, { 'path': l:d, 'time': getftime(l:d) })
-        endif
-    endfor
-
-    " sort (newest first)
-    call sort(l:projects, { a, b -> b.time - a.time })
-
-    " create a list for startify (top 10)
-    let l:res = []
-    for l:p in l:projects[0:9]
-        call add(l:res, { 
-            \ 'line': fnamemodify(l:p.path, ':p:h:t'), 
-            \ 'cmd': 'cd ' . l:p.path . ' | e .' 
-            \ })
-    endfor
-    return l:res
-endfunction
-
-" how many entries to show (default 10)
-let g:startify_files_number = 5
-" where to save sessions
-let g:startify_session_dir = '~/.vim/session'
-" define own bookmarks
-let g:startify_bookmarks = [
-\    '~/Projects',
-\    '~/Dokumente/Wiki',
-\    '~/Dokumente/Wiki/Journal',
-\    '~/dotvim',
-\]
-" what to show on startup (Projects uses our own function here)
-let g:startify_lists = [
-      \ { 'type': 'dir',       'header': ['   Current directory'] },
-      \ { 'type': 'files',     'header': ['   Last opened files'] },
-      \ { 'type': function('s:list_git_projects'), 'header': ['   Projects'] },
-      \ { 'type': 'bookmarks', 'header': ['   Bookmarks'] },
-      \ { 'type': 'sessions',  'header': ['   Sessions'] },
-      \ ]
-" }}}
-
 " vim-ai {{{
 let s:initial_complete_prompt =<< trim END
 >>> system
