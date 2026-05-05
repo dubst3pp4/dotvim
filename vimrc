@@ -210,66 +210,6 @@ inoreabbrev ctime <C-r>=strftime('%Y-%m-%d %H:%M')<CR>
 
 " }}}
 
-" *** Journaling *** {{{
-
-let g:journal_template_file = $HOME . '/.vim/templates/journal.md'
-let g:journal_base_dir = $HOME . '/Dokumente/Wiki/Journal'
-let g:date_placeholder = '@DATE@'
-
-" ==============================================================================
-" Benutzerdefinierter Befehl :Journal [Datum]
-"    -> Erstellt oder öffnet einen Journal-Eintrag.
-"    -> OHNE Argument: Verwendet das aktuelle Datum (YYYY-MM-DD).
-"    -> MIT Argument: Verwendet das angegebene Datum.
-" ==============================================================================
-" Definiert den neuen Befehl :Journal, der NULL oder EIN Argument (-nargs=? ) erwartet.
-command! -nargs=? Journal call CreateJournalEntry(<f-args>)
-
-function! CreateJournalEntry(date_or_empty = '')
-    let date_str = a:date_or_empty
-    
-    " 1. Datum ermitteln
-    if empty(date_str)
-        " Ruft das aktuelle Datum im Format YYYY-MM-DD ab.
-        let date_str = strftime("%Y-%m-%d") 
-        echon "Journal-Eintrag für heute: " . date_str
-    else
-        " 2. Datumsformat-Überprüfung
-        if date_str !~ '^\d\{4}-\d\{2}-\d\{2}$'
-            echohl ErrorMsg | echo "Fehler: Ungültiges Datumsformat. Verwenden Sie YYYY-MM-DD." | echohl None
-            return
-        endif
-    endif
-
-    " 3. Pfad-Variablen extrahieren
-    let parts = split(date_str, '-')
-    let year = parts[0]
-    let month = parts[1]
-    let filename = date_str . '.md'
-    
-    " 4. Zielverzeichnis erstellen (z.B. ~/Wiki/Journal/JAHR/MONAT/)
-    let journal_dir = g:journal_base_dir . '/' . year . '/' . month
-    
-    " Verzeichnis erstellen ('p' erstellt übergeordnete Verzeichnisse)
-    if !isdirectory(journal_dir)
-        call mkdir(journal_dir, 'p') 
-    endif
-    
-    let fullpath = journal_dir . '/' . filename
-
-    " 5. Datei im neuen Puffer öffnen (oder erstellen)
-    silent! execute 'e ' . fullpath
-    
-    " 6. NUR BEI NEUER DATEI: Template laden und anpassen
-    if empty(join(getline(1, '$'), ''))
-        execute '0r ' . g:journal_template_file
-        " Ersetzt den Platzhalter mit dem Datum
-        silent! execute '1s/'. g:date_placeholder . '/'. date_str . '/'
-    endif
-endfunction
-
-" }}}
-
 " *** PLUGINS *** {{{
 
 " vim-which-key {{{
