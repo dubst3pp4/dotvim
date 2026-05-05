@@ -114,7 +114,6 @@ nnoremap <leader>r :Rexplore<CR>
 " mapping to change to the directory of the current buffer
 nnoremap <leader>c :cd %:p:h<CR>:pwd<CR>
 " netrw settings {{{
-let g:netrw_keepdir = 0
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 let g:netrw_browse_split = 0
