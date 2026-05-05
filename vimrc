@@ -4,7 +4,6 @@
 " URL: https://github.com/dubst3pp4/dotvim
 
 " *** BASICS *** {{{
-set nocompatible
 set nu
 syn on
 " use the new regexp engine (needed by yats)
@@ -27,9 +26,7 @@ endif
 " }}}
 set background=dark
 colorscheme xcodedark
-set ruler            " show rows and column info
 set showmode         " shows current mode
-set showcmd          " shows partial commands in statusline
 set ttyfast          " speedup in tty
 "set lazyredraw       " speedup rendering while scrolling
 set synmaxcol=1024   " disable systax hightlighting after column n (speeds up drawing)
@@ -174,17 +171,10 @@ nnoremap <leader>,tl :lwindow<CR>
 " }}}
 
 " vim diff options {{{
-" ignore whitespace in vimdiff mode {{{
+" ignore whitespace in vimdiff mode and use vertical splits
 if &diff
-    set diffopt+=iwhite
+    set diffopt+=iwhite,vertical
 endif
-" }}}
-
-" always use vertical splits in vimdiff mode {{{
-if &diff
-    set diffopt+=vertical
-endif
-" }}}
 " }}}
 
 " some leader mappings {{{
@@ -286,16 +276,9 @@ let g:airline#extensions#obsession#enabled = 1
 
 " quickly switch to the selected airline-tab (buffer)
 let g:airline#extensions#tabline#buffer_idx_mode = 1
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
-nmap <leader>0 <Plug>AirlineSelectTab0
+for i in range(1, 9)
+    execute 'nmap <leader>' . i . ' <Plug>AirlineSelectTab' . i
+endfor
 nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
 " }}}
@@ -481,7 +464,10 @@ let g:repl_config = {
 " So entering '<sometag>' results in '<sometag></sometag>>'.
 " I've googled around and found this solution by myself ;-)
 " https://github.com/alvan/vim-closetag/issues/40#issuecomment-550188937
-au FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
+augroup delimitMateSettings
+    autocmd!
+    autocmd FileType html,htmldjango let b:delimitMate_matchpairs = "(:),[:],{:}"
+augroup END
 " }}}
 
 " enable build-in editorconfig.vim {{{
