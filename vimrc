@@ -2,19 +2,27 @@
 "
 " Author: Marc Hanisch
 " URL: https://github.com/dubst3pp4/dotvim
+"
+" The file is organized into logical sections (General, Visuals, Indentation,
+" Searching, Completion, Browsing, Navigation, Folding, Various, Plugins).
+" Folds are delimited with fold markers ({{{ ... }}}), so opening the file in
+" Vim collapses each section. See the last line: set foldmethod=marker.
 
-" *** BASICS *** {{{
-set nu
-syn on
-" use the new regexp engine (needed by yats)
-set re=0
-filetype plugin indent on
-let mapleader=","
+" *** GENERAL SETTINGS *** {{{
+" Start in Vim mode (not vi-compatible). This MUST be the first setting:
+" without it Vim starts in compatible mode (especially when loaded via
+" 'vim -u <this file>'), which breaks backslash line continuations in
+" augroups/dictionaries and causes E10/E723 errors.
+set nocompatible
+set number           " show line numbers
+syntax on            " enable syntax highlighting
+filetype plugin indent on " enable filetype detection, plugins and indentation
+let mapleader=","    " set the map leader key
 " Enable persistent undo so that undo history persists across vim sessions
 set undofile
 set undodir=~/.vim_undo
 " }}}
-" more powerful backspacing
+" allow backspacing over indent, end-of-line and start-of-insert characters
 set backspace=indent,eol,start
 
 " *** VISUALS *** {{{
@@ -29,7 +37,7 @@ colorscheme xcodedark
 set showmode         " shows current mode
 set ttyfast          " speedup in tty
 "set lazyredraw       " speedup rendering while scrolling
-set synmaxcol=1024   " disable systax hightlighting after column n (speeds up drawing)
+set synmaxcol=1024   " disable syntax highlighting after column n (speeds up drawing)
 set laststatus=2     " always show last status
 set nowrap           " don't break long lines
 set listchars=trail:·,tab:▸\ ,extends:‥
@@ -70,7 +78,7 @@ set smartcase
 set incsearch
 " Press leader + h to toggle highlighting on/off, and show current value.
 nnoremap <leader>h :set hlsearch! hlsearch?<CR>
-" Press leader + s to search and replace the word under the cursort
+" Press leader + s to search and replace the word under the cursor
 nnoremap <leader>s :%s/\<<C-r><C-w>\>/
 
 " custom highlight groups to use with :match
@@ -80,7 +88,8 @@ highlight Green ctermfg=white ctermbg=DarkGreen guifg=white guibg=DarkGreen
 " }}}
 
 " *** OMNI COMPLETION *** {{{
-set omnifunc=ale#completion#OmniFunc
+" NOTE: the omnifunc is set automatically by ALE (g:ale_completion_enabled = 1),
+" so there is no need to set it manually here.
 " show the menu if there are one or more completion items, do not select the
 " first item automatically
 set completeopt=menu,menuone,noselect
@@ -96,7 +105,7 @@ set wildmode=full:lastused
 set wildmenu
 " ignore case
 set wildignorecase
-" ignore some the following directorys when using fuzzy search
+" ignore the following directories when using fuzzy search
 set wildignore+=**/.git/**
 set wildignore+=**/.npm/**
 set wildignore+=**/.nuxt/**
@@ -154,8 +163,8 @@ nnoremap <expr> <C-K> &diff ? '[c' : '<C-K>'
 " }}}
 
 " *** FOLDING *** {{{
-set foldcolumn=0 " show fold gutter
-set foldlevelstart=99 " open with all folds opened
+set foldcolumn=0 " no fold gutter (columns used by the fold indicator)
+set foldlevelstart=99 " open files with all folds expanded
 " }}}
 
 " *** VARIOUS *** {{{
@@ -177,7 +186,7 @@ if &diff
 endif
 " }}}
 
-" some leader mappings {{{
+" leader + , custom mappings: list buffers, registers, jumps, marks etc. {{{
 nnoremap <leader>,b :buffers<CR>
 nnoremap <leader>,r :registers<CR>
 nnoremap <leader>,j :jumps<CR>
@@ -191,8 +200,8 @@ set history=1000
 " decrease timeouts so that some commands are more responsive
 set timeout timeoutlen=500 ttimeoutlen=100
 
-" simple snippets {{{
-" enter cdate|cwdatte|ctime to get the full date in insertmode
+" simple date snippets {{{
+" type cdate, cwdate or ctime in insert mode to get the current date/time
 inoreabbrev cdate <C-r>=strftime('%Y-%m-%d')<CR>
 inoreabbrev cwdate <C-r>=strftime('%Y-%m-%d, %A')<CR>
 inoreabbrev ctime <C-r>=strftime('%Y-%m-%d %H:%M')<CR>
@@ -301,7 +310,7 @@ let g:ale_sign_highlight_linenrs = 1
 " error and warnings {{{
 let g:ale_sign_error = ' »'
 let g:ale_sign_warning = '!'
-" set a custon ALE msg to prepend linter name before the error
+" set a custom ALE message to prepend the linter name before the error
 let g:ale_echo_msg_format = '%severity% [%linter%] (%code%) - %s'
 " show warnings in the preview window
 let g:ale_cursor_detail = 1
@@ -476,11 +485,11 @@ augroup END
 " let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 " }}}
 
-" enable build-in matchit.vim {{{
+" enable the built-in matchit.vim plugin {{{
 packadd! matchit
 " }}}
 
-" enable build-in comment.vim {{{
+" enable the built-in comment.vim plugin {{{
 packadd! comment
 " }}}
 
